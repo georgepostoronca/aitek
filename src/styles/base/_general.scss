@@ -1,12 +1,131 @@
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
+body {
+  font-family: $mont;
+  line-height: 1.2;
+  font-size: 16px;
+  color: $black;
 }
 
-.container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-inherit {
+  height: inherit;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-inherit {
+  width: inherit;
+}
+
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+}
+
+h1 {
+  font-size: 70px;
+  letter-spacing: -0.041em;
+  line-height: 0.9;
+  font-weight: 600;
+
+  b {
+    font-weight: 700;
+    padding-left: 0.27em;
+    padding-right: 0.27em;
+    display: inline;
+    letter-spacing: -0.03em;
+
+    &.--pl-none {
+      padding-left: 0;
+    }
+
+    &.--pr-none {
+      padding-right: 0;
+    }
+  }
+}
+
+h2 {
+  font-family: $mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#2D84C9, #2DAAC6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  border-radius: 100px;
+  background: $btn-gradient;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 228px;
+  padding: 20px 20px;
+
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  overflow: hidden;
+  position: relative;
+
+  appearance: none;
+  border: 0;
+
+  box-shadow: $btn-box-shadow;
+
+  user-select: none;
+
+  &:hover {
+    text-decoration: none;
+
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $btn-gradient;
+    z-index: 0;
+    transition: .5s;
+    opacity: 0;
+    transform: scale(-1);
+  }
+
+  &.--w-auto {
+    min-width: inherit;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  span {
+    color: $white;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+  }
 }

@@ -72,12 +72,8 @@
         "yargs": "~15.4.1"
     },
     "dependencies": {
-        "smart-grid": "^2.1.2"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
+        "smart-grid": "^2.1.2",
+        "swiper": "^6.5.0"
     },
     "lint-staged": {
         "!(_*).scss": [
