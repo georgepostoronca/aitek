@@ -1,0 +1,3 @@
+mixin svg(name, className)
+  svg(class="icon" + (className ? " " + className : ""))
+    use(xlink:href="img/sprites/sprite.svg#" + name)

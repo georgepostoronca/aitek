@@ -1,0 +1,88 @@
+.menu.js-menu
+  .container-fluid
+    .menu-mobile
+      a(href="#dawd").menu-mobile__logo
+        +svg("logo")
+
+      .menu-mobile__control
+        a(href="mailto:info@aitek.ru")
+          +svg("envelope")
+
+        a(href="tel:+7(4922)44-44-42")
+          +svg("phone")
+
+        button.js-menu-open
+          +svg("menu")
+
+    .menu__wrap.js-menu-el
+      a(href="#dawd").menu__logo-dop
+        +svg("logo")
+
+      .menu__social
+        .social
+          a(href="#viber")
+            +svg("viber")
+
+          a(href="#whatsapp")
+            +svg("whatsapp")
+
+          a(href="#telegram")
+            +svg("telegram")
+
+      .menu__mail
+        a(href="mailto:info@aitek.ru") info@aitek.ru
+
+      .menu__contact
+        em Ваш город:
+        .custom-select
+          .custom-select__head
+            span Владимир
+            +svg("arrow")
+
+        .menu__mobile-close.js-menu-close
+          +svg("close")
+
+        a(href="tel:+7(4922)44-44-42") +7 (4922) 44-44-42
+
+      .menu__bottom
+        a(href="#dawd").menu__logo
+          +svg("logo")
+
+        nav.menu__nav
+          ul
+            li
+              a(href="#О-компании") О компании
+            li
+              a(href="#Услуги-и-решения") Услуги и решения
+            li
+              a(href="#Портфолио-проектов") Портфолио проектов
+            li
+              a(href="#Работа-в-АйТек") Работа в АйТек
+            li
+              a(href="#Сервис-и-поддержка") Сервис и поддержка
+            li
+              a(href="#Контакты") Контакты
+
+        .menu__bottom-mobile
+          a(href="#Заявка-на-ремонт") Заявка на ремонт
+          a(href="#Состояние-ремонта") Состояние ремонта
+
+      .menu__footer
+        ul
+          li
+            a(href="#viber")
+              +svg("viber2")
+
+          li
+            a(href="#whatsapp")
+              +svg("whatsapp2")
+
+          li
+            a(href="#telegram")
+              +svg("telegram2")
+
+        div
+          a(href="tel:+7(4922)44-44-42") +7 (4922) 44-44-42
+          span /
+          a(href="mailto:info@aitek.ru") info@aitek.ru
+

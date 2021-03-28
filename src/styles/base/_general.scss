@@ -5,6 +5,10 @@ body {
   color: $black;
 }
 
+.block-scroll {
+  overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6, ul {
   margin: 0;
   padding: 0;
@@ -29,7 +33,7 @@ h1, h2, h3, h4, h5, h6, ul {
 .container-fluid {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1170px;
+  max-width: 1200px;
 }
 
 h1 {
@@ -37,6 +41,25 @@ h1 {
   letter-spacing: -0.041em;
   line-height: 0.9;
   font-weight: 600;
+
+  @media(max-width: 992px) {
+    font-size: 50px;
+  }
+
+  @media(max-width: 600px) {
+    font-size: 35px;
+    line-height: 43px;
+  }
+
+  .text-gradient {
+    @media(max-width: 620px) {
+      background: transparent !important;
+      color: inherit;
+      -webkit-background-clip: inherit;
+      -webkit-text-fill-color: inherit;
+      font-weight: inherit;
+    }
+  }
 
   b {
     font-weight: 700;
@@ -61,6 +84,21 @@ h2 {
   font-weight: 600;
   font-size: 50px;
   line-height: 60px;
+}
+
+a {
+  font-family: $muller;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black-2;
+  transition: .2s;
+  text-decoration: none;
+
+  &:hover {
+    color: $blue;
+  }
 }
 
 .text-gradient {
@@ -127,5 +165,30 @@ h2 {
     text-decoration: none;
     z-index: 1;
     position: relative;
+  }
+}
+
+
+//Custom Select
+.custom-select {
+  &__head {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      font-family: $muller;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: right;
+    }
+
+    svg {
+      width: 10px;
+      height: 6px;
+      margin-left: 8px;
+    }
   }
 }
