@@ -4,7 +4,7 @@ import Swiper from 'swiper/bundle';
 const headslid = new Swiper('.js-headslider', {
   loop: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.js-headslider-pagination',
     clickable: true
   }
 });
@@ -19,7 +19,6 @@ document.addEventListener("scroll", function() {
     menuEl.classList.remove("--fixed")
   }
 });
-
 
 // Open/Close Menu
 const menuClose = document.querySelector(".js-menu-close");
@@ -37,3 +36,24 @@ if(menuElBlock) {
     document.body.classList.add("block-scroll");
   })
 }
+
+// News Slider
+const newsslid = new Swiper('.js-newsslider', {
+  loop: false,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  breakpoints: {
+    0: {
+      loop: true,
+      slidesPerView: 1.3,
+      spaceBetween: 13
+    },
+    600: {
+      loop: true,
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  }
+});

@@ -1,0 +1,38 @@
+.news {
+  background: $gradient-violet;
+
+  &__wrap {
+    padding-top: 90px;
+
+    @media(max-width: 600px) {
+      width: calc(100% + 15px);
+      padding-top: 21px;
+    }
+
+    h2 {
+      margin-bottom: 31px;
+
+      @media(max-width: 767px) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__slider {
+
+  }
+
+  &__bottom {
+    padding-top: 35px;
+    padding-bottom: 101px;
+    text-align: center;
+
+    @media(max-width: 767px) {
+      padding-top: 31px;
+      padding-bottom: 32px;
+    }
+
+    .btn-refresh {
+    }
+  }
+}

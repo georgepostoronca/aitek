@@ -1,0 +1,39 @@
+.news
+    .container-fluid
+        .news__wrap
+            h2 Новости
+
+            // Slider main container
+            .swiper-container.js-newsslider
+                .swiper-wrapper
+                    .swiper-slide
+                        article.article
+                            picture
+                                img(src="img/slider-1.svg" alt="IMG")
+                            .article__info
+                                h4 АйТек - Поздравляет всех клиентов с Новым Годом!
+                                span Компания «АйТек» подтвердила партнерский статус HP на 2021 год
+                                em 01.01.2021
+                    .swiper-slide
+                        article.article
+                            picture
+                                img(src="img/slider-2.svg" alt="IMG")
+                            .article__info
+                                h4 Компания "АйТек" продлила Fujitsu Select
+                                span Компания "АйТек" продлила партнерский статус Fujitsu Select
+                                em 01.01.2021
+                    .swiper-slide
+                        article.article
+                            picture
+                                img(src="img/slider-3.svg" alt="IMG")
+                            .article__info
+                                h4 АйТек - Amplify Power Partner компании HP Inc
+                                span Компания «АйТек» подтвердила партнерский статус HP на 2021 год
+                                em 01.01.2021
+
+
+            .news__bottom
+                button.btn-refresh.text-gradient
+                    span Показать еще
+                    +svg("refresh")
+
