@@ -1,0 +1,130 @@
+.service {
+  &__wrap {
+    padding-top: 230px;
+    margin-bottom: 120px;
+
+    @media(max-width: 1120px) {
+      padding-top: 150px;
+      margin-bottom: 30px;
+    }
+
+    @media(max-width: 767px) {
+      padding-top: 80px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-bottom: 64px;
+
+      @media(max-width: 992px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 23%;
+
+    @media(max-width: 992px) {
+      width: 45%;
+      margin-bottom: 40px;
+    }
+
+    @media(max-width: 420px) {
+      width: 100%;
+    }
+
+    i {
+      width: 148px;
+      height: 148px;
+      position: relative;
+      border-radius: 100%;
+      overflow: hidden;
+      display: flex;
+      margin-bottom: 34px;
+
+      @media(max-width: 1120px) {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+      }
+
+      svg {
+        margin: auto;
+        width: 67px;
+        height: 67px;
+
+        @media(max-width: 1120px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(122.02deg, #2BE2FB 24.12%, #5E96DC 47.86%, #74F5D2 71.6%), #2875B4;;
+        opacity: 0.15;
+      }
+    }
+
+    h3 {
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: -0.03em;
+      margin-bottom: 31px;
+
+      @media(max-width: 1120px) {
+        font-size: 20px;
+        line-height: 1.1;
+        margin-bottom: 15px;
+      }
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        font-size: 16px;
+        padding-left: 27px;
+        line-height: 1.3;
+        margin-bottom: 21px;
+        position: relative;
+
+        @media(max-width: 1120px) {
+          margin-bottom: 10px;
+          font-size: 14px;
+          padding-left: 15px;
+        }
+
+        &:after {
+          content: "";
+          width: 13px;
+          height: 3px;
+          background-color: $blue;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 7px;
+
+          @media(max-width: 1120px) {
+            top: 8px;
+            height: 2px;
+            width: 8px;
+          }
+        }
+      }
+    }
+  }
+}
