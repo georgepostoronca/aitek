@@ -55,11 +55,15 @@ h1 {
 
   .text-gradient {
     @media(max-width: 620px) {
-      background: transparent !important;
-      color: inherit;
-      -webkit-background-clip: inherit;
-      -webkit-text-fill-color: inherit;
-      font-weight: inherit;
+      color: $blue;
+
+      @supports (-webkit-background-clip: inherit) {
+        background: transparent !important;
+        color: inherit;
+        -webkit-background-clip: inherit;
+        -webkit-text-fill-color: inherit;
+        font-weight: inherit;
+      }
     }
   }
 
@@ -307,5 +311,137 @@ a {
     height: 20px;
     transform-origin: center center;
     transition: .2s;
+  }
+}
+
+
+//Custom Select
+.custom-select-container {
+  &.is-open {
+    .custom-select-panel {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      visibility: visible;
+    }
+
+    .custom-select-opener {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .custom-select-opener {
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+
+    padding-right: 18px;
+    user-select: none;
+
+    &:hover {
+      span {
+        color: $blue;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 9px;
+      height: 6px;
+      background: url("../img/svg/arrow.svg") center center no-repeat;
+      background-size: contain;
+
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -3px;
+      transform-origin: center center;
+      transition: .2s;
+    }
+
+    span {
+      font-family: $muller;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+
+      max-width: 170px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      display: block;
+    }
+  }
+
+  .custom-select-panel {
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    min-width: 179px;
+    max-width: 250px;
+    margin-top: 9px;
+
+    max-height: inherit;
+    overflow-y: auto;
+
+    opacity: 0;
+    transition: .2s;
+    transform: translateY(10px);
+    pointer-events: none;
+    visibility: hidden;
+
+    & {
+      scrollbar-width: thin;
+      scrollbar-color: $blue transparent;
+    }
+
+    /* Works on Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $blue;
+      border-radius: 20px;
+    }
+  }
+
+  .custom-select-option {
+    font-family: $muller;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    //line-height: 2.2;
+    height: auto;
+    padding: 8px 16px;
+    cursor: pointer;
+
+    &:first-child {
+      margin-top: 9px;
+    }
+
+    &:last-child {
+      margin-bottom: 9px;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    &.has-focus {
+      color: $blue;
+      background-color: transparent;
+    }
   }
 }

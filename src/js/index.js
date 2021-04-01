@@ -1,4 +1,8 @@
 import Swiper from 'swiper/bundle';
+import customSelect from 'custom-select';
+
+// Custom Select
+customSelect(document.querySelector('.js-custom-select'));
 
 // Head Slider
 const headslid = new Swiper('.js-headslider', {
@@ -11,7 +15,6 @@ const headslid = new Swiper('.js-headslider', {
 
 // Fixed Scroll
 const menuEl = document.querySelector(".js-menu");
-console.log(menuEl)
 document.addEventListener("scroll", function() {
   if(window.scrollY > 10) {
     menuEl.classList.add("--fixed")

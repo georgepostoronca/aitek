@@ -72,6 +72,7 @@
         "yargs": "~15.4.1"
     },
     "dependencies": {
+        "custom-select": "^1.1.15",
         "smart-grid": "^2.1.2",
         "swiper": "^6.5.0"
     },

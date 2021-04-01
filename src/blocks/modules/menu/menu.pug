@@ -34,10 +34,14 @@
 
       .menu__contact
         em Ваш город:
-        .custom-select
-          .custom-select__head
-            span Владимир
-            +svg("arrow")
+        select(data-placeholder="Выбор города").js-custom-select
+          option(value="2") Владимир
+          option(value="3") Иваново
+          option(value="4") Нижний Новгород
+        //.custom-select
+        //  .custom-select__head
+        //    span Владимир
+        //    +svg("arrow")
 
         .menu__mobile-close.js-menu-close
           +svg("close")

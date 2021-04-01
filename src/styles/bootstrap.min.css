@@ -336,7 +336,14 @@ hr {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+}
+
+@media(max-width: 1200px) {
+    .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .row {

@@ -15,15 +15,21 @@
     align-items: center;
 
     min-height: 100vh;
-    padding-top: 122px;
-    padding-bottom: 122px;
+    //padding-top: 122px;
+    padding-top: 140px;
+    //padding-bottom: 122px;
+    padding-bottom: 140px;
 
     @media(max-width: 767px) {
-      min-height: inherit;
+      //min-height: inherit;
       padding-top: 94px;
       padding-bottom: 30px;
       width: 100%;
       height: auto;
+    }
+
+    @media(min-width: 768px) and (max-height: 700px) {
+      min-height: 700px;
     }
 
     &-content {
@@ -50,9 +56,14 @@
         font-family: $muller;
         margin-top: 0;
 
+        @media(max-width: 1180px) {
+          width: 50%;
+        }
+
         @media(max-width: 767px) {
           text-align: center;
           margin-bottom: 29px;
+          width: 100%;
         }
 
         @media(max-width: 480px) {
@@ -119,7 +130,12 @@
         height: 10px;
         position: relative;
         margin: 0 10px !important;
+        transition: .2s;
 
+        &:hover {
+          background-color: $blue;
+          opacity: 1;
+        }
 
         &:after {
           content: "";
