@@ -15,14 +15,18 @@ footer.footer
           a(href="#Состояние-ремонта") Состояние ремонта
         li
           a(href="#Вакансии") Вакансии
-        li
-          button
-            +svg("search")
+        li.form
+          form.footer-search
+            input(placeholder="Введите что-нибудь" value="" name="search")
+            button
+              +svg("search")
 
 
     .footer__bottom
-      a(href="tel:+7(4922)44-44-42") +7 (4922) 44-44-42
-      a(href="https://rusodot.ru/")
-        span Сделано в
-        +svg("ruso")
+      a.link(href="tel:+7(4922)44-44-42") +7 (4922) 44-44-42
+      a.link(href="#") Политика конфиденциальности
+      span.dev
+        em Сделано в
+        a(href="https://rusodot.ru/")
+          +svg("ruso")
 

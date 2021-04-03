@@ -34,10 +34,10 @@
 
       .menu__contact
         em Ваш город:
-        select(data-placeholder="Выбор города").js-custom-select
-          option(value="2") Владимир
-          option(value="3") Иваново
-          option(value="4") Нижний Новгород
+        select(data-placeholder="Выбор города" data-change-number="true").js-custom-select
+          option(value="1" data-phone="+1 (4922) 44-44-42") Владимир
+          option(value="2" data-phone="+2 (4922) 44-44-42" selected) Иваново
+          option(value="3" data-phone="+3 (4922) 44-44-42") Нижний Новгород
         //.custom-select
         //  .custom-select__head
         //    span Владимир
@@ -46,7 +46,7 @@
         .menu__mobile-close.js-menu-close
           +svg("close")
 
-        a(href="tel:+7(4922)44-44-42") +7 (4922) 44-44-42
+        a(href="tel:+7(4922)44-44-42").js-change-phone +7 (4922) 44-44-42
 
       .menu__bottom
         a(href="#dawd").menu__logo

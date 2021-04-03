@@ -2,7 +2,33 @@ import Swiper from 'swiper/bundle';
 import customSelect from 'custom-select';
 
 // Custom Select
-customSelect(document.querySelector('.js-custom-select'));
+const wrapCustomSelect = customSelect(document.querySelector('.js-custom-select'));
+console.log(wrapCustomSelect);
+wrapCustomSelect[0].select.addEventListener('change', (e) => {
+  console.log(e);
+  if(e.target.dataset.changeNumber) {
+    chabgeNumber(e.target);
+  }
+});
+
+const chabgeNumber = (el) => {
+  try {
+    let index = el.selectedIndex;
+    let changeTel = document.querySelector(".js-change-phone");
+    let phone = el.options[index].dataset.phone;
+
+    changeTel.innerText = phone;
+    changeTel.setAttribute("href", "tel:" + phone.split('').filter(e => e.trim().length).join(''));
+  } catch(e) {
+    console.log(e);
+  }
+}
+
+const changeNumberLink = document.querySelector("[data-change-number]");
+if(changeNumberLink) {
+  chabgeNumber(changeNumberLink);
+}
+
 
 // Head Slider
 const headslid = new Swiper('.js-headslider', {
@@ -47,6 +73,12 @@ const newsslid = new Swiper('.js-newsslider', {
   spaceBetween: 30,
   breakpoints: {
     0: {
+      loop: true,
+      slidesPerView: 1.15,
+      spaceBetween: 13
+    },
+
+    370: {
       loop: true,
       slidesPerView: 1.3,
       spaceBetween: 13

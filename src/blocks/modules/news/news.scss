@@ -4,6 +4,10 @@
   &__wrap {
     padding-top: 90px;
 
+    @media(max-width: 767px) {
+      padding-top: 30px;
+    }
+
     @media(max-width: 600px) {
       width: calc(100% + 15px);
       padding-top: 21px;
