@@ -26,6 +26,7 @@
       padding-bottom: 30px;
       width: 100%;
       height: auto;
+      min-height: inherit;
     }
 
     @media(min-width: 768px) and (max-height: 700px) {
@@ -95,13 +96,25 @@
       }
 
       img {
-        width: 60%;
+        //width: 60%;
         position: absolute;
         top: 50%;
         right: -13.6%;
         transform: translateY(-50%);
         z-index: -1;
         //max-width: 870px;
+        max-width: 833px;
+        max-height: 65vh;
+
+        @media(max-width: 1300px) {
+          width: 60%;
+          max-width: inherit;
+        }
+
+        @media(min-width: 1921px) {
+          width: 60%;
+          max-width: inherit;
+        }
 
         @media(max-width: 767px) {
           position: static;

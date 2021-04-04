@@ -56,18 +56,33 @@ h1 {
   .text-gradient {
     @media(max-width: 620px) {
       color: $blue;
+      //transform: translate3d(0,0,0);
+      //
+      //@supports (-webkit-background-clip: inherit) {
+      //  background: transparent !important;
+      //  color: inherit;
+      //  -webkit-background-clip: inherit;
+      //  -webkit-text-fill-color: inherit;
+      //  font-weight: inherit;
+      //}
+      //
+      //@supports (-webkit-mask-image: $btn-gradient) {
+      //  -webkit-mask-image: $btn-gradient;
+      //}
 
-      @supports (-webkit-background-clip: inherit) {
-        background: transparent !important;
-        color: inherit;
-        -webkit-background-clip: inherit;
-        -webkit-text-fill-color: inherit;
-        font-weight: inherit;
-      }
-
-      @supports (-webkit-mask-image: $btn-gradient) {
-        -webkit-mask-image: $btn-gradient;
-      }
+      //transform: translate3d(0,0,0);
+      //@supports (-webkit-background-clip: inherit) {
+      //  background: #2D84C9;
+      //  background: -webkit-linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
+      //  background: -moz-linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
+      //  background: linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
+      //  -webkit-background-clip: text;
+      //  -webkit-text-fill-color: transparent;
+      //}
+      //
+      //@supports (-webkit-mask-image: $btn-gradient) {
+      //  -webkit-mask-image: $btn-gradient;
+      //}
     }
   }
 
@@ -119,10 +134,36 @@ a {
   }
 }
 
+//.text-gradient {
+//  transform: translate3d(0,0,0);
+//  @supports (-webkit-background-clip: inherit) {
+//    background: #2D84C9;
+//    background: -webkit-linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
+//    background: -moz-linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
+//    background: linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
+//    -webkit-background-clip: text;
+//    -webkit-text-fill-color: transparent;
+//  }
+//
+//  @supports (-webkit-mask-image: $btn-gradient) {
+//    -webkit-mask-image: $btn-gradient;
+//  }
+//}
+
 .text-gradient {
-  background: -webkit-linear-gradient(#2D84C9, #2DAAC6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2D84C9;
+}
+
+@supports ((background-clip: text) or (-webkit-background-clip: text)) and
+  ((text-fill-color: transparent) or (-webkit-text-fill-color: transparent)) {
+  .text-gradient {
+    background: linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
 }
 
 .btn {
@@ -221,7 +262,6 @@ a {
   border-radius: 15px;
   overflow: hidden;
   background-color: #fff;
-
   text-decoration: none !important;
 
   picture {
@@ -264,7 +304,7 @@ a {
       letter-spacing: -0.03em;
       margin-bottom: 22px;
       color: $black-2;
-      line-height: 1.4;
+      line-height: 1.2;
       transition: .2s;
 
       @media(max-width: 767px) {
@@ -395,6 +435,7 @@ a {
       overflow: hidden;
       white-space: nowrap;
       display: block;
+      transition: .2s;
     }
   }
 
@@ -471,4 +512,33 @@ a {
 
 .js-custom-select {
   opacity: 0;
+}
+
+
+.section{
+  &__wrap {
+    padding-top: 90px;
+    padding-bottom: 101px;
+
+    @media(max-width: 767px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media(max-width: 600px) {
+      padding-top: 21px;
+    }
+
+    h2 {
+      margin-bottom: 31px;
+
+      @media(max-width: 767px) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__head {
+
+  }
 }

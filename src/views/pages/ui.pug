@@ -1,0 +1,12 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+  - const title = "gulp-pug-starter"
+
+block content
+  include ../../blocks/modules/blockblue/blockblue
+
+block scripts
+  script(src="js/main.js")
+  script(src="js/vendor.js")

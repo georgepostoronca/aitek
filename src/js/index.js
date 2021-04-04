@@ -5,7 +5,7 @@ import customSelect from 'custom-select';
 const wrapCustomSelect = customSelect(document.querySelector('.js-custom-select'));
 console.log(wrapCustomSelect);
 wrapCustomSelect[0].select.addEventListener('change', (e) => {
-  console.log(e);
+  // console.log(e);
   if(e.target.dataset.changeNumber) {
     chabgeNumber(e.target);
   }
