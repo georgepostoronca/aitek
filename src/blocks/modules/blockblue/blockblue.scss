@@ -1,0 +1,37 @@
+.blockblue {
+  background-color: $blue-3;
+  color: $white;
+
+  min-height: 458px;
+
+  @media(max-width: 768px) {
+    min-height: inherit;
+  }
+
+  &__wrap {
+    padding-top: 109px;
+  }
+
+  &__content {
+    h2 {
+      letter-spacing: 0.4px;
+      margin-bottom: 17px;
+      line-height: 1;
+    }
+
+    p {
+      width: 59%;
+      font-family: $muller;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+      margin-top: 0;
+      margin-bottom: 35px;
+
+      @media(max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+}
