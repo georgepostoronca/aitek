@@ -1,0 +1,81 @@
+.slidermin {
+  &__wrap {
+
+  }
+
+  &__slider {
+    padding-bottom: 50px;
+
+    .swiper-pagination {
+      width: auto;
+      bottom: 0;
+      padding-left: 2px;
+
+      .swiper-pagination-bullet {
+        width: 11px;
+        height: 11px;
+        background-color: $black-3;
+        position: relative;
+        margin-left: 0;
+        margin-right: 20px;
+        transition: .2s;
+        cursor: pointer;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 13px;
+          height: 13px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: .2s;
+          background: $gradient-blue;
+          opacity: 0;
+          border-radius: 100%;
+        }
+
+        &:hover {
+          background: $blue;
+          opacity: 1;
+        }
+
+        &.swiper-pagination-bullet-active {
+          background: transparent;
+
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      span {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+        color: $black-2;
+      }
+
+      svg {
+        width: 14px;
+        height: 10px;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .swiper-button-prev {
+
+    }
+
+    .swiper-button-next {
+
+    }
+  }
+}
