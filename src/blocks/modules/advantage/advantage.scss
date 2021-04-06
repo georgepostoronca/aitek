@@ -1,4 +1,9 @@
 .advantage {
+
+  &.--page-service &__wrap {
+    padding-bottom: 0;
+  }
+
   &__wrap {
     h2 {
       margin-bottom: 65px;

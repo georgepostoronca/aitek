@@ -6,7 +6,12 @@
   transition: .2s;
 
   &.--fixed {
-    background-color: #fff;
+    background-color: $white;
+  }
+
+  &.--sticky {
+    position: sticky;
+    background-color: $white;
   }
 
   //Mobile

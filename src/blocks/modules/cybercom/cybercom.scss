@@ -1,4 +1,14 @@
 .cybercom {
+  &.--page-service &__wrap {
+    padding-top: 60px;
+    padding-bottom: 0;
+
+    @media(max-width: 767px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
   .section__head {
     margin-bottom: 58px;
 

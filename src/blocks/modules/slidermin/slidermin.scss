@@ -1,4 +1,16 @@
 .slidermin {
+
+  &.--page-service &__wrap {
+    padding-top: 66px;
+    padding-bottom: 0;
+
+    @media(max-width: 767px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+
   &__wrap {
 
   }
