@@ -3,6 +3,11 @@
 
   }
 
+  &__head {
+    h2 {
+    }
+  }
+
   &__slider {
     padding-bottom: 50px;
 
@@ -21,6 +26,12 @@
         transition: .2s;
         cursor: pointer;
 
+        @media(max-width: 480px) {
+          margin-right: 4px;
+          width: 8px;
+          height: 8px;
+        }
+
         &:after {
           content: "";
           display: block;
@@ -34,6 +45,11 @@
           background: $gradient-blue;
           opacity: 0;
           border-radius: 100%;
+
+          @media(max-width: 480px) {
+            width: 10px;
+            height: 10px;
+          }
         }
 
         &:hover {
@@ -51,18 +67,83 @@
       }
     }
 
+    .swiper-button-prev {
+      bottom: -12px;
+      margin-top: 0;
+      right: 110px;
+      left: inherit;
+
+      @media(max-width: 480px) {
+        right: 70px;
+      }
+
+      svg {
+        transform: rotate(180deg);
+        margin-right: 15px;
+
+        @media(max-width: 480px) {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .swiper-button-next {
+      bottom: -12px;
+      margin-top: 0;
+      right: -8px;
+
+      @media(max-width: 480px) {
+        right: 0;
+      }
+
+      svg {
+        margin-left: 15px;
+
+        @media(max-width: 480px) {
+          margin-left: 5px;
+        }
+      }
+    }
+
     .swiper-button-prev, .swiper-button-next {
+      width: 100px;
+      top: inherit;
+      bottom: 0;
+      margin-top: 0;
+      height: 20px;
+
+      @media(max-width: 480px) {
+        width: 60px;
+        bottom: -2px;
+      }
+
+      &:hover {
+        span {
+          color: $blue;
+        }
+
+        svg {
+          fill: $blue;
+        }
+      }
+
       span {
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
         line-height: 16px;
         color: $black-2;
+        transition: .2s;
+
+        @media(max-width: 480px) {
+          font-size: 12px;
+        }
       }
 
       svg {
         width: 14px;
         height: 10px;
+        transition: .2s;
       }
 
       &:after {
