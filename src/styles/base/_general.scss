@@ -110,6 +110,10 @@ h2 {
   font-size: 50px;
   line-height: 60px;
 
+  &.--break-all {
+    word-break: break-all;
+  }
+
   @media(max-width: 768px) {
     font-size: 35px;
     line-height: 1;

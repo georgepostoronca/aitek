@@ -1,0 +1,118 @@
+.cybercom {
+  .section__head {
+    margin-bottom: 58px;
+
+    @media(max-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    @media(max-width: 576px) {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      padding-right: 20px;
+
+      @media(max-width: 1200px) {
+        padding-right: 0;
+      }
+    }
+
+    p {
+      padding-left: 40px;
+      margin-top: 17px;
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+      font-family: $muller;
+
+      @media(max-width: 1200px) {
+        padding-left: 0;
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__wrap {
+
+  }
+
+  &-table {
+    overflow: auto;
+
+    @media(max-width: 992px) {
+      table {
+        width: 1000px;
+      }
+    }
+
+    @media(max-width: 767px) {
+      table {
+        width: 800px;
+      }
+    }
+  }
+}
+
+table {
+  width: 100%;
+  thead {
+    td {
+      padding: 21px 24px;
+      padding-top: 15px;
+      padding-bottom: 26px;
+      border-bottom: 1px solid #ECECEC;
+
+      @media(max-width: 768px) {
+        padding: 15px;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid $silver-5;
+      }
+    }
+
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: $muller;
+    }
+  }
+
+  tbody {
+    td {
+      padding: 25px 24px;
+      border-bottom: 1px solid $silver-5;
+
+      @media(max-width: 768px) {
+        padding: 15px;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid $silver-5;
+      }
+    }
+
+    span {
+      font-family: $muller;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    b {
+      color: $blue;
+    }
+  }
+}
