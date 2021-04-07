@@ -154,3 +154,44 @@ let lightbox = new SimpleLightbox({
 //   })
 // }
 
+
+
+// Tab
+let getSiblings = function (e) {
+  // for collecting siblings
+  let siblings = [];
+  // if no parent, return no sibling
+  if(!e.parentNode) {
+    return siblings;
+  }
+  // first child of the parent node
+  let sibling  = e.parentNode.firstChild;
+  // collecting siblings
+  while (sibling) {
+    if (sibling.nodeType === 1 && sibling !== e) {
+      siblings.push(sibling);
+    }
+    sibling = sibling.nextSibling;
+  }
+  return siblings;
+};
+
+let tabBlock = [].slice.call(document.querySelectorAll(".js-tab"));
+tabBlock.forEach(item => {
+  let btns = [].slice.call(item.querySelectorAll(".js-tab-btn"));
+  let contents = [].slice.call(item.querySelectorAll(".js-tab-content"));
+
+  btns.forEach(btn => {
+    btn.addEventListener("click", (b) => {
+      let index = btns.indexOf(btn);
+
+      btns[index].classList.add("active");
+      let siblingsBtn = getSiblings(btns[index]);
+      siblingsBtn.forEach(item => item.classList.remove("active"));
+
+      contents[index].classList.add("active");
+      let siblingsContent = getSiblings(contents[index]);
+      siblingsContent.forEach(item => item.classList.remove("active"));
+    })
+  })
+});

@@ -129,6 +129,24 @@ h2 {
   }
 }
 
+h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+
+  @media(max-width: 768px) {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  @media(max-width: 480px) {
+    font-size: 22px;
+    line-height: 1;
+  }
+}
+
 h4 {
   font-style: normal;
   font-weight: bold;

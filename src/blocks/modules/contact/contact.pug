@@ -1,0 +1,52 @@
+section.contact
+  .container-fluid
+    .contact__wrap
+      h2 Контакты
+
+      address.address
+        .address__item
+          span Для сообщений
+          a.ico(href="#viber")
+            +svg("viber")
+          a.ico(href="#telegram")
+            +svg("telegram")
+          a.phone(href="tel:88005559953") +8 800 555 99 53
+
+        .address__item
+          span Для сервиса
+          a.ico(href="#telegram")
+            +svg("telegram")
+          a.phone(href="tel:88005559953") +8 800 555 99 53
+
+        .address__item
+          span Тех.поддержка
+          a.ico(href="#telegram")
+            +svg("telegram")
+          a.phone(href="mailto:aitek@gmail.com") aitek@gmail.com
+
+      .contact-tab.js-tab
+        .contact-tab__head
+          each text,index in ["Владимир", "Иваново", "Нижний Новгород", "Склад и Сервисный центр"]
+            button.js-tab-btn(data-text=text class=index === 0 ? 'active' : '')
+              span=text
+
+        .contact-tab__contact
+          each i in [1,2,3,4]
+            .contact-tab__item.js-tab-content(class=i === 1 ? 'active' : '')
+              div
+                h3 Офис г. Владимир #{i}
+                ul
+                  li
+                    em Адрес
+                    span 11745 улица Дорожная дом 70б
+
+                  li
+                    em Телефон
+                    a(href="tel:89590504041") 8 959 050 40 41
+
+                  li
+                    em Email
+                    a(href="mailto:aitek@gmail.com") aitek@gmail.com
+              div.map
+                #map
+
