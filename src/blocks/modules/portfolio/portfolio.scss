@@ -1,0 +1,166 @@
+.portfolio {
+  &__wrap {
+    padding-top: 85px;
+
+    @media(max-width: 992px) {
+      padding-top: 50px;
+    }
+
+    @media(max-width: 767px) {
+      padding-top: 30px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 33px;
+
+    @media(max-width: 1080px) {
+      display: block;
+    }
+
+    @media(max-width: 620px) {
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 50px;
+
+      @media(max-width: 620px) {
+        font-size: 30px;
+      }
+
+      em {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        margin-left: 14px;
+        letter-spacing: -0.1px;
+        font-family: $muller;
+
+        @media(max-width: 620px) {
+          display: block;
+          margin-left: 0;
+          line-height: 1;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  &__select {
+    display: flex;
+    margin-right: 4px;
+
+    @media(max-width: 1080px) {
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    @media(max-width: 620px) {
+      flex-wrap: wrap;
+    }
+
+    .customSelect {
+      position: relative;
+      margin-left: 30px;
+
+      @media(max-width: 1080px) {
+        margin-left: 0;
+        margin-right: 40px;
+      }
+
+      @media(max-width: 620px) {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
+
+      .custom-select-panel {
+        right: 0;
+
+        @media(max-width: 767px) {
+          right: inherit;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(#222222, .15);
+    padding-bottom: 16px;
+    margin-bottom: 67px;
+
+    @media(max-width: 992px) {
+      margin-bottom: 30px;
+    }
+
+    &-item {
+      background: $silver-2;
+      border-radius: 100px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 7px 13px;
+      position: relative;
+
+      overflow: hidden;
+
+      &:hover, &.active {
+        span {
+          color: $white;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 1;
+        z-index: 1;
+        transition: .2s;
+        position: relative;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: $gradient-blue;
+        opacity: 0;
+        transition: .2s;
+      }
+    }
+  }
+
+  &__map {
+    background-color: $silver;
+    height: 347px;
+    margin-bottom: 58px;
+  }
+
+  &__grid {
+    margin-bottom: 33px;
+
+    @media(max-width: 768px) {
+      margin-bottom: 0;
+    }
+
+    .article {
+      margin-bottom: 30px;
+    }
+  }
+}

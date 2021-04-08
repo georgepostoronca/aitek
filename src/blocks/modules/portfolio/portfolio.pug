@@ -1,0 +1,64 @@
+section.portfolio
+  .container-fluid
+    .portfolio__wrap
+      .portfolio__head
+        h1 Проекты
+          em 120 проектов
+
+        .portfolio__select
+          select(data-placeholder="Группа услуг").js-custom-select.--right
+            option(value="1") Группа услуг
+            option(value="2") Группа услуг 2
+            option(value="3") Группа услуг 3
+
+          select(data-placeholder="Тип услуги").js-custom-select.--right
+            option(value="1") Тип услуги
+            option(value="2") Тип услуги 2
+            option(value="3") Тип услуги 3
+
+          select(data-placeholder="Отрасль").js-custom-select.--right
+            option(value="1") Отрасль
+            option(value="2") Отрасль 2
+            option(value="3") Отрасль 3
+
+          select(data-placeholder="Год").js-custom-select.--right
+            option(value="1") Год
+            option(value="2") Год 2
+            option(value="3") Год 3
+
+      .portfolio__label
+        a.portfolio__label-item.active(href="#")
+          span Все
+        a.portfolio__label-item(href="#")
+          span Поставка оборудования и ПО
+        a.portfolio__label-item(href="#")
+          span ИТ Инфраструктура
+        a.portfolio__label-item(href="#")
+          span Инфраструктура ЦОД
+        a.portfolio__label-item(href="#")
+          span Информационная безопасность
+        a.portfolio__label-item(href="#")
+          span Конференц залы и видеосистемы
+        a.portfolio__label-item(href="#")
+          span Сети и кабельные системы
+        a.portfolio__label-item(href="#")
+          span Видеонаблюдение
+        a.portfolio__label-item(href="#")
+          span Бесперебойное электропитание
+        a.portfolio__label-item(href="#")
+          span Сервис и ИТ Аутсорсинг
+        a.portfolio__label-item(href="#")
+          span Автоматизация производства
+
+      .portfolio__map
+        #map
+
+      .portfolio__grid.row
+        each i in [1,2,3,4,5,6,7,8,9]
+          a(href="#").col-12.col-md-6.col-xl-4.article.--min-info
+            picture
+              img(src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG")
+            .article__info
+              h4 АйТек - Поздравляет всех клиентов с Новым Годом!
+              span Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
+

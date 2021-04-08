@@ -4,15 +4,19 @@ import SimpleLightbox from "simple-lightbox";
 // let SimpleLightbox = window.SimpleLightbox;
 
 // Custom Select
-const wrapCustomSelect = customSelect(document.querySelector('.js-custom-select'));
-if(wrapCustomSelect[0]) {
-  wrapCustomSelect[0].select.addEventListener('change', (e) => {
-    // console.log(e);
-    if(e.target.dataset.changeNumber) {
-      chabgeNumber(e.target);
-    }
-  });
-}
+let customSelectAll = [].slice.call(document.querySelectorAll('.js-custom-select'));
+customSelectAll.forEach(item => {
+  const wrapCustomSelect = customSelect(item);
+  console.log(wrapCustomSelect)
+  if(wrapCustomSelect[0]) {
+    wrapCustomSelect[0].select.addEventListener('change', (e) => {
+      // console.log(e);
+      if(e.target.dataset.changeNumber) {
+        chabgeNumber(e.target);
+      }
+    });
+  }
+});
 
 const chabgeNumber = (el) => {
   try {
