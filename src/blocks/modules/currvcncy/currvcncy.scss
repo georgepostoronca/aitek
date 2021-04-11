@@ -1,0 +1,27 @@
+.currvcncy {
+  .section__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media(max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2 {
+      padding-right: 20px;
+
+      @media(max-width: 768px) {
+        padding-right: 0;
+      }
+    }
+
+    a {
+      @media(max-width: 768px) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

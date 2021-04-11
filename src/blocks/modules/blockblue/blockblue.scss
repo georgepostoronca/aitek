@@ -8,6 +8,30 @@
     min-height: inherit;
   }
 
+  &.--silver {
+    background-color: $silver-8;
+    color: $black-2;
+    min-height: 393px;
+
+    @media(max-width: 992px) {
+      min-height: inherit;
+    }
+  }
+
+  &.--silver &__wrap {
+    padding-top: 90px;
+    padding-bottom: 50px;
+
+    @media(max-width: 992px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 36px;
+    }
+  }
+
   &__wrap {
     padding-top: 109px;
   }

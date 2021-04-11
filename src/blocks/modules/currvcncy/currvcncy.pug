@@ -1,0 +1,38 @@
+section.section.slidermin.currvcncy(class=sliderClass)
+    .container-fluid
+        .section__wrap.slidermin__wrap
+            .section__head
+                h2=sliderTitle
+                a.link-arrow.--max
+                    span Все вакансии
+                    +svg("arrowline")
+
+            .swiper-container.slidermin__slider.js-slidermin.js-lightbox
+                .swiper-wrapper
+                    each i in [1,2]
+                        .swiper-slide
+                            .article-vcncy.--blue
+                                b Инженер
+                                em г. Москва
+                                p Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически
+
+                        .swiper-slide
+                            .article-vcncy.--green
+                                b Менеджер
+                                em г. Владивосток
+                                p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
+
+                        .swiper-slide
+                            .article-vcncy.--violet
+                                b Администратор
+                                em г. Москва
+                                p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
+
+                .swiper-pagination
+                .swiper-button-prev
+                    +svg("arrowline")
+                    span Назад
+
+                .swiper-button-next
+                    span Далее
+                    +svg("arrowline")

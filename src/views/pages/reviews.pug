@@ -5,13 +5,14 @@ block variables
   - const title = "reviews"
 
 block content
-  - var menuFixed = "--sticky"
-  include ../../blocks/modules/menu/menu
+  #wrapper
+    - var menuFixed = "--sticky"
+    include ../../blocks/modules/menu/menu
 
-  main
-    include ../../blocks/modules/reviews/reviews
+    main
+      include ../../blocks/modules/reviews/reviews
 
-  include ../../blocks/modules/footer/footer
+    include ../../blocks/modules/footer/footer
 
 block scripts
   script(src="js/main.js")

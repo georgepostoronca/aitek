@@ -1,4 +1,14 @@
 .vacancyblock {
+  &__title {
+    h1 {
+      text-align: center;
+      margin-bottom: 31px;
+
+      @media(max-width: 767px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
   &__wrap {
     background: #DDBB95 url("../img/vacancy-bg.jpg") center top no-repeat;
     background-size: cover;
