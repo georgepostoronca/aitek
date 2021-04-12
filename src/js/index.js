@@ -199,3 +199,36 @@ tabBlock.forEach(item => {
     })
   })
 });
+
+
+// Scroll Start/End
+function scrolled(o, type) {
+  var direction = type ? o.scrollTop : o.scrollLeft;
+  var size = type ? o.scrollHeight : o.scrollWidth;
+  var sizeEl = type ? o.clientHeight : o.clientWidth;
+
+  // console.log(o, type)
+  // console.log((direction + sizeEl), direction + sizeEl, size);
+
+  if ((direction + sizeEl) == size) {
+    o.parentNode.classList.add("end");
+    o.parentNode.classList.remove("between");
+    o.parentNode.classList.remove("start");
+    console.log("end")
+  } else {
+    console.log("between")
+    o.parentNode.classList.remove("end");
+    o.parentNode.classList.add("between");
+    o.parentNode.classList.remove("start");
+  }
+
+  if (direction == 0) {
+    console.log("start")
+    o.parentNode.classList.remove("end");
+    o.parentNode.classList.remove("between");
+    o.parentNode.classList.add("start");
+  }
+  return false;
+}
+
+window.scrolledFn = scrolled;

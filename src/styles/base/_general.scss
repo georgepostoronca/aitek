@@ -1,8 +1,17 @@
-body {
+html, body {
+  min-height: 100%;
+  height: 100%;
+  min-width: 320px;
+
   font-family: $mont;
   line-height: 1.2;
   font-size: 16px;
   color: $black;
+}
+
+body.block-scroll {
+  overflow: hidden;
+  touch-action: none;
 }
 
 #wrapper {
@@ -963,16 +972,6 @@ p {
 
 //Pages
 .page-work {
-  //padding-top: 182px;
-  //
-  //@media(max-width: 992px) {
-  //  padding-top: 140px;
-  //}
-  //
-  //@media(max-width: 767px) {
-  //  padding-top: 80px;
-  //}
-
   .vacancyblock {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -988,6 +987,43 @@ p {
 
     @media(max-width: 992px) {
       margin-bottom: 40px;
+    }
+  }
+}
+
+#wrapper.page-reviews {
+  @media(max-width: 992px) {
+    height: auto;
+  }
+
+  main {
+    height: calc(100% - 281px);
+
+    @media(max-height: 700px) {
+      height: auto;
+    }
+
+    @media(max-width: 992px) {
+      height: auto;
+    }
+  }
+
+  .reviews {
+    height: 100%;
+
+    .container-fluid {
+      height: 100%;
+    }
+
+    &__wrap {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .reviews__scroll {
+        flex: 1;
+        overflow: auto;
+      }
     }
   }
 }

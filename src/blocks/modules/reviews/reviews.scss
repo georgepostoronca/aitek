@@ -1,10 +1,14 @@
 .reviews {
+  height: 100%;
+
   &__wrap {
     width: 786px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 69px;
+
+    height: 100%;
 
     @media(max-width: 836px) {
       width: 100%;
@@ -24,27 +28,57 @@
   }
 
   &__scroll {
-    //& {
-    //  scrollbar-width: thin;
-    //  scrollbar-color: blue orange;
-    //}
-    //
-    //&::-webkit-scrollbar {
-    //  width: 12px;
-    //}
-    //
-    //&::-webkit-scrollbar-track {
-    //  background: orange;
-    //}
-    //
-    //&::-webkit-scrollbar-thumb {
+    padding-right: 53px;
+    width: calc(100% + 53px);
+    position: relative;
+
+    @media(max-width: 992px) {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    //&:before {
+    //  content: "";
+    //  width: 100%;
+    //  height: 20px;
+    //  position: sticky;
+    //  top: 0;
+    //  left: 0;
     //  background-color: blue;
-    //  border-radius: 20px;
-    //  border: 3px solid orange;
     //}
+
+    & {
+      scrollbar-width: thin;
+      scrollbar-color: $silver-6 $silver-9;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $silver-9;
+      border-radius: 15px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $silver-6;
+      border-radius: 20px;
+      border: 1px solid $silver-9;
+    }
   }
 
   &__item {
+    //&:after {
+    //  content: "";
+    //  width: 100%;
+    //  height: 20px;
+    //  position: absolute;
+    //  top: 0;
+    //  left: 0;
+    //  background-color: red;
+    //}
+
     .review {
       margin-bottom: 23px;
     }

@@ -1,0 +1,20 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+  - const title = "vacancy"
+
+block content
+    #wrapper.page-work
+        - var menuFixed = "--sticky"
+        include ../../blocks/modules/menu/menu
+
+        main
+            include ../../blocks/modules/vacancy/vacancy
+
+
+        include ../../blocks/modules/footer/footer
+
+block scripts
+    script(src="js/main.js")
+    script(src="js/vendor.js")
