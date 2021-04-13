@@ -295,6 +295,31 @@ p {
   will-change: transform;
   overflow: hidden;
 
+  &.--light {
+    background: rgba(40, 113, 182, 0.1);
+    box-shadow: none;
+    transition: .2s;
+
+    &:hover {
+      background-color: $blue;
+
+      span {
+        color: $white;
+      }
+    }
+
+    span {
+      color: $blue;
+      font-weight: 600;
+      font-size: 13px;
+      transition: .2s;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
   &:hover {
     text-decoration: none;
 
