@@ -836,6 +836,29 @@ p {
     display: block;
   }
 
+  &.--quote {
+    position: relative;
+
+    footer {
+      svg {
+        width: 56px;
+        height: 42px;
+        fill: $blue;
+
+        position: absolute;
+        right: 46px;
+        bottom: 20px;
+
+        @media(max-width: 768px) {
+          width: 34px;
+          height: 25px;
+          right: 15px;
+          bottom: 15px;
+        }
+      }
+    }
+  }
+
   &__img {
     width: 156px;
 
@@ -916,6 +939,34 @@ p {
 
     svg {
       width: 15px;
+    }
+  }
+
+  &.--ico {
+    &:hover {
+      svg {
+        fill: $black-2;
+      }
+    }
+    span {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1;
+      position: relative;
+      top: 1px;
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 7px;
+    }
+  }
+
+  &.--arrow-rotate {
+    svg {
+      transform: rotate(180deg);
     }
   }
 

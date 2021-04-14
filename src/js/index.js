@@ -145,6 +145,32 @@ if(sliderminEl) {
 }
 
 
+let sliderminDetailEl = document.querySelector(".js-bdetail");
+if(sliderminDetailEl) {
+  const newsslidDetailEl = new Swiper(sliderminDetailEl, {
+    loop: false,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 15,
+    breakpoints: {
+      0: {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 15
+      },
+      480: {
+        slidesPerView: "auto",
+        loop: true,
+        spaceBetween: 15,
+      }
+    },
+    navigation: {
+      nextEl: '.js-bdetail-next',
+      prevEl: '.js-bdetail-prev',
+    }
+  });
+}
+
 // Simple Lightbox
 let lightbox = new SimpleLightbox({
   // elements: '.js-lightbox .js-lightbox-link'

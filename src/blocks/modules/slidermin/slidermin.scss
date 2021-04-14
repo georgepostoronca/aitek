@@ -10,6 +10,27 @@
     }
   }
 
+  &.--bg-silver {
+    background-color: $silver-4;
+  }
+
+  &.--bg-silver &__wrap {
+    padding-top: 66px;
+
+    @media(max-width: 767px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .article__info {
+      background-color: $white;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+      color: $black-2;
+    }
+  }
+
 
   &__wrap {
 
