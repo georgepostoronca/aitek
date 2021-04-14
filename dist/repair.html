@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>repair</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicon/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon/apple-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicon/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicon/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="menu js-menu --sticky">
+        <div class="container-fluid">
+          <div class="menu-mobile"><a class="menu-mobile__logo" href="#dawd">
+              <svg class="icon">
+                <use xlink:href="img/sprites/sprite.svg#logo"></use>
+              </svg></a>
+            <div class="menu-mobile__control"><a href="mailto:info@aitek.ru">
+                <svg class="icon">
+                  <use xlink:href="img/sprites/sprite.svg#envelope"></use>
+                </svg></a><a href="tel:+7(4922)44-44-42">
+                <svg class="icon">
+                  <use xlink:href="img/sprites/sprite.svg#phone"></use>
+                </svg></a>
+              <button class="js-menu-open">
+                <svg class="icon">
+                  <use xlink:href="img/sprites/sprite.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="menu__wrap js-menu-el"><a class="menu__logo-dop" href="#dawd">
+              <svg class="icon">
+                <use xlink:href="img/sprites/sprite.svg#logo"></use>
+              </svg></a>
+            <div class="menu__social">
+              <div class="social"><a href="#viber">
+                  <svg class="icon">
+                    <use xlink:href="img/sprites/sprite.svg#viber"></use>
+                  </svg></a><a href="#whatsapp">
+                  <svg class="icon">
+                    <use xlink:href="img/sprites/sprite.svg#whatsapp"></use>
+                  </svg></a><a href="#telegram">
+                  <svg class="icon">
+                    <use xlink:href="img/sprites/sprite.svg#telegram"></use>
+                  </svg></a></div>
+            </div>
+            <div class="menu__mail"><a href="mailto:info@aitek.ru">info@aitek.ru</a></div>
+            <div class="menu__contact"><em>Ваш город:</em>
+              <select class="js-custom-select" data-placeholder="Выбор города" data-change-number="true">
+                <option value="1" data-phone="+1 (4922) 44-44-42">Владимир</option>
+                <option value="2" data-phone="+2 (4922) 44-44-42" selected>Иваново</option>
+                <option value="3" data-phone="+3 (4922) 44-44-42">Нижний Новгород</option>
+              </select>
+              <!--.custom-select-->
+              <!--  .custom-select__head-->
+              <!--    span Владимир-->
+              <!--    +svg("arrow")-->
+              <div class="menu__mobile-close js-menu-close">
+                <svg class="icon">
+                  <use xlink:href="img/sprites/sprite.svg#close"></use>
+                </svg>
+              </div><a class="js-change-phone" href="tel:+7(4922)44-44-42">+7 (4922) 44-44-42</a>
+            </div>
+            <div class="menu__bottom"><a class="menu__logo" href="#dawd">
+                <svg class="icon">
+                  <use xlink:href="img/sprites/sprite.svg#logo"></use>
+                </svg></a>
+              <nav class="menu__nav">
+                <ul>
+                  <li><a href="#О-компании">О компании</a></li>
+                  <li><a href="#Услуги-и-решения">Услуги и решения</a></li>
+                  <li><a href="#Портфолио-проектов">Портфолио проектов</a></li>
+                  <li><a href="#Работа-в-АйТек">Работа в АйТек</a></li>
+                  <li><a href="#Сервис-и-поддержка">Сервис и поддержка</a></li>
+                  <li><a href="#Контакты">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="menu__bottom-mobile"><a href="#Заявка-на-ремонт">Заявка на ремонт</a><a href="#Состояние-ремонта">Состояние ремонта</a></div>
+            </div>
+            <div class="menu__footer">
+              <ul>
+                <li><a href="#viber">
+                    <svg class="icon">
+                      <use xlink:href="img/sprites/sprite.svg#viber2"></use>
+                    </svg></a></li>
+                <li><a href="#whatsapp">
+                    <svg class="icon">
+                      <use xlink:href="img/sprites/sprite.svg#whatsapp2"></use>
+                    </svg></a></li>
+                <li><a href="#telegram">
+                    <svg class="icon">
+                      <use xlink:href="img/sprites/sprite.svg#telegram2"></use>
+                    </svg></a></li>
+              </ul>
+              <div><a href="tel:+7(4922)44-44-42">+7 (4922) 44-44-42</a><span>/</span><a href="mailto:info@aitek.ru">info@aitek.ru</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="repair">
+          <div class="container-fluid">
+            <div class="repair__wrap">
+              <div class="repair__head">
+                <h1 class="h2">Сроки ремонта</h1>
+              </div>
+              <div class="repair__grid row">
+                <div class="repair__grid-item col-12 col-md-6 col-xl-4"><b>Гарантийный ремонт</b><span>(кроме системных блоков АйТек):</span>
+                  <div><span><b>45</b>рабочих дней</span><span><b>50</b>рабочих дней</span></div>
+                  <button class="btn --light"><span>Подробнее на схеме</span></button>
+                </div>
+                <div class="repair__grid-item col-12 col-md-6 col-xl-4"><b>Негарантийный ремонт</b><span></span>
+                  <div><span><b>45</b>рабочих дней</span><span><b>50</b>рабочих дней</span></div>
+                  <button class="btn --light"><span>Подробнее на схеме</span></button>
+                </div>
+                <div class="repair__grid-item col-12 col-md-6 col-xl-4"><b>Гарантийный ремонт</b><span>(кроме системных блоков АйТек):</span>
+                  <div><span><b>45</b>рабочих дней</span><span><b>50</b>рабочих дней</span></div>
+                  <button class="btn --light"><span>Подробнее на схеме</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="footer__wrap">
+            <ul>
+              <li><a href="#Партнеры">Партнеры</a></li>
+              <li><a href="#Отзывы-клиентов">Отзывы клиентов</a></li>
+              <li><a href="#Реквизиты">Реквизиты</a></li>
+              <li><a href="#Заявка-на-ремонт">Заявка на ремонт</a></li>
+              <li><a href="#Состояние-ремонта">Состояние ремонта</a></li>
+              <li><a href="#Вакансии">Вакансии</a></li>
+              <li class="form">
+                <form class="footer-search">
+                  <input placeholder="Введите что-нибудь" value="" name="search">
+                  <button>
+                    <svg class="icon">
+                      <use xlink:href="img/sprites/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom"><a class="link" href="tel:+7(4922)44-44-42">+7 (4922) 44-44-42</a><a class="link" href="#">Политика конфиденциальности</a><span class="dev"><em>Сделано в</em><a href="https://rusodot.ru/" target="_blank">
+                <svg class="icon">
+                  <use xlink:href="img/sprites/sprite.svg#ruso"></use>
+                </svg></a></span></div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>
