@@ -253,3 +253,36 @@ function scrolled(o, type) {
 }
 
 window.scrolledFn = scrolled;
+
+
+
+// Tab ID
+let tabIDItem = [].slice.call(document.querySelectorAll(".js-tab-id"));
+if(tabIDItem) {
+  setTimeout(() => {
+    tabIDItem[0].click();
+  }, 100);
+
+  let contentToggle = (item, id) => {
+    let elContent = [].slice.call(document.querySelectorAll(".js-tab-id-content"));
+
+    elContent.forEach(cnt => {
+      console.log(cnt.id, item, id)
+      cnt.id === id ? cnt.classList.add("active") : cnt.classList.remove("active");
+    })
+  }
+
+  tabIDItem.forEach(item => {
+    item.addEventListener("click", (e) => {
+      let id = item.dataset.tab;
+      item.classList.add("active")
+
+      let siblingsBtn = getSiblings(item);
+      siblingsBtn.forEach(btn => {
+        btn.classList.remove("active");
+      });
+
+      contentToggle(item, id);
+    })
+  })
+}

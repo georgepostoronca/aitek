@@ -1153,3 +1153,86 @@ p {
     }
   }
 }
+
+
+//Card
+.card {
+  background-color: $blue;
+  border-radius: 15px;
+  color: $white;
+  height: 100%;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 26px;
+  padding-bottom: 30px;
+
+  //margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media(max-width: 767px) {
+    padding: 20px;
+    display: block;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 2px;
+    font-family: $muller;
+  }
+
+  em {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 25px;
+    //margin-bottom: 33px;
+    display: inline-block;
+    font-family: $muller;
+  }
+
+  p {
+    margin-bottom: 18px;
+    margin-top: auto;
+    font-family: $muller;
+    line-height: 25px;
+  }
+
+  .btn {
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 21px 20px;
+    margin-top: 0;
+
+    @media(max-width: 480px) {
+      width: 100%;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.6);
+
+      span {
+        color: $black-2;
+      }
+    }
+
+    span {
+      color: $white;
+      font-size: 16px;
+    }
+  }
+
+  &.--green {
+    background-color: $green;
+  }
+
+  &.--violet {
+    background-color: $violet;
+  }
+}
