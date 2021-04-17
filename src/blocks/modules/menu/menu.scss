@@ -5,10 +5,46 @@
   z-index: 100;
   transition: .2s;
 
+
+  //Colored
+  &.--colored {
+    color: $white;
+  }
+
+  &.--colored &__logo {
+    svg {
+      fill: $white;
+    }
+  }
+
+  &.--colored .menu-mobile__logo {
+    svg {
+      fill: $white;
+    }
+  }
+
+  &.--colored a {
+    color: $white;
+  }
+
+  &.--colored .custom-select-option {
+    color: $black-2;
+  }
+
+  &.--colored .custom-select-option.is-selected {
+    color: $blue;
+  }
+
+  &.--colored .is-open .custom-select-opener span {
+    color: $white;
+  }
+
+  //Fixed
   &.--fixed {
     background-color: $white;
   }
 
+  //Sticky
   &.--sticky {
     position: sticky;
     background-color: $white;
@@ -36,6 +72,7 @@
         display: block;
         width: 71px;
         height: 43px;
+        fill: $blue;
       }
     }
 
@@ -173,6 +210,7 @@
       width: 70px;
       height: 44px;
       display: block;
+      fill: $blue;
 
       @media(max-width: 850px) {
         width: 57px;
@@ -484,6 +522,7 @@
       width: 91px;
       height: 56px;
       display: block;
+      fill: $blue;
 
       @media(max-width: 992px) {
         width: 70px;

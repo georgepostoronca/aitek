@@ -267,7 +267,6 @@ if(tabIDItem) {
     let elContent = [].slice.call(document.querySelectorAll(".js-tab-id-content"));
 
     elContent.forEach(cnt => {
-      console.log(cnt.id, item, id)
       cnt.id === id ? cnt.classList.add("active") : cnt.classList.remove("active");
     })
   }
@@ -285,4 +284,53 @@ if(tabIDItem) {
       contentToggle(item, id);
     })
   })
+}
+
+
+
+// Vacancy Detail
+let btnVncyDetail = [].slice.call(document.querySelectorAll(".js-open-detail"));
+if(btnVncyDetail.length) {
+  const allDetail = [].slice.call(document.querySelectorAll(".js-vacancy-detail"));
+  const vcncyWrap = document.querySelector(".js-vacancy-wrap");
+  const vcncyClose = [].slice.call(document.querySelectorAll(".js-vacancy-detail-close"));
+  const head = document.querySelector(".menu");
+
+  vcncyClose.forEach(vc => {
+    vc.addEventListener("click", () => {
+      vcncyWrap.style.display = "block";
+      head.style.backgroundColor = "#ffffff";
+      head.style.transition = "0s";
+      head.classList.remove("--colored");
+
+      allDetail.forEach(i => {
+        i.classList.remove("active");
+      });
+    });
+  });
+
+  btnVncyDetail.forEach(item => {
+    item.addEventListener("click", (e) => {
+      let color = e.currentTarget.dataset.color;
+      let content = e.currentTarget.dataset.content;
+      let elId = document.getElementById(content);
+
+      elId.style.backgroundColor = color;
+      head.style.transition = "0s";
+      head.style.backgroundColor = color;
+      head.classList.add("--colored");
+
+      let elIdSiblings = allDetail.filter(s => {
+        if(s !== elId) return s;
+      });
+
+      vcncyWrap.style.display = "none";
+
+      elIdSiblings.forEach(i => {
+        i.classList.remove("active");
+      });
+
+      elId.classList.add("active");
+    });
+  });
 }

@@ -1,87 +1,138 @@
-section.vacancy
+section.vacancy.js-vacancy
     .container-fluid
-        .vacancy__head
-            h1.h2.--fw-700 Вакансии
+        .vacancy__wrap.js-vacancy-wrap
+            .vacancy__head
+                h1.h2.--fw-700 Вакансии
 
-            .vacancy__head-btn
-                button.js-tab-id(data-tab="city1")
-                    span Владимир
-                button.js-tab-id(data-tab="city2")
-                    span Иваново
-                button.js-tab-id(data-tab="city3")
-                    span Нижний новгород
+                .vacancy__head-btn
+                    button.js-tab-id(data-tab="city1")
+                        span Владимир
+                    button.js-tab-id(data-tab="city2")
+                        span Иваново
+                    button.js-tab-id(data-tab="city3")
+                        span Нижний новгород
 
-        .vacancy__content.row
-            .vacancy__card.js-tab-id-content(id="city1").col-12.col-sm-12.col-md-6.col-lg-4
-                .card
-                    h3 Водитель-экспедитор (категории В)
-                    em г. Москва
-                    p Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически
-                    .btn.--light
-                        span Подробнее
+            .vacancy__content.row
+                .vacancy__card.js-tab-id-content(id="city1").col-12.col-sm-12.col-md-6.col-lg-4
+                    .card
+                        h3 Водитель-экспедитор (категории В)
+                        em г. Москва
+                        p Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически
+                        .btn.--light.js-open-detail(data-color="#2871B6" data-content="detail-1")
+                            span Подробнее
 
-            .vacancy__card.js-tab-id-content(id="city1").col-12.col-sm-12.col-md-6.col-lg-4
-                .card.--green
-                    h3 Менеджер по работе с клиентами
-                    em г. Владивосток
-                    p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
-                    .btn.--light
-                        span Подробнее
+                .vacancy__card.js-tab-id-content(id="city1").col-12.col-sm-12.col-md-6.col-lg-4
+                    .card.--green
+                        h3 Менеджер по работе с клиентами
+                        em г. Владивосток
+                        p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
+                        .btn.--light.js-open-detail(data-color="#28ADAE" data-content="detail-2")
+                            span Подробнее
 
-            .vacancy__card.js-tab-id-content(id="city1").col-12.col-sm-12.col-md-6.col-lg-4
-                .card.--violet
-                    h3 Пресейл-инженер (в отдел инженерных систем)
-                    em г. Владивосток
-                    p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
-                    .btn.--light
-                        span Подробнее
-
-
-            .vacancy__card.js-tab-id-content(id="city2").col-12.col-sm-12.col-md-6.col-lg-4
-                .card
-                    h3 Водитель-экспедитор (категории В)
-                    em г. Москва
-                    p Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически
-                    .btn.--light
-                        span Подробнее
-
-            .vacancy__card.js-tab-id-content(id="city2").col-12.col-sm-12.col-md-6.col-lg-4
-                .card.--violet
-                    h3 Пресейл-инженер (в отдел инженерных систем)
-                    em г. Владивосток
-                    p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
-                    .btn.--light
-                        span Подробнее
-
-            .vacancy__card.js-tab-id-content(id="city2").col-12.col-sm-12.col-md-6.col-lg-4
-                .card.--green
-                    h3 Менеджер по работе с клиентами
-                    em г. Владивосток
-                    p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
-                    .btn.--light
-                        span Подробнее
+                .vacancy__card.js-tab-id-content(id="city1").col-12.col-sm-12.col-md-6.col-lg-4
+                    .card.--violet
+                        h3 Пресейл-инженер (в отдел инженерных систем)
+                        em г. Владивосток
+                        p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
+                        .btn.--light.js-open-detail(data-color="#AD83E2" data-content="detail-3")
+                            span Подробнее
 
 
-            .vacancy__card.js-tab-id-content(id="city3").col-12.col-sm-12.col-md-6.col-lg-4
-                .card
-                    h3 Водитель-экспедитор (категории В)
-                    em г. Москва
-                    p Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически
-                    .btn.--light
-                        span Подробнее
+                .vacancy__card.js-tab-id-content(id="city2").col-12.col-sm-12.col-md-6.col-lg-4
+                    .card
+                        h3 Водитель-экспедитор (категории В)
+                        em г. Москва
+                        p Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически
+                        .btn.--light.js-open-detail(data-color="#2871B6" data-content="detail-4")
+                            span Подробнее
 
-            .vacancy__card.js-tab-id-content(id="city3").col-12.col-sm-12.col-md-6.col-lg-4
-                .card.--green
-                    h3 Менеджер по работе с клиентами
-                    em г. Владивосток
-                    p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
-                    .btn.--light
-                        span Подробнее
+                .vacancy__card.js-tab-id-content(id="city2").col-12.col-sm-12.col-md-6.col-lg-4
+                    .card.--violet
+                        h3 Пресейл-инженер (в отдел инженерных систем)
+                        em г. Владивосток
+                        p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
+                        .btn.--light.js-open-detail(data-color="#AD83E2" data-content="detail-5")
+                            span Подробнее
 
-            .vacancy__card.js-tab-id-content(id="city3").col-12.col-sm-12.col-md-6.col-lg-4
-                .card.--violet
-                    h3 Пресейл-инженер (в отдел инженерных систем)
-                    em г. Владивосток
-                    p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
-                    .btn.--light
-                        span Подробнее
+                .vacancy__card.js-tab-id-content(id="city2").col-12.col-sm-12.col-md-6.col-lg-4
+                    .card.--green
+                        h3 Менеджер по работе с клиентами
+                        em г. Владивосток
+                        p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
+                        .btn.--light.js-open-detail(data-color="#28ADAE" data-content="detail-6")
+                            span Подробнее
+
+
+                .vacancy__card.js-tab-id-content(id="city3").col-12.col-sm-12.col-md-6.col-lg-4
+                    .card
+                        h3 Водитель-экспедитор (категории В)
+                        em г. Москва
+                        p Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически
+                        .btn.--light.js-open-detail(data-color="#2871B6" data-content="detail-7")
+                            span Подробнее
+
+                .vacancy__card.js-tab-id-content(id="city3").col-12.col-sm-12.col-md-6.col-lg-4
+                    .card.--green
+                        h3 Менеджер по работе с клиентами
+                        em г. Владивосток
+                        p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
+                        .btn.--light.js-open-detail(data-color="#28ADAE" data-content="detail-8")
+                            span Подробнее
+
+                .vacancy__card.js-tab-id-content(id="city3").col-12.col-sm-12.col-md-6.col-lg-4
+                    .card.--violet
+                        h3 Пресейл-инженер (в отдел инженерных систем)
+                        em г. Владивосток
+                        p Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой
+                        .btn.--light.js-open-detail(data-color="#AD83E2" data-content="detail-9")
+                            span Подробнее
+
+    .vacancy__detail
+        each i in [1,2,3,4,5,6,7,8,9]
+            .vacancy-detail.js-vacancy-detail(id="detail-"+i)
+                .container-fluid
+                    .vacancy-detail__item
+                        .vacancy-detail__back
+                            button.link-arrow.js-vacancy-detail-close.--arrow-rotate
+                                +svg("arrowline")
+                                span Вернуться к списку
+                        .vacancy-detail__info
+                            h2 Менеджер по работе с клиентами (оформление документов) #{i}
+
+                            .price
+                                em Зарплата от
+                                b 55 000₽
+
+                            .vacancy-detail__tab.js-tab
+                                .vacancy-detail__tab-head
+                                    each text,index in ["Требования", "Обязанности", "Условия"]
+                                        button.js-tab-btn(data-text=text class=index === 0 ? 'active' : '')
+                                            span=text
+
+                                .vacancy-detail__tab-content
+                                    each i in [1,2,3,4]
+                                        .vacancy-detail__tab-item.js-tab-content(class=i === 1 ? 'active' : '')
+                                            ul
+                                                li=i
+                                                li Подготовка типовых коммерческих предложений;
+                                                li Оформление договоров;
+                                                li Размещение в заказах оплаченных счетов, контроль счетов, готовых к отгрузке;
+                                                li Формирование финансовых, складских документов, сопровождающих
+                                                li отгрузку товара;
+                                                li Создание доставок в базе 1С;
+                                                li Оформление пакета необходимых документов для участия в конкурсах в соответствии с требованиями конкурсной документации, подача заявок;
+                                                li Контроль сроков подачи заявок на участие в конкурсе, сроков оплаты
+                                                li обеспечения исполнения заявки;
+                                                li Запрос справок у проверяющих органов;
+                                                li Контроль отгрузки товара, контроль возврата финансовых документов.
+
+                                            footer
+                                                h4 Работайте с нами
+                                                p Отправляйте заполненную анкету для соискателей на электронный адрес
+                                                    a() info@aitek.ru
+                                                    | , тел.
+                                                    a(href="tel:+7(495)755-65-56") +7 (495) 755-65-56 доб. 6815.
+                                                    | Наша служба персонала внимательно рассмотрит резюме и свяжется с вами.
+
+                                                .btn
+                                                    span Отправьте ваше резюме
