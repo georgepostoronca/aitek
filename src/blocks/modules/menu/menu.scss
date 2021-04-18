@@ -5,8 +5,11 @@
   z-index: 100;
   transition: .2s;
 
+  @media print {
+    display: none;
+  }
 
-  //Colored
+    //Colored
   &.--colored {
     color: $white;
   }

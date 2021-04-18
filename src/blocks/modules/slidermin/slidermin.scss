@@ -1,5 +1,9 @@
 .slidermin {
 
+  @media print {
+    display: none;
+  }
+
   &.--page-service &__wrap {
     padding-top: 66px;
     padding-bottom: 0;

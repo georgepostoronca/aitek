@@ -967,6 +967,11 @@ p {
   align-items: center;
   cursor: pointer;
 
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+
   &.--max {
     span {
       font-size: 16px;

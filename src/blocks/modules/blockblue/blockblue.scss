@@ -8,6 +8,10 @@
     min-height: inherit;
   }
 
+  @media print {
+    display: none;
+  }
+
   &.--silver {
     background-color: $silver-8;
     color: $black-2;

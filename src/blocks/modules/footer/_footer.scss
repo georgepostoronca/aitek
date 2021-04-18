@@ -1,4 +1,8 @@
 .footer {
+  @media print {
+    display: none;
+  }
+
   &__wrap {
     padding-top: 28px;
 
