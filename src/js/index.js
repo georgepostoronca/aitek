@@ -1,6 +1,9 @@
 import Swiper from 'swiper/bundle';
 import customSelect from 'custom-select';
 import SimpleLightbox from "simple-lightbox";
+import tingle from "./tingle.min";
+import IMask from './imask';
+
 // let SimpleLightbox = window.SimpleLightbox;
 
 // Custom Select
@@ -258,7 +261,7 @@ window.scrolledFn = scrolled;
 
 // Tab ID
 let tabIDItem = [].slice.call(document.querySelectorAll(".js-tab-id"));
-if(tabIDItem) {
+if(tabIDItem.length) {
   setTimeout(() => {
     tabIDItem[0].click();
   }, 100);
@@ -334,3 +337,39 @@ if(btnVncyDetail.length) {
     });
   });
 }
+
+
+// Modal
+var modalTinyNoFooter = new tingle.modal({
+  closeLabel: "",
+});
+
+var btnModal = [].slice.call(document.querySelectorAll('.js-tingle-modal'));
+btnModal.forEach(item => {
+  item.addEventListener('click', function () {
+    let slider = item.dataset.slider;
+    let el = document.querySelector('.' + slider);
+
+    modalTinyNoFooter.setContent(el.outerHTML);
+    modalTinyNoFooter.open();
+
+    let close = modalTinyNoFooter.modal.querySelector(".js-modal-close");
+
+    if(close) {
+      close.addEventListener("click", function() {
+        modalTinyNoFooter.close();
+      });
+    }
+  });
+});
+
+
+
+// IMask
+let IMaskArr = [].slice.call(document.querySelectorAll('.js-input-phone'));
+let maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+IMaskArr.forEach(item => {
+  let mask = IMask(item, maskOptions);
+});

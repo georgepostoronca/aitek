@@ -234,6 +234,10 @@
     //width: 35%;
     padding-left: 219px;
 
+    @media(max-width: 1080px) {
+      padding-left: 0;
+    }
+
     @media(max-width: 850px) {
       width: auto;
       display: flex;
@@ -394,6 +398,10 @@
       position: absolute;
       top: 0;
       right: 0;
+
+      @media(max-width: 1080px) {
+        width: 100%;
+      }
     }
 
     @media(max-width: 992px) {
@@ -550,7 +558,12 @@
       display: flex;
       width: 100%;
       justify-content: space-between;
-      padding-left: 50px;
+      //padding-left: 50px;
+      padding-left: 127px;
+
+      @media(max-width: 1080px) {
+        padding-left: 50px;
+      }
 
       @media(max-width: 850px) {
         justify-content: space-between;
