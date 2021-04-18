@@ -434,7 +434,6 @@ if (tabIDItem) {
   var contentToggle = function contentToggle(item, id) {
     var elContent = [].slice.call(document.querySelectorAll(".js-tab-id-content"));
     elContent.forEach(function (cnt) {
-      console.log(cnt.id, item, id);
       cnt.id === id ? cnt.classList.add("active") : cnt.classList.remove("active");
     });
   };
@@ -448,6 +447,46 @@ if (tabIDItem) {
         btn.classList.remove("active");
       });
       contentToggle(item, id);
+    });
+  });
+} // Vacancy Detail
+
+
+var btnVncyDetail = [].slice.call(document.querySelectorAll(".js-open-detail"));
+
+if (btnVncyDetail.length) {
+  var allDetail = [].slice.call(document.querySelectorAll(".js-vacancy-detail"));
+  var vcncyWrap = document.querySelector(".js-vacancy-wrap");
+  var vcncyClose = [].slice.call(document.querySelectorAll(".js-vacancy-detail-close"));
+  var head = document.querySelector(".menu");
+  vcncyClose.forEach(function (vc) {
+    vc.addEventListener("click", function () {
+      vcncyWrap.style.display = "block";
+      head.style.backgroundColor = "#ffffff";
+      head.style.transition = "0s";
+      head.classList.remove("--colored");
+      allDetail.forEach(function (i) {
+        i.classList.remove("active");
+      });
+    });
+  });
+  btnVncyDetail.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      var color = e.currentTarget.dataset.color;
+      var content = e.currentTarget.dataset.content;
+      var elId = document.getElementById(content);
+      elId.style.backgroundColor = color;
+      head.style.transition = "0s";
+      head.style.backgroundColor = color;
+      head.classList.add("--colored");
+      var elIdSiblings = allDetail.filter(function (s) {
+        if (s !== elId) return s;
+      });
+      vcncyWrap.style.display = "none";
+      elIdSiblings.forEach(function (i) {
+        i.classList.remove("active");
+      });
+      elId.classList.add("active");
     });
   });
 }

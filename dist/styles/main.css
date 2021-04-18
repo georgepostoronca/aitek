@@ -3175,6 +3175,7 @@ p {
   line-height: 25px;
   display: inline-block;
   font-family: "Muller", sans-serif;
+  margin-bottom: 7px;
 }
 
 .card p {
@@ -4871,13 +4872,19 @@ table tbody b {
   font-family: "Muller", sans-serif;
 }
 
+.vacancy.--content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .vacancy__head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 87px;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .vacancy__head-btn {
@@ -4944,7 +4951,7 @@ table tbody b {
 }
 
 .vacancy__content {
-  margin-bottom: 66px;
+  margin-bottom: 30px;
 }
 
 .vacancy__card {
@@ -4956,6 +4963,10 @@ table tbody b {
   display: block;
 }
 
+.vacancy__detail {
+  height: 100%;
+}
+
 .vacancy-detail {
   background-color: #2871B6;
   color: #ffffff;
@@ -4964,6 +4975,12 @@ table tbody b {
 
 .vacancy-detail.active {
   display: block;
+}
+
+.vacancy-detail.active .vacancy-detail__info {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: .2s;
 }
 
 .vacancy-detail__item {
@@ -5008,6 +5025,9 @@ table tbody b {
 
 .vacancy-detail__info {
   width: calc(100% - 266px);
+  opacity: 0;
+  transform: translateY(2%);
+  transition: .5s;
 }
 
 .vacancy-detail__info h2 {
@@ -7805,10 +7825,6 @@ table tbody b {
 
   .benefits__item {
     margin-bottom: 40px;
-  }
-
-  .vacancy__head {
-    margin-top: 30px;
   }
 
   .vacancy__content {
