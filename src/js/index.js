@@ -10,7 +10,7 @@ import IMask from './imask';
 let customSelectAll = [].slice.call(document.querySelectorAll('.js-custom-select'));
 customSelectAll.forEach(item => {
   const wrapCustomSelect = customSelect(item);
-  console.log(wrapCustomSelect)
+  // console.log(wrapCustomSelect)
   if(wrapCustomSelect[0]) {
     wrapCustomSelect[0].select.addEventListener('change', (e) => {
       // console.log(e);
@@ -346,6 +346,7 @@ var modalTinyNoFooter = new tingle.modal({
 
 var btnModal = [].slice.call(document.querySelectorAll('.js-tingle-modal'));
 btnModal.forEach(item => {
+
   item.addEventListener('click', function () {
     let slider = item.dataset.slider;
     let el = document.querySelector('.' + slider);

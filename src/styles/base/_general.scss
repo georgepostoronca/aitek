@@ -310,6 +310,25 @@ textarea {
     height: 0;
   }
 
+  &.--radio {
+    input:checked + span {
+      &:before {
+        width: 8px;
+        height: 8px;
+        border: 5px solid $blue;
+        background: $white;
+        box-sizing: content-box;
+      }
+    }
+    span {
+      &:before {
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        top: -3px;
+      };
+    }
+  }
   span {
     display: flex;
     align-items: center;
@@ -350,6 +369,14 @@ textarea {
 
 .text-gradient {
   color: #2D84C9;
+  background: transparent;
+  -webkit-text-fill-color: $blue;
+  text-fill-color: $blue;
+  background-clip: unset;
+
+  span {
+    color: $blue;
+  }
 }
 
 @supports ((background-clip: text) or (-webkit-background-clip: text)) and
@@ -487,6 +514,8 @@ textarea {
     text-decoration: none;
     z-index: 1;
     position: relative;
+    font-weight: bold;
+    font-family: $muller;
   }
 }
 
@@ -761,6 +790,7 @@ textarea {
   border: 0;
   padding: 0;
   outline: none;
+  cursor: pointer;
 
   &:hover {
     svg {
@@ -819,19 +849,23 @@ textarea {
     }
 
     &:after {
-      content: "";
+      content: "\02C7";
+      font-size: 26px;
       display: block;
       width: 9px;
-      height: 6px;
-      background: url("../img/svg/arrow.svg") center center no-repeat;
+      height: 9px;
+      line-height: 1;
+      //background: url("../img/svg/arrow.svg") center center no-repeat;
       background-size: contain;
 
       position: absolute;
       right: 0;
       top: 50%;
-      margin-top: -4px;
+      margin-top: -6px;
       transform-origin: center center;
       transition: .2s;
+
+      color: $blue;
     }
 
     span {
