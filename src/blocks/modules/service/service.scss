@@ -1,15 +1,18 @@
 .service {
   &__wrap {
-    padding-top: 230px;
+    //padding-top: 230px;
+    padding-top: 63px;
     margin-bottom: 120px;
 
     @media(max-width: 1120px) {
-      padding-top: 150px;
+      //padding-top: 150px;
+
       margin-bottom: 30px;
     }
 
     @media(max-width: 767px) {
-      padding-top: 80px;
+      //padding-top: 80px;
+      padding-top: 30px;
       margin-bottom: 0;
     }
 
@@ -41,42 +44,54 @@
     }
 
     i {
-      width: 148px;
-      height: 148px;
+      //width: 148px;
+      //height: 148px;
+      width: 200px;
+      height: 200px;
       position: relative;
-      border-radius: 100%;
+      //border-radius: 100%;
       overflow: hidden;
       display: flex;
       margin-bottom: 34px;
 
       @media(max-width: 1120px) {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
         margin-bottom: 20px;
       }
 
-      svg {
-        margin: auto;
-        width: 67px;
-        height: 67px;
-
-        @media(max-width: 1120px) {
-          width: 40px;
-          height: 40px;
-        }
-      }
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
+      svg, img {
         width: 100%;
         height: 100%;
-        z-index: -1;
-        background: linear-gradient(122.02deg, #2BE2FB 24.12%, #5E96DC 47.86%, #74F5D2 71.6%), #2875B4;;
-        opacity: 0.15;
       }
+
+      img {
+        object-fit: contain;
+        object-position: center;
+      }
+
+      //svg {
+      //  margin: auto;
+      //  width: 67px;
+      //  height: 67px;
+      //
+      //  @media(max-width: 1120px) {
+      //    width: 40px;
+      //    height: 40px;
+      //  }
+      //}
+
+      //&:after {
+      //  content: "";
+      //  position: absolute;
+      //  top: 0;
+      //  left: 0;
+      //  width: 100%;
+      //  height: 100%;
+      //  z-index: -1;
+      //  background: linear-gradient(122.02deg, #2BE2FB 24.12%, #5E96DC 47.86%, #74F5D2 71.6%), #2875B4;;
+      //  opacity: 0.15;
+      //}
     }
 
     h3 {

@@ -1,6 +1,8 @@
 button(class="btn btn--primary btn-demo js-tingle-modal" data-slider="tingle-slider") A simple modal
 button(class="btn btn--primary btn-demo js-tingle-modal" data-slider="tingle-repair")
     span A simple modal
+button(class="btn btn--primary btn-demo js-tingle-modal" data-slider="tingle-img")
+    span IMG
 
 .tingle.--min.tingle-form
     .tingle__close.js-modal-close
@@ -30,12 +32,36 @@ button(class="btn btn--primary btn-demo js-tingle-modal" data-slider="tingle-rep
             span 35 рабочих дней
         p Это максимальный срок, учитывающий различныес ценарии и нормативы сервисного центра. Срок ремонта может быть изменен в случаях ремонта во внешнем сервисном центре.
 
-    .tingle-repair__content
-        h2 Заявка на ремонт
+    form.tingle-repair__content
+        h2.--fw-700 Заявка на ремонт
 
         .tingle-repair__check
             - var radios = ["Негарантийный ремонт", "Гарантийный ремонт", "Гарантийный ремонт (Системный блок АйТек)", "Владимир", "Вл. область и другие регионы"]
             for radio, index in radios
-                label(for="input-radio-"+index).input-checbox.--radio
-                    input(type="radio" name="radio" id="input-radio-"+index)
-                    span=radio
+                div
+                    label(for="input-radio-"+index).input-checbox.--radio
+                        input(type="radio" name="radio" id="input-radio-"+index)
+                        span=radio
+
+        .tingle-repair__form
+            input(type="text" placeholder="Компания" name="company" required)
+            input(type="text" placeholder="Наименование товара" name="name-prod" required)
+            input(type="text" placeholder="Контактное лицо" name="contact" required)
+            input(type="text" placeholder="Заявленная неисправность" name="zaiav-neispr" required)
+            input.js-input-phone(type="phone" placeholder="Телефон для связи" name="name" required)
+            input(type="text" placeholder="Серийный номер товара" name="name" required)
+            input(type="email" placeholder="Email" name="email" required)
+            input(type="text" placeholder="Номер документа о покупке" name="number-doc" required)
+            textarea(placeholder="Комментарий" name="message" minlength="3" required)
+
+            div
+                button.btn
+                    span Отправить
+
+
+.tingle.--max.tingle-img
+    .tingle-img__head
+        h4 Гарантий ремонт
+        span (кроме системных блоков АйТек):
+    .tingle-img__content
+        img(src="./img/remont.jpg" srcset="img/remont@2x.jpg 2x" alt="IMG")

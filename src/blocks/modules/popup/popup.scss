@@ -58,6 +58,10 @@
   border-radius: 15px;
   display: none;
 
+  @media (max-width: 700px) {
+    width: calc(100% - 30px);
+  }
+
   &.middle {
     width: 513px;
   }
@@ -147,6 +151,11 @@
       padding-top: 30px;
       padding-bottom: 23px;
 
+      @media (max-width: 600px) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
       h4 {
         font-style: normal;
         font-weight: bold;
@@ -174,7 +183,116 @@
     &__content {
       padding-left: 43px;
       padding-right: 43px;
-      padding-top: 37px;
+      padding-top: 30px;
+      padding-bottom: 37px;
+
+      @media (max-width: 600px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+      }
+
+      h2 {
+        margin-bottom: 17px;
+      }
+    }
+
+    &__check {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #EFEFEF;
+      padding-bottom: 10px;
+      margin-bottom: 18px;
+
+      div {
+        width: 37%;
+        padding-right: 10px;
+        margin-bottom: 10px;
+
+        @media(max-width: 600px) {
+          width: 100%;
+        }
+
+        &:nth-child(2n - 1) {
+          width: 63%;
+
+          @media(max-width: 600px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      input {
+        width: calc(50% - 6px);
+        margin-bottom: 10px;
+
+        @media(max-width: 600px) {
+          width: 100%;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        margin-bottom: 28px;
+      }
+
+      div {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+
+  //IMG
+  &-img {
+    &__head {
+      border-bottom: 1px solid #E7E7E7;
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center;
+      padding-top: 31px;
+      padding-bottom: 31px;
+
+      h4 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: -0.03em;
+        font-family: $muller;
+        display: inline-block;
+      }
+
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        font-family: $muller;
+        letter-spacing: -0.03em;
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+
+    &__content {
+      padding-bottom: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 38px;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }

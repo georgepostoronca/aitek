@@ -326,6 +326,8 @@ textarea {
         height: 18px;
         border-radius: 100%;
         top: -3px;
+        border: 1px solid #DEDEDE;
+        background-color: #ffffff;
       };
     }
   }
@@ -552,6 +554,9 @@ textarea {
   background-color: #fff;
   text-decoration: none !important;
 
+  display: inline-flex;
+  flex-direction: column;
+
   &.--slider {
     picture {
       height: 208px;
@@ -722,6 +727,7 @@ textarea {
 
   &__info {
     padding: 50px 35px;
+    flex: 1;
 
     @media(max-width: 768px) {
       padding: 27px 21px;
@@ -738,8 +744,8 @@ textarea {
       font-style: normal;
       font-weight: bold;
       font-size: 21px;
-      letter-spacing: -0.03em;
-      margin-bottom: 22px;
+      letter-spacing: 0.7px;
+      margin-bottom: 19px;
       color: $black-2;
       line-height: 1.2;
       transition: .2s;
@@ -759,7 +765,7 @@ textarea {
       margin-bottom: 22px;
       display: block;
       color: $black-2;
-      line-height: 1.3;
+      line-height: 1.42;
 
       @media(max-width: 767px) {
         font-size: 13px;
@@ -849,19 +855,18 @@ textarea {
     }
 
     &:after {
-      content: "\02C7";
-      font-size: 26px;
+      content: "";
       display: block;
       width: 9px;
-      height: 9px;
+      height: 6px;
       line-height: 1;
-      //background: url("../img/svg/arrow.svg") center center no-repeat;
+      background: url("../img/arrow-blue.svg") center center no-repeat;
       background-size: contain;
 
       position: absolute;
       right: 0;
       top: 50%;
-      margin-top: -6px;
+      margin-top: -5px;
       transform-origin: center center;
       transition: .2s;
 
@@ -1177,6 +1182,7 @@ textarea {
   padding-bottom: 3px;
   transition: .2s;
   border-bottom: 1px solid rgba(40, 113, 182, 0.2);
+  font-weight: 400;
 
   &:hover {
     border-color: transparent;

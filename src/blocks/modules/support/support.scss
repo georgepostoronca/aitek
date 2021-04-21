@@ -123,6 +123,12 @@
 
         a {
           margin-right: 22px;
+
+          &.--margin-max {
+            @media(min-width: 1220px) {
+              margin-right: 38px;
+            }
+          }
         }
       }
 

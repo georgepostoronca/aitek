@@ -333,7 +333,8 @@
         }
 
         &:after {
-          filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(251deg) brightness(116%) contrast(87%);
+          margin-top: -3px;
+          background: url("../img/arrow-white.svg") center center no-repeat;
         }
       }
     }

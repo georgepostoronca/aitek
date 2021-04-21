@@ -3,6 +3,9 @@ import customSelect from 'custom-select';
 import SimpleLightbox from "simple-lightbox";
 import tingle from "./tingle.min";
 import IMask from './imask';
+import Plyr from 'plyr';
+
+const player = new Plyr('#player');
 
 // let SimpleLightbox = window.SimpleLightbox;
 
@@ -178,6 +181,11 @@ if(sliderminDetailEl) {
 let lightbox = new SimpleLightbox({
   // elements: '.js-lightbox .js-lightbox-link'
   elements: document.querySelectorAll('.js-lightbox .js-lightbox-link')
+});
+
+let lightbox2 = new SimpleLightbox({
+  // elements: '.js-lightbox .js-lightbox-link'
+  elements: document.querySelectorAll('.js-lightbox2 .js-lightbox-link')
 });
 // let magnificLinks = [].slice.call(document.querySelectorAll(".js-magnific-link"));
 // if(magnificLinks) {

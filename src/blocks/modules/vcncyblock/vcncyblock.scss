@@ -68,6 +68,19 @@
           display: block;
           margin-bottom: 12px;
 
+          em {
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            display: inline-block;
+            padding-left: 4px;
+            font-style: normal;
+
+            @media(max-width: 767px) {
+              padding-left: 2px;
+            }
+          }
+
           @media(max-width: 992px) {
             font-size: 25px;
             margin-bottom: 5px;
