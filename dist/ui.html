@@ -23,60 +23,70 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" async rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" async rel="stylesheet">
   </head>
   <body>
-    <button class="btn btn--primary btn-demo js-tingle-modal" data-slider="tingle-slider">A simple modal</button>
-    <button class="btn btn--primary btn-demo js-tingle-modal" data-slider="tingle-repair"><span>A simple modal</span></button>
-    <button class="btn btn--primary btn-demo js-tingle-modal" data-slider="tingle-img"><span>IMG</span></button>
-    <div class="tingle --min tingle-form">
-      <div class="tingle__close js-modal-close"><svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M.3 9.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3L5 6.4l3.3 3.3c.2.2.5.3.7.3.2 0 .5-.1.7-.3.4-.4.4-1 0-1.4L6.4 5l3.3-3.3c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0L5 3.6 1.7.3C1.3-.1.7-.1.3.3c-.4.4-.4 1 0 1.4L3.6 5 .3 8.3c-.4.4-.4 1 0 1.4z" fill="#000" fill-rule="nonzero"></path></svg></div>
-      <h3 class="--min">Обратная связь</h3>
-      <form>
-        <input type="text" placeholder="Имя" minlength="3" name="name" pattern="[A-Za-z0-9]+" required>
-        <input class="js-input-phone" type="text" placeholder="Телефон" name="name" required>
-        <input type="text" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required>
-        <textarea placeholder="Сообщение" name="message" minlength="3" required></textarea>
-        <label class="input-checbox" for="input-1">
-          <input type="checkbox" name="check" id="input-1" required><span>Согласие на обработку данных</span>
-        </label>
-        <button class="btn"><span>Отправить</span></button>
-      </form>
+    <button class="btn" data-fancybox data-src="#tingle-form"><span>Form</span></button>
+    <button class="btn" data-fancybox data-src="#tingle-repair"><span>A simple modal</span></button>
+    <button class="btn" data-fancybox data-src="#tingle-img"><span>IMG</span></button>
+    <button class="btn" data-fancybox data-src="#tingle-slider"><span>Slider</span></button>
+    <div class="tingle --min tingle-form" id="tingle-form">
+      <div class="tingle-form__content">
+        <h3 class="--min">Обратная связь</h3>
+        <form class="js-form-validator" data-submit="tingleFormSubmit">
+          <input type="text" placeholder="Имя" minlength="3" name="name" required>
+          <input class="js-input-phone" type="phone" placeholder="Телефон" name="name" required>
+          <input type="email" placeholder="Email" name="email" required>
+          <textarea placeholder="Сообщение" name="message" minlength="3" required></textarea>
+          <label class="input-checbox" for="input-1">
+            <input type="checkbox" name="check" id="input-1" required><span>Согласие на обработку данных</span>
+          </label>
+          <button class="btn" type="submit"><span>Отправить</span></button>
+        </form>
+      </div>
+      <script>
+        function tingleFormSubmit(e) {
+          console.log(e)
+        }
+        
+        
+      </script>
     </div>
-    <div class="tingle --max tingle-repair">
-      <div class="tingle__close js-modal-close"><svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M.3 9.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3L5 6.4l3.3 3.3c.2.2.5.3.7.3.2 0 .5-.1.7-.3.4-.4.4-1 0-1.4L6.4 5l3.3-3.3c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0L5 3.6 1.7.3C1.3-.1.7-.1.3.3c-.4.4-.4 1 0 1.4L3.6 5 .3 8.3c-.4.4-.4 1 0 1.4z" fill="#000" fill-rule="nonzero"></path></svg></div>
+    <div class="tingle --max tingle-repair" id="tingle-repair">
       <div class="tingle-repair__head">
         <h4>Плановый срок ремонта не более:<span>35 рабочих дней</span></h4>
         <p>Это максимальный срок, учитывающий различныес ценарии и нормативы сервисного центра. Срок ремонта может быть изменен в случаях ремонта во внешнем сервисном центре.</p>
       </div>
-      <form class="tingle-repair__content">
+      <form class="tingle-repair__content js-form-validator" data-submit="tingleRepairSubmit">
         <h2 class="--fw-700">Заявка на ремонт</h2>
         <div class="tingle-repair__check">
           <div>
             <label class="input-checbox --radio" for="input-radio-0">
-              <input type="radio" name="radio" id="input-radio-0"><span>Негарантийный ремонт</span>
+              <input type="radio" name="radio" id="input-radio-0" required><span>Негарантийный ремонт</span>
             </label>
           </div>
           <div>
             <label class="input-checbox --radio" for="input-radio-1">
-              <input type="radio" name="radio" id="input-radio-1"><span>Гарантийный ремонт</span>
+              <input type="radio" name="radio" id="input-radio-1" required><span>Гарантийный ремонт</span>
             </label>
           </div>
           <div>
             <label class="input-checbox --radio" for="input-radio-2">
-              <input type="radio" name="radio" id="input-radio-2"><span>Гарантийный ремонт (Системный блок АйТек)</span>
+              <input type="radio" name="radio" id="input-radio-2" required><span>Гарантийный ремонт (Системный блок АйТек)</span>
             </label>
           </div>
           <div>
             <label class="input-checbox --radio" for="input-radio-3">
-              <input type="radio" name="radio" id="input-radio-3"><span>Владимир</span>
+              <input type="radio" name="radio" id="input-radio-3" required><span>Владимир</span>
             </label>
           </div>
           <div>
             <label class="input-checbox --radio" for="input-radio-4">
-              <input type="radio" name="radio" id="input-radio-4"><span>Вл. область и другие регионы</span>
+              <input type="radio" name="radio" id="input-radio-4" required><span>Вл. область и другие регионы</span>
             </label>
           </div>
         </div>
@@ -91,16 +101,55 @@
           <input type="text" placeholder="Номер документа о покупке" name="number-doc" required>
           <textarea placeholder="Комментарий" name="message" minlength="3" required></textarea>
           <div>
-            <button class="btn"><span>Отправить</span></button>
+            <button class="btn" type="submit"><span>Отправить</span></button>
           </div>
         </div>
       </form>
+      <script>
+        function tingleRepairSubmit(e) {
+          console.log(e)
+        }
+        
+        
+      </script>
     </div>
-    <div class="tingle --max tingle-img">
+    <div class="tingle --max tingle-img" id="tingle-img">
       <div class="tingle-img__head">
         <h4>Гарантий ремонт</h4><span>(кроме системных блоков АйТек):</span>
       </div>
-      <div class="tingle-img__content"><img src="./img/remont.jpg" srcset="img/remont@2x.jpg 2x" alt="IMG"></div>
+      <div class="tingle-img__content"><img src="./img/remont-1.jpg" srcset="img/remont-1@2x.jpg 2x" alt="IMG"></div>
+    </div>
+    <div class="tingle --middle tingle-slider" id="tingle-slider">
+      <div class="tingle-slider__content">
+        <div class="modal-slider swiper-container gallery-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+          </div>
+        </div>
+        <div class="swiper-container gallery-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <header class="headerbg"><img src="img/head-img.jpg" srcset="img/head-img@2x.jpg 2x" alt="IMG">
       <div class="container-fluid">
@@ -604,9 +653,9 @@
             <li><a href="#Состояние-ремонта">Состояние ремонта</a></li>
             <li><a href="#Вакансии">Вакансии</a></li>
             <li class="form">
-              <form class="footer-search">
-                <input placeholder="Введите что-нибудь" value="" name="search">
-                <button>
+              <form class="footer-search js-form-validator" data-submit="footerSearch">
+                <input placeholder="Введите что-нибудь" name="search" required>
+                <button type="submit">
                   <svg class="icon">
                     <use xlink:href="img/sprites/sprite.svg#search"></use>
                   </svg>
@@ -621,7 +670,7 @@
               </svg></a></span></div>
       </div>
     </footer>
-    <script src="js/main.min.js"></script>
-    <script src="js/vendor.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
   </body>
 </html>

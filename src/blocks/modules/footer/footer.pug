@@ -15,9 +15,9 @@ footer.footer
         li
           a(href="#Вакансии") Вакансии
         li.form
-          form.footer-search
-            input(placeholder="Введите что-нибудь" value="" name="search")
-            button
+          form.footer-search.js-form-validator(data-submit="footerSearch")
+            input(placeholder="Введите что-нибудь" name="search" required)
+            button(type="submit")
               +svg("search")
 
 

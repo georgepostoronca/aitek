@@ -1,13 +1,19 @@
 import Swiper from 'swiper/bundle';
 import customSelect from 'custom-select';
 import SimpleLightbox from "simple-lightbox";
-import tingle from "./tingle.min";
 import IMask from './imask';
-import Plyr from 'plyr';
+import Bouncer from './bouncer.polyfills.min';
 
+import Plyr from 'plyr';
 const player = new Plyr('#player');
 
-// let SimpleLightbox = window.SimpleLightbox;
+const jquery = require("jquery");
+const $ = require("jquery");
+const jQuery = require("jquery");
+window.jQuery = $;
+const fancybox = require("@fancyapps/fancybox");
+// const bouncer = require("bouncer.polyfills.min");
+
 
 // Custom Select
 let customSelectAll = [].slice.call(document.querySelectorAll('.js-custom-select'));
@@ -177,16 +183,62 @@ if(sliderminDetailEl) {
   });
 }
 
-// Simple Lightbox
-let lightbox = new SimpleLightbox({
-  // elements: '.js-lightbox .js-lightbox-link'
-  elements: document.querySelectorAll('.js-lightbox .js-lightbox-link')
+
+// Modal Slider
+const setttingsSliderTop = {
+  spaceBetween: 28,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  autoHeight: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 28,
+    },
+  }
+};
+
+const setttingsSliderBottom = {
+  spaceBetween: 10,
+  centeredSlides: true,
+  thumbs: {
+    swiper: galleryThumbs
+  },
+};
+const galleryThumbs = new Swiper('.gallery-thumbs', setttingsSliderTop);
+const galleryTop = new Swiper('.gallery-top', setttingsSliderBottom);
+
+$.fancybox.defaults.backFocus = false;
+$("[data-fancybox]").fancybox({
+  afterShow: function( instance, slide ) {
+    console.log("show", galleryThumbs);
+    galleryThumbs.destroy();
+    galleryTop.destroy();
+    new Swiper('.gallery-thumbs', setttingsSliderTop);
+    new Swiper('.gallery-top', setttingsSliderBottom);
+  }
 });
 
-let lightbox2 = new SimpleLightbox({
-  // elements: '.js-lightbox .js-lightbox-link'
-  elements: document.querySelectorAll('.js-lightbox2 .js-lightbox-link')
-});
+// Simple Lightbox
+// let lightbox = new SimpleLightbox({
+//   // elements: '.js-lightbox .js-lightbox-link'
+//   elements: document.querySelectorAll('.js-lightbox .js-lightbox-link')
+// });
+
+// let lightbox2 = new SimpleLightbox({
+//   // elements: '.js-lightbox .js-lightbox-link'
+//   elements: document.querySelectorAll('.js-lightbox2 .js-lightbox-link')
+// });
 // let magnificLinks = [].slice.call(document.querySelectorAll(".js-magnific-link"));
 // if(magnificLinks) {
 //   magnificLinks.forEach(item => {
@@ -348,29 +400,29 @@ if(btnVncyDetail.length) {
 
 
 // Modal
-var modalTinyNoFooter = new tingle.modal({
-  closeLabel: "",
-});
-
-var btnModal = [].slice.call(document.querySelectorAll('.js-tingle-modal'));
-btnModal.forEach(item => {
-
-  item.addEventListener('click', function () {
-    let slider = item.dataset.slider;
-    let el = document.querySelector('.' + slider);
-
-    modalTinyNoFooter.setContent(el.outerHTML);
-    modalTinyNoFooter.open();
-
-    let close = modalTinyNoFooter.modal.querySelector(".js-modal-close");
-
-    if(close) {
-      close.addEventListener("click", function() {
-        modalTinyNoFooter.close();
-      });
-    }
-  });
-});
+// var modalTinyNoFooter = new tingle.modal({
+//   closeLabel: "",
+// });
+//
+// var btnModal = [].slice.call(document.querySelectorAll('.js-tingle-modal'));
+// btnModal.forEach(item => {
+//
+//   item.addEventListener('click', function () {
+//     let slider = item.dataset.slider;
+//     let el = document.querySelector('.' + slider);
+//
+//     modalTinyNoFooter.setContent(el.outerHTML);
+//     modalTinyNoFooter.open();
+//
+//     let close = modalTinyNoFooter.modal.querySelector(".js-modal-close");
+//
+//     if(close) {
+//       close.addEventListener("click", function() {
+//         modalTinyNoFooter.close();
+//       });
+//     }
+//   });
+// });
 
 
 
@@ -381,4 +433,66 @@ let maskOptions = {
 };
 IMaskArr.forEach(item => {
   let mask = IMask(item, maskOptions);
+});
+
+
+
+// Form Validation
+document.addEventListener("DOMContentLoaded", function (event) {
+  var validatorClass = document.querySelectorAll(".js-form-validator");
+  if (validatorClass.length) {
+    var bouncer = new Bouncer('.js-form-validator', {
+      disableSubmit: true,
+      fieldClass: 'error', // Applied to fields with errors
+      errorClass: 'error-message', // Applied to the error message for invalid fields
+      fieldPrefix: 'bouncer-field_', // If a field doesn't have a name or ID, one is generated with this prefix
+      errorPrefix: 'bouncer-error_', // Prefix used for error message IDs
+      patterns: {
+        email: /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$/,
+        // password: /(?=.*\d)(?=.*[a-zа-яё|A-ZА-ЯЁ]).{8,}/,
+        password: /[\d\w\W\D\d].{7,}/,
+        tel: /^(\+7|7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/,
+        phone: /^(\+7|7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/
+      },
+      customValidations: {
+        valueMismatch: function (field) {
+          // Look for a selector for a field to compare
+          // If there isn't one, return false (no error)
+          var selector = field.getAttribute('data-bouncer-match');
+          if (!selector) return false;
+
+          // Get the field to compare
+          var otherField = field.form.querySelector(selector);
+          if (!otherField) return false;
+
+          // Compare the two field values
+          // We use a negative comparison here because if they do match, the field validates
+          // We want to return true for failures, which can be confusing
+          return otherField.value !== field.value;
+
+        }
+      },
+    });
+
+    document.addEventListener('bouncerFormInvalid', function (event) {
+      // console.log(event.detail.errors);
+      window.scrollTo(0, event.target.offsetTop);
+    }, false);
+
+    document.addEventListener('bouncerFormValid', function (el) {
+      try {
+        var fn = el.target.dataset.submit;
+        window[fn](el);
+      } catch(e) {
+        console.log("Form Submit Error!")
+      }
+    }, false);
+
+    let arrinput = [].slice.apply(document.querySelectorAll("input[type='password']"));
+    arrinput.forEach(function (input) {
+      input.addEventListener("input", function () {
+        check(this.value, this);
+      });
+    });
+  }
 });

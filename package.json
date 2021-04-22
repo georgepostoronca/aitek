@@ -72,6 +72,7 @@
         "yargs": "~15.4.1"
     },
     "dependencies": {
+        "@fancyapps/fancybox": "^3.5.7",
         "custom-select": "^1.1.15",
         "jquery": "^3.6.0",
         "magnific-popup": "^1.1.0",
