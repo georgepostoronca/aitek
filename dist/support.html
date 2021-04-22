@@ -7,27 +7,18 @@
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" async rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" async rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.min.css" async rel="stylesheet">
   </head>
   <body>
     <div id="wrapper">
@@ -120,6 +111,123 @@
           </div>
         </div>
       </header>
+      <div class="tingle --min tingle-form" id="tingle-form">
+        <div class="tingle-form__content">
+          <h3 class="--min">Обратная связь</h3>
+          <form class="js-form-validator" data-submit="tingleFormSubmit">
+            <input type="text" placeholder="Имя" minlength="3" name="name" required>
+            <input class="js-input-phone" type="phone" placeholder="Телефон" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <textarea placeholder="Сообщение" name="message" minlength="3" required></textarea>
+            <label class="input-checbox" for="input-1">
+              <input type="checkbox" name="check" id="input-1" required><span>Согласие на обработку данных</span>
+            </label>
+            <button class="btn" type="submit"><span>Отправить</span></button>
+          </form>
+        </div>
+        <script>
+          function tingleFormSubmit(e) {
+            console.log(e)
+          }
+          
+          
+        </script>
+      </div>
+      <div class="tingle --max tingle-repair" id="tingle-repair">
+        <div class="tingle-repair__head">
+          <h4>Плановый срок ремонта не более:<span>35 рабочих дней</span></h4>
+          <p>Это максимальный срок, учитывающий различныес ценарии и нормативы сервисного центра. Срок ремонта может быть изменен в случаях ремонта во внешнем сервисном центре.</p>
+        </div>
+        <form class="tingle-repair__content js-form-validator" data-submit="tingleRepairSubmit">
+          <h2 class="--fw-700">Заявка на ремонт</h2>
+          <div class="tingle-repair__check">
+            <div>
+              <label class="input-checbox --radio" for="input-radio-0">
+                <input type="radio" name="radio" id="input-radio-0" required><span>Негарантийный ремонт</span>
+              </label>
+            </div>
+            <div>
+              <label class="input-checbox --radio" for="input-radio-1">
+                <input type="radio" name="radio" id="input-radio-1" required><span>Гарантийный ремонт</span>
+              </label>
+            </div>
+            <div>
+              <label class="input-checbox --radio" for="input-radio-2">
+                <input type="radio" name="radio" id="input-radio-2" required><span>Гарантийный ремонт (Системный блок АйТек)</span>
+              </label>
+            </div>
+            <div>
+              <label class="input-checbox --radio" for="input-radio-3">
+                <input type="radio" name="radio" id="input-radio-3" required><span>Владимир</span>
+              </label>
+            </div>
+            <div>
+              <label class="input-checbox --radio" for="input-radio-4">
+                <input type="radio" name="radio" id="input-radio-4" required><span>Вл. область и другие регионы</span>
+              </label>
+            </div>
+          </div>
+          <div class="tingle-repair__form">
+            <input type="text" placeholder="Компания" name="company" required>
+            <input type="text" placeholder="Наименование товара" name="name-prod" required>
+            <input type="text" placeholder="Контактное лицо" name="contact" required>
+            <input type="text" placeholder="Заявленная неисправность" name="zaiav-neispr" required>
+            <input class="js-input-phone" type="phone" placeholder="Телефон для связи" name="name" required>
+            <input type="text" placeholder="Серийный номер товара" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="text" placeholder="Номер документа о покупке" name="number-doc" required>
+            <textarea placeholder="Комментарий" name="message" minlength="3" required></textarea>
+            <div>
+              <button class="btn" type="submit"><span>Отправить</span></button>
+            </div>
+          </div>
+        </form>
+        <script>
+          function tingleRepairSubmit(e) {
+            console.log(e)
+          }
+          
+          
+        </script>
+      </div>
+      <div class="tingle --max tingle-img" id="tingle-img">
+        <div class="tingle-img__head">
+          <h4>Гарантий ремонт</h4><span>(кроме системных блоков АйТек):</span>
+        </div>
+        <div class="tingle-img__content"><img src="./img/remont-1.jpg" srcset="img/remont-1@2x.jpg 2x" alt="IMG"></div>
+      </div>
+      <div class="tingle --middle tingle-slider" id="tingle-slider">
+        <div class="tingle-slider__content">
+          <div class="modal-slider swiper-container gallery-top">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            </div>
+          </div>
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <main>
         <section class="support">
           <div class="container-fluid">
@@ -136,7 +244,7 @@
                 <article class="support-grid__item first">
                   <h3>Если у вас что-то сломалось</h3>
                   <p>Если ваша техника сломалась, мы ее починим. Неважно, гарантийный у вас случай или не гарантийный, первым делом отправьте нам заявку на ремонт. Администратор сервисного центра свяжется с вами и согласует дальнейшие действия. Обычно, мы сами забираем вашу технику. При возможности можем обеспечить вам временную замену из подменного фонда. подменного фонда. подменного фонда.</p>
-                  <div class="btn --blue"><span>Заявка на ремонт</span></div>
+                  <div class="btn --blue" data-fancybox data-src="#tingle-repair"><span>Заявка на ремонт</span></div>
                   <div class="btn --light"><span>Проверить состояние ремонта</span></div>
                   <div class="footer --border-bottom"><a class="link-blue" href="#link">Сроки ремонта</a><a class="link-blue" href="#link">Авторизация</a></div>
                   <div class="row">
@@ -227,7 +335,7 @@
         </div>
       </footer>
     </div>
-    <script src="js/main.js"></script>
-    <script src="js/vendor.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
   </body>
 </html>

@@ -141,6 +141,14 @@
       &.first {
         background: url("../img/svg/support-1.svg") top center no-repeat;
         background-size: contain;
+
+        p {
+          padding-right: 35px;
+
+          @media(max-width: 992px) {
+            padding-right: 0;
+          }
+        }
       }
 
       &.two {

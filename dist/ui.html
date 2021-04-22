@@ -7,27 +7,18 @@
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" async rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" async rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.min.css" async rel="stylesheet">
   </head>
   <body>
     <button class="btn" data-fancybox data-src="#tingle-form"><span>Form</span></button>
@@ -321,12 +312,12 @@
           <div class="section__head">
             <h2>Фотогаллерея</h2>
           </div>
-          <div class="photogallery__grid row js-lightbox2">
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><a class="js-lightbox-link" href="img/gridimg-1.jpg"><img src="img/gridimg-1.jpg"></a></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><a class="js-lightbox-link" href="img/gridimg-1.jpg"><img src="img/gridimg-1.jpg"></a></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a class="js-lightbox-link" href="img/gridimg-1.jpg"><img src="img/gridimg-1.jpg"></a></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a class="js-lightbox-link" href="img/gridimg-1.jpg"><img src="img/gridimg-1.jpg"></a></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a class="js-lightbox-link" href="img/gridimg-1.jpg"><img src="img/gridimg-1.jpg"></a></div>
+          <div class="photogallery__grid row">
+            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
+            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
+            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
+            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
+            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
             <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-6"><span></span></div>
             <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
             <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
@@ -496,7 +487,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img1.jpg"></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -505,7 +496,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img2.jpg"></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img2.jpg" data-fancybox></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -514,7 +505,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img3.jpg"></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img3.jpg" data-fancybox></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -523,7 +514,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img1.jpg"></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -532,7 +523,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img2.jpg"></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img2.jpg" data-fancybox></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -541,7 +532,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img3.jpg"></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img3.jpg" data-fancybox></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -574,7 +565,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img1.jpg"></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -583,7 +574,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img2.jpg"></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img2.jpg" data-fancybox></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -592,7 +583,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img3.jpg"></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img3.jpg" data-fancybox></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -601,7 +592,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img1.jpg"></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -610,7 +601,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img2.jpg"></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img2.jpg" data-fancybox></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -619,7 +610,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a class="js-lightbox-link" href="img/slider-img3.jpg"></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img3.jpg" data-fancybox></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -670,7 +661,7 @@
               </svg></a></span></div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
-    <script src="js/vendor.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
   </body>
 </html>
