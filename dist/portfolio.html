@@ -7,11 +7,11 @@
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="styles/main.min.css">
@@ -140,6 +140,21 @@
           </div>
           <div class="portfolio__label"><a class="portfolio__label-item active" href="#"><span>Все</span></a><a class="portfolio__label-item" href="#"><span>Поставка оборудования и ПО</span></a><a class="portfolio__label-item" href="#"><span>ИТ Инфраструктура</span></a><a class="portfolio__label-item" href="#"><span>Инфраструктура ЦОД</span></a><a class="portfolio__label-item" href="#"><span>Информационная безопасность</span></a><a class="portfolio__label-item" href="#"><span>Конференц залы и видеосистемы</span></a><a class="portfolio__label-item" href="#"><span>Сети и кабельные системы</span></a><a class="portfolio__label-item" href="#"><span>Видеонаблюдение</span></a><a class="portfolio__label-item" href="#"><span>Бесперебойное электропитание</span></a><a class="portfolio__label-item" href="#"><span>Сервис и ИТ Аутсорсинг</span></a><a class="portfolio__label-item" href="#"><span>Автоматизация производства</span></a></div>
           <div class="portfolio__map">
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=55a53236-c7d6-45ea-a8d9-bc51cda5db7c&amp;load=Map&amp;lang=ru_RU" type="text/javascript"></script>
+            <script>
+              ymaps.ready(function () {
+                var map = new ymaps.Map("map", {
+                  center: [55.76, 37.64],
+                  zoom: 10
+                });
+              
+                if (map) {
+                  ymaps.modules.require(['Placemark', 'Circle'], function (Placemark, Circle) {
+                    var placemark = new Placemark([55.37, 35.45]);
+                  });
+                }
+              });
+            </script>
             <div id="map"></div>
           </div>
           <div class="portfolio__grid row"><a class="col-12 col-md-6 col-xl-4 article --min-info" href="#">

@@ -51,7 +51,22 @@ section.portfolio
           span Автоматизация производства
 
       .portfolio__map
+        script(src="https://api-maps.yandex.ru/2.1/?apikey=55a53236-c7d6-45ea-a8d9-bc51cda5db7c&load=Map&lang=ru_RU" type="text/javascript")
+        script.
+          ymaps.ready(function () {
+            var map = new ymaps.Map("map", {
+              center: [55.76, 37.64],
+              zoom: 10
+            });
+
+            if (map) {
+              ymaps.modules.require(['Placemark', 'Circle'], function (Placemark, Circle) {
+                var placemark = new Placemark([55.37, 35.45]);
+              });
+            }
+          });
         #map
+
 
       .portfolio__grid.row
         each i in [1,2,3,4,5,6,7,8,9]

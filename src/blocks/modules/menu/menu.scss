@@ -11,7 +11,42 @@
 
     //Colored
   &.--colored {
+    background-color: $blue;
     color: $white;
+
+    a {
+      transition: .2s;
+
+      &:hover {
+        opacity: .6;
+        color: $white;
+      }
+    }
+
+    .social {
+      svg {
+        fill: #ffffff;
+      }
+    }
+
+    .custom-select-container {
+      .custom-select-opener {
+        span {
+          color: $white;
+        }
+
+        &:hover {
+          span {
+            color: $white;
+            opacity: .7;
+          }
+        }
+
+        &:after {
+          background: url(../img/arrow-white.svg) center center no-repeat;
+        }
+      }
+    }
   }
 
   &.--colored &__logo {
@@ -51,6 +86,11 @@
   &.--sticky {
     position: sticky;
     background-color: $white;
+
+    &.--colored {
+      background-color: $blue;
+      color: $white;
+    }
   }
 
   //Mobile
@@ -247,6 +287,20 @@
 
     @media(max-width: 767px) {
       display: none;
+    }
+  }
+
+  .social {
+    .viber {
+      fill: #4826D0;
+    }
+
+    .telegram {
+      fill: #3295DD;
+    }
+
+    .whatsapp {
+      fill: #22B04A;
     }
   }
 

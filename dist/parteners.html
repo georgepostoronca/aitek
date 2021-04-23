@@ -7,11 +7,11 @@
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="styles/main.min.css">
@@ -112,6 +112,123 @@
         </div>
       </header>
       <main>
+        <div class="tingle --min tingle-form" id="tingle-form">
+          <div class="tingle-form__content">
+            <h3 class="--min">Обратная связь</h3>
+            <form class="js-form-validator" data-submit="tingleFormSubmit">
+              <input type="text" placeholder="Имя" minlength="3" name="name" required>
+              <input class="js-input-phone" type="phone" placeholder="Телефон" name="name" required>
+              <input type="email" placeholder="Email" name="email" required>
+              <textarea placeholder="Сообщение" name="message" minlength="3" required></textarea>
+              <label class="input-checbox" for="input-1">
+                <input type="checkbox" name="check" id="input-1" required><span>Согласие на обработку данных</span>
+              </label>
+              <button class="btn" type="submit"><span>Отправить</span></button>
+            </form>
+          </div>
+          <script>
+            function tingleFormSubmit(e) {
+              console.log(e)
+            }
+            
+            
+          </script>
+        </div>
+        <div class="tingle --max tingle-repair" id="tingle-repair">
+          <div class="tingle-repair__head">
+            <h4>Плановый срок ремонта не более:<span>35 рабочих дней</span></h4>
+            <p>Это максимальный срок, учитывающий различныес ценарии и нормативы сервисного центра. Срок ремонта может быть изменен в случаях ремонта во внешнем сервисном центре.</p>
+          </div>
+          <form class="tingle-repair__content js-form-validator" data-submit="tingleRepairSubmit">
+            <h2 class="--fw-700">Заявка на ремонт</h2>
+            <div class="tingle-repair__check">
+              <div>
+                <label class="input-checbox --radio" for="input-radio-0">
+                  <input type="radio" name="radio" id="input-radio-0" required><span>Негарантийный ремонт</span>
+                </label>
+              </div>
+              <div>
+                <label class="input-checbox --radio" for="input-radio-1">
+                  <input type="radio" name="radio" id="input-radio-1" required><span>Гарантийный ремонт</span>
+                </label>
+              </div>
+              <div>
+                <label class="input-checbox --radio" for="input-radio-2">
+                  <input type="radio" name="radio" id="input-radio-2" required><span>Гарантийный ремонт (Системный блок АйТек)</span>
+                </label>
+              </div>
+              <div>
+                <label class="input-checbox --radio" for="input-radio-3">
+                  <input type="radio" name="radio" id="input-radio-3" required><span>Владимир</span>
+                </label>
+              </div>
+              <div>
+                <label class="input-checbox --radio" for="input-radio-4">
+                  <input type="radio" name="radio" id="input-radio-4" required><span>Вл. область и другие регионы</span>
+                </label>
+              </div>
+            </div>
+            <div class="tingle-repair__form">
+              <input type="text" placeholder="Компания" name="company" required>
+              <input type="text" placeholder="Наименование товара" name="name-prod" required>
+              <input type="text" placeholder="Контактное лицо" name="contact" required>
+              <input type="text" placeholder="Заявленная неисправность" name="zaiav-neispr" required>
+              <input class="js-input-phone" type="phone" placeholder="Телефон для связи" name="name" required>
+              <input type="text" placeholder="Серийный номер товара" name="name" required>
+              <input type="email" placeholder="Email" name="email" required>
+              <input type="text" placeholder="Номер документа о покупке" name="number-doc" required>
+              <textarea placeholder="Комментарий" name="message" minlength="3" required></textarea>
+              <div>
+                <button class="btn" type="submit"><span>Отправить</span></button>
+              </div>
+            </div>
+          </form>
+          <script>
+            function tingleRepairSubmit(e) {
+              console.log(e)
+            }
+            
+            
+          </script>
+        </div>
+        <div class="tingle --max tingle-img" id="tingle-img">
+          <div class="tingle-img__head">
+            <h4>Гарантий ремонт</h4><span>(кроме системных блоков АйТек):</span>
+          </div>
+          <div class="tingle-img__content"><img src="./img/remont-1.jpg" srcset="img/remont-1@2x.jpg 2x" alt="IMG"></div>
+        </div>
+        <div class="tingle --middle tingle-slider" id="tingle-slider">
+          <div class="tingle-slider__content">
+            <div class="modal-slider swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              </div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <section class="parteners">
           <div class="container-fluid">
             <div class="parteners__wrap">
@@ -122,76 +239,76 @@
                     <div class="parteners-grid__item">
                       <picture><img src="img/amocrm-logo-white1.jpg" srcset="img/amocrm-logo-white1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Партнер 2 уровня</span>
                       <div class="parteners-grid__link"></div>
-                      <div class="parteners-grid__link"><a class="blue" href="#Сертификат">www.amocrm.ru</a></div>
+                      <div class="parteners-grid__link"><a class="blue" href="#Сертификат" data-fancybox data-src="#tingle-slider">www.amocrm.ru</a></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/3_1_061.jpg" srcset="img/3_1_061@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Register Partner</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/53451da94eaa4_lenovo-logomaxresdefaultjpg-4ov8am1u1.jpg" srcset="img/53451da94eaa4_lenovo-logomaxresdefaultjpg-4ov8am1u1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>DATA CENTER Авторизованный партнер, PC GOLD PARTNER</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"><a class="blue" href="#Сертификат">www.amocrm.ru</a></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/oki1.jpg" srcset="img/oki1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Официальный дилер</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/t25_beward1.jpg" srcset="img/t25_beward1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Партнер 2 уровня</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/amocrm-logo-white1.jpg" srcset="img/amocrm-logo-white1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Партнер 2 уровня</span>
                       <div class="parteners-grid__link"></div>
-                      <div class="parteners-grid__link"><a class="blue" href="#Сертификат">www.amocrm.ru</a></div>
+                      <div class="parteners-grid__link"><a class="blue" href="#Сертификат" data-fancybox data-src="#tingle-slider">www.amocrm.ru</a></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/3_1_061.jpg" srcset="img/3_1_061@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Register Partner</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/53451da94eaa4_lenovo-logomaxresdefaultjpg-4ov8am1u1.jpg" srcset="img/53451da94eaa4_lenovo-logomaxresdefaultjpg-4ov8am1u1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>DATA CENTER Авторизованный партнер, PC GOLD PARTNER</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"><a class="blue" href="#Сертификат">www.amocrm.ru</a></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/oki1.jpg" srcset="img/oki1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Официальный дилер</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/t25_beward1.jpg" srcset="img/t25_beward1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Партнер 2 уровня</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/amocrm-logo-white1.jpg" srcset="img/amocrm-logo-white1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Партнер 2 уровня</span>
                       <div class="parteners-grid__link"></div>
-                      <div class="parteners-grid__link"><a class="blue" href="#Сертификат">www.amocrm.ru</a></div>
+                      <div class="parteners-grid__link"><a class="blue" href="#Сертификат" data-fancybox data-src="#tingle-slider">www.amocrm.ru</a></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/3_1_061.jpg" srcset="img/3_1_061@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Register Partner</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/53451da94eaa4_lenovo-logomaxresdefaultjpg-4ov8am1u1.jpg" srcset="img/53451da94eaa4_lenovo-logomaxresdefaultjpg-4ov8am1u1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>DATA CENTER Авторизованный партнер, PC GOLD PARTNER</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"><a class="blue" href="#Сертификат">www.amocrm.ru</a></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/oki1.jpg" srcset="img/oki1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Официальный дилер</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"></div>
                     </div>
                     <div class="parteners-grid__item">
                       <picture><img src="img/t25_beward1.jpg" srcset="img/t25_beward1@2x.jpg 2x" alt="IMG"></picture><b>amoCRM</b><span><b>Статус:</b>Партнер 2 уровня</span>
-                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат">Сертификат</a></div>
+                      <div class="parteners-grid__link"><a class="silver" href="#Сертификат" data-fancybox data-src="#tingle-slider">Сертификат</a></div>
                       <div class="parteners-grid__link"></div>
                     </div>
                   </div><a class="link-more" href="#link">
@@ -214,7 +331,7 @@
                           <li>Сетевые фильтры</li>
                         </ul>
                       </div>
-                      <div class="td last"><a href="Сертификаты">Сертификаты</a></div>
+                      <div class="td last"><a href="Сертификаты" data-fancybox data-src="#tingle-slider">Сертификаты</a></div>
                     </div>
                     <div class="tr">
                       <div class="td"><b>НР</b></div>
@@ -229,7 +346,7 @@
                           <li>IBM</li>
                         </ul>
                       </div>
-                      <div class="td last"><a href="Сертификаты">Сертификаты</a></div>
+                      <div class="td last"><a href="Сертификаты" data-fancybox data-src="#tingle-slider">Сертификаты</a></div>
                     </div>
                     <div class="tr">
                       <div class="td"><b>IBM</b></div>
@@ -240,7 +357,7 @@
                           <li>Cистемы хранения данных</li>
                         </ul>
                       </div>
-                      <div class="td last"><a href="Сертификаты">Сертификаты</a></div>
+                      <div class="td last"><a href="Сертификаты" data-fancybox data-src="#tingle-slider">Сертификаты</a></div>
                     </div>
                   </div>
                 </div>

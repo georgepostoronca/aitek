@@ -47,6 +47,28 @@ section.contact
                   li
                     em Email
                     a(href="mailto:aitek@gmail.com") aitek@gmail.com
-              div.map
-                #map
+              div.map(data-map="map"+i)
+                div.map__item(id="map"+i)
 
+      script(src="https://api-maps.yandex.ru/2.1/?apikey=55a53236-c7d6-45ea-a8d9-bc51cda5db7c&load=Map&lang=ru_RU" type="text/javascript")
+      script.
+        (function () {
+          let id = [].slice.call(document.querySelectorAll("[data-map]"));
+
+          id.forEach(item => {
+            let data = item.dataset.map;
+
+            ymaps.ready(function () {
+              var map = new ymaps.Map(data, {
+                center: [55.76, 37.64],
+                zoom: 10
+              });
+
+              if (map) {
+                ymaps.modules.require(['Placemark', 'Circle'], function (Placemark, Circle) {
+                  var placemark = new Placemark([55.37, 35.45]);
+                });
+              }
+            });
+          });
+        })();

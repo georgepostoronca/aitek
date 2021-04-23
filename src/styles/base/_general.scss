@@ -153,6 +153,23 @@ h1, .h1 {
   }
 }
 
+.text-gradient {
+  display: inline-block;
+  color: #2D84C9;
+}
+
+@supports ((background-clip: text) or (-webkit-background-clip: text)) and
+  ((text-fill-color: transparent) or (-webkit-text-fill-color: transparent)) {
+  .text-gradient {
+    background-image: linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+}
+
 h2, .h2 {
   font-family: $mont;
   font-style: normal;
@@ -280,6 +297,8 @@ input, textarea {
   color: $black-2;
   transition: .2s;
 
+  box-shadow: none !important;
+
   @media(max-width: 767px) {
     height: 45px;
     padding-left: 15px;
@@ -392,29 +411,29 @@ textarea {
 }
 
 
-.text-gradient {
-  color: #2D84C9;
-  background: transparent;
-  -webkit-text-fill-color: $blue;
-  text-fill-color: $blue;
-  background-clip: unset;
-
-  span {
-    color: $blue;
-  }
-}
-
-@supports ((background-clip: text) or (-webkit-background-clip: text)) and
-  ((text-fill-color: transparent) or (-webkit-text-fill-color: transparent)) {
-  .text-gradient {
-    background: linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
-    background-size: cover;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-  }
-}
+//.text-gradient {
+//  color: #2D84C9;
+//  background: transparent;
+//  -webkit-text-fill-color: $blue;
+//  text-fill-color: $blue;
+//  background-clip: unset;
+//
+//  span {
+//    color: $blue;
+//  }
+//}
+//
+//@supports ((background-clip: text) or (-webkit-background-clip: text)) and
+//  ((text-fill-color: transparent) or (-webkit-text-fill-color: transparent)) {
+//  .text-gradient {
+//    background: linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
+//    background-size: cover;
+//    -webkit-background-clip: text;
+//    background-clip: text;
+//    -webkit-text-fill-color: transparent;
+//    text-fill-color: transparent;
+//  }
+//}
 
 .btn {
   border-radius: 100px;
@@ -441,6 +460,10 @@ textarea {
   transform: translateZ(0);
   will-change: transform;
   overflow: hidden;
+
+  &.--max {
+    min-width: 261px;
+  }
 
   &.--light {
     background: rgba(40, 113, 182, 0.1);
@@ -820,6 +843,7 @@ textarea {
   padding: 0;
   outline: none;
   cursor: pointer;
+  background-color: transparent;
 
   &:hover {
     svg {
@@ -833,6 +857,8 @@ textarea {
     font-size: 16px;
     line-height: 24px;
     margin-right: 10px;
+
+    @extend .text-gradient;
   }
 
   svg {

@@ -1,5 +1,10 @@
 .vacancy {
 
+  &.--colored {
+    background-color: $blue;
+    color: $white;
+  }
+
   &.--content-center {
     display: flex;
     flex-direction: column;
@@ -145,11 +150,11 @@
     background-color: $blue;
     color: $white;
 
-    display: none;
+    //display: none;
 
-    &.active {
-      display: block;
-    }
+    //&.active {
+    //  display: block;
+    //}
 
     &.active &__info {
       opacity: 1;

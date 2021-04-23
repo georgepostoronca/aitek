@@ -2,16 +2,17 @@ extends ../layouts/default
 include ../helpers/mixins
 
 block variables
-  - const title = "parteners"
+  - const title = "vacancy"
 
 block content
-    #wrapper
-      - var menuFixed = "--sticky"
+    #wrapper.page-work
+        - var menuFixed = "--sticky --colored"
         include ../../blocks/modules/menu/menu
 
         main
-            include ../../blocks/modules/popup/popup
-            include ../../blocks/modules/parteners/parteners
+            - var vacancyClass = "--colored"
+            include ../../blocks/modules/vacancy-detail/vacancy-detail
+
 
         include ../../blocks/modules/footer/footer
 
