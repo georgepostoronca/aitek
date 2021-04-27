@@ -221,7 +221,7 @@ const galleryTop = new Swiper('.gallery-top', setttingsSliderBottom);
 $.fancybox.defaults.backFocus = false;
 $("[data-fancybox]").fancybox({
   afterShow: function( instance, slide ) {
-    console.log("show", galleryThumbs);
+    // console.log("show", galleryThumbs);
     galleryThumbs.destroy();
     galleryTop.destroy();
     new Swiper('.gallery-thumbs', setttingsSliderTop);

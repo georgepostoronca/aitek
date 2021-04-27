@@ -484,7 +484,7 @@ textarea {
 
     span {
       color: $blue;
-      font-weight: bold;
+      font-weight: 500;
       font-size: 13px;
       transition: .2s;
     }
@@ -562,7 +562,7 @@ textarea {
     text-decoration: none;
     z-index: 1;
     position: relative;
-    font-weight: bold;
+    font-weight: 500;
     font-family: $muller;
   }
 }
@@ -1395,7 +1395,6 @@ textarea {
   }
 
   .btn {
-    margin-top: auto;
     background: rgba(255, 255, 255, 0.1);
     padding: 21px 20px;
     margin-top: 0;
