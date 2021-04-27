@@ -4,66 +4,77 @@ section.section.slidermin(class=sliderClass)
       .section__head
         h2=sliderTitle
 
-      .swiper-container.slidermin__slider.js-slidermin.js-lightbox
+      .swiper-container.slidermin__slider.js-slidermin
         .swiper-wrapper
-          .swiper-slide
-            .article.--slider
-              picture
-                a(href="img/slider-img1.jpg" data-fancybox)
-                img(src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG")
-              .article__info
-                a(href="#")
-                  h4 АйТек - Поздравляет всех клиентов с Новым Годом!
-                p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
-          .swiper-slide
-            .article.--slider
-              picture
-                a(href="img/slider-img2.jpg" data-fancybox)
-                img(src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG")
-              .article__info
-                a(href="#")
-                  h4 АйТек - Поздравляет всех клиентов с Новым Годом!
-                p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
+          each i in [1,2,3,4,5,6,7,8,9]
+            if sliderFancy === 1
+              .swiper-slide
+                .article.--slider
+                  picture
+                    a(href="img/slider-img1.jpg" data-fancybox)
+                    img(src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG")
+                  .article__info
+                    a(href="#")
+                      h4 АйТек - Поздравляет всех клиентов с Новым Годом!
+                    p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
+            else
+              .swiper-slide
+                a(href="#").article.--slider
+                  picture
+                    img(src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG")
+                  .article__info
+                    h4 АйТек - Поздравляет всех клиентов с Новым Годом!
+                    p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
 
-          .swiper-slide
-            .article.--slider
-              picture
-                a(href="img/slider-img3.jpg" data-fancybox)
-                img(src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG")
-              .article__info
-                a(href="#")
-                  h4 АйТек - Поздравляет всех клиентов с Новым Годом!
-                p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
-
-          .swiper-slide
-            .article.--slider
-              picture
-                a(href="img/slider-img1.jpg" data-fancybox)
-                img(src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG")
-              .article__info
-                a(href="#")
-                  h4 АйТек - Поздравляет всех клиентов с Новым Годом!
-                p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
-
-          .swiper-slide
-            .article.--slider
-              picture
-                a(href="img/slider-img2.jpg" data-fancybox)
-                img(src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG")
-              .article__info
-                a(href="#")
-                  h4 АйТек - Поздравляет всех клиентов с Новым Годом!
-                p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
-
-          .swiper-slide
-            .article.--slider
-              picture
-                a(href="img/slider-img3.jpg" data-fancybox)
-                img(src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG")
-              .article__info
-                a(href="#")
-                  h4 АйТек - Поздравляет всех клиентов с Новым Годом!
-                p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
+          //.swiper-slide
+          //  .article.--slider
+          //    picture
+          //      a(href="img/slider-img2.jpg" data-fancybox)
+          //      img(src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG")
+          //    .article__info
+          //      a(href="#")
+          //        h4 АйТек - Поздравляет всех клиентов с Новым Годом!
+          //      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
+          //
+          //.swiper-slide
+          //  .article.--slider
+          //    picture
+          //      a(href="img/slider-img3.jpg" data-fancybox)
+          //      img(src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG")
+          //    .article__info
+          //      a(href="#")
+          //        h4 АйТек - Поздравляет всех клиентов с Новым Годом!
+          //      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
+          //
+          //.swiper-slide
+          //  .article.--slider
+          //    picture
+          //      a(href="img/slider-img1.jpg" data-fancybox)
+          //      img(src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG")
+          //    .article__info
+          //      a(href="#")
+          //        h4 АйТек - Поздравляет всех клиентов с Новым Годом!
+          //      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
+          //
+          //.swiper-slide
+          //  .article.--slider
+          //    picture
+          //      a(href="img/slider-img2.jpg" data-fancybox)
+          //      img(src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG")
+          //    .article__info
+          //      a(href="#")
+          //        h4 АйТек - Поздравляет всех клиентов с Новым Годом!
+          //      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
+          //
+          //.swiper-slide
+          //  .article.--slider
+          //    picture
+          //      a(href="img/slider-img3.jpg" data-fancybox)
+          //      img(src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG")
+          //    .article__info
+          //      a(href="#")
+          //        h4 АйТек - Поздравляет всех клиентов с Новым Годом!
+          //      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от
 
         .swiper-pagination
         .swiper-button-prev

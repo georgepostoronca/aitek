@@ -7,12 +7,13 @@ block variables
 block content
     #wrapper
       - var menuFixed = "--sticky"
-      include ../../blocks/modules/menu/menu
+        include ../../blocks/modules/menu/menu
 
-      main
-          include ../../blocks/modules/repair/repair
+        main
+            include ../../blocks/modules/repair/repair
+            include ../../blocks/modules/popup/popup
 
-      include ../../blocks/modules/footer/footer
+        include ../../blocks/modules/footer/footer
 
 block scripts
     script(src="js/main.js")

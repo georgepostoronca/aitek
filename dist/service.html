@@ -14,396 +14,449 @@
     <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" async rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" async rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" async rel="stylesheet">
   </head>
   <body>
-    <header class="menu js-menu --sticky">
-      <div class="container-fluid">
-        <div class="menu-mobile"><a class="menu-mobile__logo" href="#dawd">
-            <svg class="icon">
-              <use xlink:href="img/sprites/sprite.svg#logo"></use>
-            </svg></a>
-          <div class="menu-mobile__control"><a href="mailto:info@aitek.ru">
-              <svg class="icon">
-                <use xlink:href="img/sprites/sprite.svg#envelope"></use>
-              </svg></a><a href="tel:+7(4922)44-44-42">
-              <svg class="icon">
-                <use xlink:href="img/sprites/sprite.svg#phone"></use>
-              </svg></a>
-            <button class="js-menu-open">
-              <svg class="icon">
-                <use xlink:href="img/sprites/sprite.svg#menu"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="menu__wrap js-menu-el"><a class="menu__logo-dop" href="#dawd">
-            <svg class="icon">
-              <use xlink:href="img/sprites/sprite.svg#logo"></use>
-            </svg></a>
-          <div class="menu__social">
-            <div class="social"><a class="viber" href="#viber">
-                <svg class="icon">
-                  <use xlink:href="img/sprites/sprite.svg#viber"></use>
-                </svg></a><a class="whatsapp" href="#whatsapp">
-                <svg class="icon">
-                  <use xlink:href="img/sprites/sprite.svg#whatsapp"></use>
-                </svg></a><a class="telegram" href="#telegram">
-                <svg class="icon">
-                  <use xlink:href="img/sprites/sprite.svg#telegram"></use>
-                </svg></a></div>
-          </div>
-          <div class="menu__mail"><a href="mailto:info@aitek.ru">info@aitek.ru</a></div>
-          <div class="menu__contact"><em>Ваш город:</em>
-            <select class="js-custom-select" data-placeholder="Выбор города" data-change-number="true">
-              <option value="1" data-phone="+1 (4922) 44-44-42">Владимир</option>
-              <option value="2" data-phone="+2 (4922) 44-44-42" selected>Иваново</option>
-              <option value="3" data-phone="+3 (4922) 44-44-42">Нижний Новгород</option>
-            </select>
-            <!--.custom-select-->
-            <!--  .custom-select__head-->
-            <!--    span Владимир-->
-            <!--    +svg("arrow")-->
-            <div class="menu__mobile-close js-menu-close">
-              <svg class="icon">
-                <use xlink:href="img/sprites/sprite.svg#close"></use>
-              </svg>
-            </div><a class="js-change-phone" href="tel:+7(4922)44-44-42">+7 (4922) 44-44-42</a>
-          </div>
-          <div class="menu__bottom"><a class="menu__logo" href="#dawd">
+    <div id="wrapper">
+      <header class="menu js-menu --sticky">
+        <div class="container-fluid">
+          <div class="menu-mobile"><a class="menu-mobile__logo" href="#dawd">
               <svg class="icon">
                 <use xlink:href="img/sprites/sprite.svg#logo"></use>
               </svg></a>
-            <nav class="menu__nav">
-              <ul>
-                <li><a href="#О-компании">О компании</a></li>
-                <li><a href="#Услуги-и-решения">Услуги и решения</a></li>
-                <li><a href="#Портфолио-проектов">Портфолио проектов</a></li>
-                <li><a href="#Работа-в-АйТек">Работа в АйТек</a></li>
-                <li><a href="#Сервис-и-поддержка">Сервис и поддержка</a></li>
-                <li><a href="#Контакты">Контакты</a></li>
-              </ul>
-            </nav>
-            <div class="menu__bottom-mobile"><a href="#Заявка-на-ремонт">Заявка на ремонт</a><a href="#Состояние-ремонта">Состояние ремонта</a></div>
-          </div>
-          <div class="menu__footer">
-            <ul>
-              <li><a class="viber" href="#viber">
-                  <svg class="icon">
-                    <use xlink:href="img/sprites/sprite.svg#viber2"></use>
-                  </svg></a></li>
-              <li><a class="whatsapp" href="#whatsapp">
-                  <svg class="icon">
-                    <use xlink:href="img/sprites/sprite.svg#whatsapp2"></use>
-                  </svg></a></li>
-              <li><a class="telegram" href="#telegram">
-                  <svg class="icon">
-                    <use xlink:href="img/sprites/sprite.svg#telegram2"></use>
-                  </svg></a></li>
-            </ul>
-            <div><a href="tel:+7(4922)44-44-42">+7 (4922) 44-44-42</a><span>/</span><a href="mailto:info@aitek.ru">info@aitek.ru</a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <header class="headerbg"><img src="img/head-img.jpg" srcset="img/head-img@2x.jpg 2x" alt="IMG">
-      <div class="container-fluid">
-        <div class="headerbg__wrap">
-          <h1>Системы безопасности и противожарной защиты</h1>
-          <p>Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему,</p>
-          <button class="btn"><span>Cвязаться с нами</span></button>
-          <button class="btn"><span>Посмотреть проекты</span></button>
-        </div>
-      </div>
-    </header>
-    <section class="section slidermin --page-service">
-      <div class="container-fluid">
-        <div class="section__wrap slidermin__wrap">
-          <div class="section__head">
-            <h2>Реализованные проекты</h2>
-          </div>
-          <div class="swiper-container slidermin__slider js-slidermin js-lightbox">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
-                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img2.jpg" data-fancybox></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
-                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img3.jpg" data-fancybox></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
-                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
-                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img2.jpg" data-fancybox></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
-                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img3.jpg" data-fancybox></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
-                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev">
-              <svg class="icon">
-                <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
-              </svg><span>Назад</span>
-            </div>
-            <div class="swiper-button-next"><span>Далее</span>
-              <svg class="icon">
-                <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section advantage --page-service">
-      <div class="container-fluid">
-        <div class="section__wrap advantage__wrap">
-          <div class="section__head">
-            <h2>Преимущества</h2>
-            <div class="advantage__grid row">
-              <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
-                  <svg class="icon">
-                    <use xlink:href="img/sprites/sprite.svg#web-browser"></use>
-                  </svg></i>
-                <h4>Профессионализм</h4>
-                <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-              </div>
-              <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
-                  <svg class="icon">
-                    <use xlink:href="img/sprites/sprite.svg#voice"></use>
-                  </svg></i>
-                <h4>Комплексный подход</h4>
-                <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-              </div>
-              <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
-                  <svg class="icon">
-                    <use xlink:href="img/sprites/sprite.svg#weather"></use>
-                  </svg></i>
-                <h4>Квалификация</h4>
-                <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-              </div>
-              <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
-                  <svg class="icon">
-                    <use xlink:href="img/sprites/sprite.svg#notes"></use>
-                  </svg></i>
-                <h4>Комплексный подход</h4>
-                <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-              </div>
-              <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
-                  <svg class="icon">
-                    <use xlink:href="img/sprites/sprite.svg#video-calling"></use>
-                  </svg></i>
-                <h4>Комплексный подход</h4>
-                <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-              </div>
-              <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
-                  <svg class="icon">
-                    <use xlink:href="img/sprites/sprite.svg#shortcut"></use>
-                  </svg></i>
-                <h4>Квалификация</h4>
-                <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section cybercom --page-service">
-      <div class="container-fluid">
-        <div class="section__wrap cybercom__wrap">
-          <div class="section__head row">
-            <div class="col-12 col-lg-7 col-xl-6">
-              <h2 class="--break-all">Улучшить<br>кибербезопасность компаний</h2>
-            </div>
-            <div class="col-12 col-lg-5 col-xl-6">
-              <p>Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой</p>
-            </div>
-          </div>
-          <div class="cybercom-table">
-            <table cellspacing="0" cellpadding="0">
-              <thead>
-                <tr>
-                  <td><span>Товар</span></td>
-                  <td><span>Объем</span></td>
-                  <td><span>Новая цена</span></td>
-                  <td><span>Объем</span></td>
-                  <td><span>Объем</span></td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span>Антисептик для рук Septolab</span></td>
-                  <td><span>канистра 20 л.</span></td>
-                  <td><b>100₽</b></td>
-                  <td><span>канистра 20 л.</span></td>
-                  <td><span>канистра 20 л.</span></td>
-                </tr>
-                <tr>
-                  <td><span>Антисептик для рук Septolab</span></td>
-                  <td><span>канистра 20 л.</span></td>
-                  <td><b>100₽</b></td>
-                  <td><span>канистра 20 л.</span></td>
-                  <td><span>канистра 20 л.</span></td>
-                </tr>
-                <tr>
-                  <td><span>Антисептик для рук Septolab</span></td>
-                  <td><span>канистра 20 л.</span></td>
-                  <td><b>100₽</b></td>
-                  <td><span>канистра 20 л.</span></td>
-                  <td><span>канистра 20 л.</span></td>
-                </tr>
-                <tr>
-                  <td><span>Антисептик для рук Septolab</span></td>
-                  <td><span>канистра 20 л.</span></td>
-                  <td><b>100₽</b></td>
-                  <td><span>канистра 20 л.</span></td>
-                  <td><span>канистра 20 л.</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section improvecyber --page-service">
-      <div class="container-fluid">
-        <div class="section__wrap improvecyber__wrap">
-          <h2 class="--break-all">Улучшить кибербезопасность компаний</h2>
-          <p>Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой</p><img src="img/improveimg.jpg" srcset="img/improveimg@2x.jpg 2x" alt="IMG">
-        </div>
-      </div>
-    </section>
-    <section class="section slidermin --page-service">
-      <div class="container-fluid">
-        <div class="section__wrap slidermin__wrap">
-          <div class="section__head">
-            <h2>Реализованные проекты</h2>
-            <div class="swiper-container slidermin__slider js-slidermin js-lightbox">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект один</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект второй</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev">
+            <div class="menu-mobile__control"><a href="mailto:info@aitek.ru">
                 <svg class="icon">
-                  <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
-                </svg><span>Назад</span>
-              </div>
-              <div class="swiper-button-next"><span>Далее</span>
+                  <use xlink:href="img/sprites/sprite.svg#envelope"></use>
+                </svg></a><a href="tel:+7(4922)44-44-42">
                 <svg class="icon">
-                  <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
+                  <use xlink:href="img/sprites/sprite.svg#phone"></use>
+                </svg></a>
+              <button class="js-menu-open">
+                <svg class="icon">
+                  <use xlink:href="img/sprites/sprite.svg#menu"></use>
                 </svg>
+              </button>
+            </div>
+          </div>
+          <div class="menu__wrap js-menu-el"><a class="menu__logo-dop" href="#dawd">
+              <svg class="icon">
+                <use xlink:href="img/sprites/sprite.svg#logo"></use>
+              </svg></a>
+            <div class="menu__social">
+              <div class="social"><a class="viber" href="#viber">
+                  <svg class="icon">
+                    <use xlink:href="img/sprites/sprite.svg#viber"></use>
+                  </svg></a><a class="whatsapp" href="#whatsapp">
+                  <svg class="icon">
+                    <use xlink:href="img/sprites/sprite.svg#whatsapp"></use>
+                  </svg></a><a class="telegram" href="#telegram">
+                  <svg class="icon">
+                    <use xlink:href="img/sprites/sprite.svg#telegram"></use>
+                  </svg></a></div>
+            </div>
+            <div class="menu__mail"><a href="mailto:info@aitek.ru">info@aitek.ru</a></div>
+            <div class="menu__contact"><em>Ваш город:</em>
+              <select class="js-custom-select" data-placeholder="Выбор города" data-change-number="true">
+                <option value="1" data-phone="+1 (4922) 44-44-42">Владимир</option>
+                <option value="2" data-phone="+2 (4922) 44-44-42" selected>Иваново</option>
+                <option value="3" data-phone="+3 (4922) 44-44-42">Нижний Новгород</option>
+              </select>
+              <!--.custom-select-->
+              <!--  .custom-select__head-->
+              <!--    span Владимир-->
+              <!--    +svg("arrow")-->
+              <div class="menu__mobile-close js-menu-close">
+                <svg class="icon">
+                  <use xlink:href="img/sprites/sprite.svg#close"></use>
+                </svg>
+              </div><a class="js-change-phone" href="tel:+7(4922)44-44-42">+7 (4922) 44-44-42</a>
+            </div>
+            <div class="menu__bottom"><a class="menu__logo" href="#dawd">
+                <svg class="icon">
+                  <use xlink:href="img/sprites/sprite.svg#logo"></use>
+                </svg></a>
+              <nav class="menu__nav">
+                <ul>
+                  <li><a href="#О-компании">О компании</a></li>
+                  <li><a href="#Услуги-и-решения">Услуги и решения</a></li>
+                  <li><a href="#Портфолио-проектов">Портфолио проектов</a></li>
+                  <li><a href="#Работа-в-АйТек">Работа в АйТек</a></li>
+                  <li><a href="#Сервис-и-поддержка">Сервис и поддержка</a></li>
+                  <li><a href="#Контакты">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="menu__bottom-mobile"><a href="#Заявка-на-ремонт">Заявка на ремонт</a><a href="#Состояние-ремонта">Состояние ремонта</a></div>
+            </div>
+            <div class="menu__footer">
+              <ul>
+                <li><a class="viber" href="#viber">
+                    <svg class="icon">
+                      <use xlink:href="img/sprites/sprite.svg#viber2"></use>
+                    </svg></a></li>
+                <li><a class="whatsapp" href="#whatsapp">
+                    <svg class="icon">
+                      <use xlink:href="img/sprites/sprite.svg#whatsapp2"></use>
+                    </svg></a></li>
+                <li><a class="telegram" href="#telegram">
+                    <svg class="icon">
+                      <use xlink:href="img/sprites/sprite.svg#telegram2"></use>
+                    </svg></a></li>
+              </ul>
+              <div><a href="tel:+7(4922)44-44-42">+7 (4922) 44-44-42</a><span>/</span><a href="mailto:info@aitek.ru">info@aitek.ru</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <header class="headerbg"><img src="img/head-img.jpg" srcset="img/head-img@2x.jpg 2x" alt="IMG">
+          <div class="container-fluid">
+            <div class="headerbg__wrap">
+              <h1>Системы безопасности и противожарной защиты</h1>
+              <p>Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему,</p>
+              <button class="btn" data-fancybox data-src="#tingle-form"><span>Cвязаться с нами</span></button>
+              <button class="btn"><span>Посмотреть проекты</span></button>
+            </div>
+          </div>
+        </header>
+        <section class="section slidermin --page-service">
+          <div class="container-fluid">
+            <div class="section__wrap slidermin__wrap">
+              <div class="section__head">
+                <h2>Реализованные проекты</h2>
+              </div>
+              <div class="swiper-container slidermin__slider js-slidermin">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a class="article --slider" href="#">
+                      <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                      <div class="article__info">
+                        <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                        <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="article --slider" href="#">
+                      <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                      <div class="article__info">
+                        <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                        <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="article --slider" href="#">
+                      <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                      <div class="article__info">
+                        <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                        <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="article --slider" href="#">
+                      <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                      <div class="article__info">
+                        <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                        <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="article --slider" href="#">
+                      <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                      <div class="article__info">
+                        <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                        <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="article --slider" href="#">
+                      <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                      <div class="article__info">
+                        <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                        <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="article --slider" href="#">
+                      <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                      <div class="article__info">
+                        <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                        <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="article --slider" href="#">
+                      <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                      <div class="article__info">
+                        <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                        <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="article --slider" href="#">
+                      <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                      <div class="article__info">
+                        <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                        <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                      </div></a></div>
+                  <!--.swiper-slide-->
+                  <!--  .article.--slider-->
+                  <!--    picture-->
+                  <!--      a(href="img/slider-img2.jpg" data-fancybox)-->
+                  <!--      img(src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG")-->
+                  <!--    .article__info-->
+                  <!--      a(href="#")-->
+                  <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+                  <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+                  <!---->
+                  <!--.swiper-slide-->
+                  <!--  .article.--slider-->
+                  <!--    picture-->
+                  <!--      a(href="img/slider-img3.jpg" data-fancybox)-->
+                  <!--      img(src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG")-->
+                  <!--    .article__info-->
+                  <!--      a(href="#")-->
+                  <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+                  <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+                  <!---->
+                  <!--.swiper-slide-->
+                  <!--  .article.--slider-->
+                  <!--    picture-->
+                  <!--      a(href="img/slider-img1.jpg" data-fancybox)-->
+                  <!--      img(src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG")-->
+                  <!--    .article__info-->
+                  <!--      a(href="#")-->
+                  <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+                  <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+                  <!---->
+                  <!--.swiper-slide-->
+                  <!--  .article.--slider-->
+                  <!--    picture-->
+                  <!--      a(href="img/slider-img2.jpg" data-fancybox)-->
+                  <!--      img(src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG")-->
+                  <!--    .article__info-->
+                  <!--      a(href="#")-->
+                  <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+                  <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+                  <!---->
+                  <!--.swiper-slide-->
+                  <!--  .article.--slider-->
+                  <!--    picture-->
+                  <!--      a(href="img/slider-img3.jpg" data-fancybox)-->
+                  <!--      img(src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG")-->
+                  <!--    .article__info-->
+                  <!--      a(href="#")-->
+                  <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+                  <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                  <svg class="icon">
+                    <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
+                  </svg><span>Назад</span>
+                </div>
+                <div class="swiper-button-next"><span>Далее</span>
+                  <svg class="icon">
+                    <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="section photogallery">
-      <div class="container-fluid">
-        <div class="section__wrap photogallery__wrap">
-          <div class="section__head">
-            <h2>Фотогаллерея</h2>
-          </div>
-          <div class="photogallery__grid row">
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-6"><span></span></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><span></span></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><span></span></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><span></span></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
-            <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-6"><span></span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section blockblue">
-      <div class="container-fluid">
-        <div class="section__wrap blockblue__wrap">
-          <div class="section__head blockblue__content">
-            <h2>Чем мы можем вам помочь?</h2>
-            <p>Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой</p>
-            <button class="btn"><span>Cвязаться с нами</span></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section blockvideo">
-      <div class="container-fluid">
-        <div class="section__wrap blockvideo__wrap">
-          <div class="section__head blockblue__content">
-            <h2>Посмотрите видео</h2>
-            <div class="blockvideo__video">
-              <video id="player">
-                <source src="img/Sony_Columbia PicturesLogo.mp4" type="video/mp4">
-              </video>
+        </section>
+        <section class="section advantage --page-service">
+          <div class="container-fluid">
+            <div class="section__wrap advantage__wrap">
+              <div class="section__head">
+                <h2>Преимущества</h2>
+                <div class="advantage__grid row">
+                  <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
+                      <svg class="icon">
+                        <use xlink:href="img/sprites/sprite.svg#web-browser"></use>
+                      </svg></i>
+                    <h4>Профессионализм</h4>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div>
+                  <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
+                      <svg class="icon">
+                        <use xlink:href="img/sprites/sprite.svg#voice"></use>
+                      </svg></i>
+                    <h4>Комплексный подход</h4>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div>
+                  <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
+                      <svg class="icon">
+                        <use xlink:href="img/sprites/sprite.svg#weather"></use>
+                      </svg></i>
+                    <h4>Квалификация</h4>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div>
+                  <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
+                      <svg class="icon">
+                        <use xlink:href="img/sprites/sprite.svg#notes"></use>
+                      </svg></i>
+                    <h4>Комплексный подход</h4>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div>
+                  <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
+                      <svg class="icon">
+                        <use xlink:href="img/sprites/sprite.svg#video-calling"></use>
+                      </svg></i>
+                    <h4>Комплексный подход</h4>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div>
+                  <div class="advantage__grid-item col-12 col-sm-6 col-lg-4"><i>
+                      <svg class="icon">
+                        <use xlink:href="img/sprites/sprite.svg#shortcut"></use>
+                      </svg></i>
+                    <h4>Квалификация</h4>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+        <section class="section cybercom --page-service">
+          <div class="container-fluid">
+            <div class="section__wrap cybercom__wrap">
+              <div class="section__head row">
+                <div class="col-12 col-lg-7 col-xl-6">
+                  <h2 class="--break-all">Улучшить<br>кибербезопасность компаний</h2>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-6">
+                  <p>Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой</p>
+                </div>
+              </div>
+              <div class="cybercom-table">
+                <table cellspacing="0" cellpadding="0">
+                  <thead>
+                    <tr>
+                      <td><span>Товар</span></td>
+                      <td><span>Объем</span></td>
+                      <td><span>Новая цена</span></td>
+                      <td><span>Объем</span></td>
+                      <td><span>Объем</span></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span>Антисептик для рук Septolab</span></td>
+                      <td><span>канистра 20 л.</span></td>
+                      <td><b>100₽</b></td>
+                      <td><span>канистра 20 л.</span></td>
+                      <td><span>канистра 20 л.</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Антисептик для рук Septolab</span></td>
+                      <td><span>канистра 20 л.</span></td>
+                      <td><b>100₽</b></td>
+                      <td><span>канистра 20 л.</span></td>
+                      <td><span>канистра 20 л.</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Антисептик для рук Septolab</span></td>
+                      <td><span>канистра 20 л.</span></td>
+                      <td><b>100₽</b></td>
+                      <td><span>канистра 20 л.</span></td>
+                      <td><span>канистра 20 л.</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Антисептик для рук Septolab</span></td>
+                      <td><span>канистра 20 л.</span></td>
+                      <td><b>100₽</b></td>
+                      <td><span>канистра 20 л.</span></td>
+                      <td><span>канистра 20 л.</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section improvecyber --page-service">
+          <div class="container-fluid">
+            <div class="section__wrap improvecyber__wrap">
+              <h2 class="--break-all">Улучшить кибербезопасность компаний</h2>
+              <p>Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой</p><img src="img/improveimg.jpg" srcset="img/improveimg@2x.jpg 2x" alt="IMG">
+            </div>
+          </div>
+        </section>
+        <section class="section slidermin --page-service">
+          <div class="container-fluid">
+            <div class="section__wrap slidermin__wrap">
+              <div class="section__head">
+                <h2>Реализованные проекты</h2>
+              </div>
+              <div class="swiper-container slidermin__slider js-slidermin js-lightbox">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a class="article --min" href="#">
+                      <picture><span>Проект один</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+                  <div class="swiper-slide"><a class="article --min" href="#">
+                      <picture><span>Проект второй</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+                  <div class="swiper-slide"><a class="article --min" href="#">
+                      <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+                  <div class="swiper-slide"><a class="article --min" href="#">
+                      <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+                  <div class="swiper-slide"><a class="article --min" href="#">
+                      <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+                  <div class="swiper-slide"><a class="article --min" href="#">
+                      <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                  <svg class="icon">
+                    <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
+                  </svg><span>Назад</span>
+                </div>
+                <div class="swiper-button-next"><span>Далее</span>
+                  <svg class="icon">
+                    <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section photogallery">
+          <div class="container-fluid">
+            <div class="section__wrap photogallery__wrap">
+              <div class="section__head">
+                <h2>Фотогаллерея</h2>
+              </div>
+              <div class="photogallery__grid row">
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><a href="img/gridimg-1.jpg" data-fancybox="photogallery"><img src="img/gridimg-1.jpg"></a></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-6"><span></span></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><span></span></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><span></span></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-2"><span></span></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-3"><span></span></div>
+                <div class="photogallery__item col-12 col-sm-6 col-lg-4 col-xl-6"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section blockblue">
+          <div class="container-fluid">
+            <div class="section__wrap blockblue__wrap">
+              <div class="section__head blockblue__content">
+                <h2>Чем мы можем вам помочь?</h2>
+                <p>Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему, глиссандо заканчивает деструктивный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой</p>
+                <button class="btn"><span>Cвязаться с нами</span></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section blockvideo">
+          <div class="container-fluid">
+            <div class="section__wrap blockvideo__wrap">
+              <div class="section__head blockblue__content">
+                <h2>Посмотрите видео</h2>
+                <div class="blockvideo__video">
+                  <video id="player">
+                    <source src="img/SonyColumbia.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     <footer class="footer">
       <div class="container-fluid">
         <div class="footer__wrap">
@@ -432,7 +485,7 @@
               </svg></a></span></div>
       </div>
     </footer>
-    <script src="js/main.min.js"></script>
-    <script src="js/vendor.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
   </body>
 </html>

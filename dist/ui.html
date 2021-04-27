@@ -14,11 +14,11 @@
     <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" async rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" async rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" async rel="stylesheet">
   </head>
   <body>
     <button class="btn" data-fancybox data-src="#tingle-form"><span>Form</span></button>
@@ -55,35 +55,29 @@
       <form class="tingle-repair__content js-form-validator" data-submit="tingleRepairSubmit">
         <h2 class="--fw-700">Заявка на ремонт</h2>
         <div class="tingle-repair__check">
-          <div>
+          <fieldset>
             <label class="input-checbox --radio" for="input-radio-0">
               <input type="radio" name="radio" id="input-radio-0" required><span>Негарантийный ремонт</span>
             </label>
-          </div>
-          <div>
             <label class="input-checbox --radio" for="input-radio-1">
               <input type="radio" name="radio" id="input-radio-1" required><span>Гарантийный ремонт</span>
             </label>
-          </div>
-          <div>
             <label class="input-checbox --radio" for="input-radio-2">
               <input type="radio" name="radio" id="input-radio-2" required><span>Гарантийный ремонт (Системный блок АйТек)</span>
             </label>
-          </div>
-          <div>
-            <label class="input-checbox --radio" for="input-radio-3">
-              <input type="radio" name="radio" id="input-radio-3" required><span>Владимир</span>
+          </fieldset>
+          <fieldset>
+            <label class="input-checbox --radio" for="input-radio2-0">
+              <input type="radio" name="radio2" id="input-radio2-0" required><span>Владимир</span>
             </label>
-          </div>
-          <div>
-            <label class="input-checbox --radio" for="input-radio-4">
-              <input type="radio" name="radio" id="input-radio-4" required><span>Вл. область и другие регионы</span>
+            <label class="input-checbox --radio" for="input-radio2-1">
+              <input type="radio" name="radio2" id="input-radio2-1" required><span>Вл. область и другие регионы</span>
             </label>
-          </div>
+          </fieldset>
         </div>
         <div class="tingle-repair__form">
-          <input type="text" placeholder="Компания" name="company" required>
-          <input type="text" placeholder="Наименование товара" name="name-prod" required>
+          <input class="--min" type="text" placeholder="Компания" name="company" required>
+          <input class="--min" type="text" placeholder="Наименование товара" name="name-prod" required>
           <input type="text" placeholder="Контактное лицо" name="contact" required>
           <input type="text" placeholder="Заявленная неисправность" name="zaiav-neispr" required>
           <input class="js-input-phone" type="phone" placeholder="Телефон для связи" name="name" required>
@@ -147,7 +141,7 @@
         <div class="headerbg__wrap">
           <h1>Системы безопасности и противожарной защиты</h1>
           <p>Хамбакер неравномерен. Плавно-мобильное голосовое поле просветляет резкий голос. Развивая эту тему,</p>
-          <button class="btn"><span>Cвязаться с нами</span></button>
+          <button class="btn" data-fancybox data-src="#tingle-form"><span>Cвязаться с нами</span></button>
           <button class="btn"><span>Посмотреть проекты</span></button>
         </div>
       </div>
@@ -275,32 +269,32 @@
         <div class="section__wrap slidermin__wrap">
           <div class="section__head">
             <h2>Реализованные проекты</h2>
-            <div class="swiper-container slidermin__slider js-slidermin js-lightbox">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект один</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект второй</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-                <div class="swiper-slide"><a class="article --min" href="#">
-                    <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev">
-                <svg class="icon">
-                  <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
-                </svg><span>Назад</span>
-              </div>
-              <div class="swiper-button-next"><span>Далее</span>
-                <svg class="icon">
-                  <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
-                </svg>
-              </div>
+          </div>
+          <div class="swiper-container slidermin__slider js-slidermin js-lightbox">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a class="article --min" href="#">
+                  <picture><span>Проект один</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+              <div class="swiper-slide"><a class="article --min" href="#">
+                  <picture><span>Проект второй</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+              <div class="swiper-slide"><a class="article --min" href="#">
+                  <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+              <div class="swiper-slide"><a class="article --min" href="#">
+                  <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+              <div class="swiper-slide"><a class="article --min" href="#">
+                  <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+              <div class="swiper-slide"><a class="article --min" href="#">
+                  <picture><span>Проект третий</span><img src="img/project.jpg" srcset="img/project@2x.png" alt="IMG"></picture></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev">
+              <svg class="icon">
+                <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
+              </svg><span>Назад</span>
+            </div>
+            <div class="swiper-button-next"><span>Далее</span>
+              <svg class="icon">
+                <use xlink:href="img/sprites/sprite.svg#arrowline"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -351,7 +345,7 @@
             <h2>Посмотрите видео</h2>
             <div class="blockvideo__video">
               <video id="player">
-                <source src="img/Sony_Columbia PicturesLogo.mp4" type="video/mp4">
+                <source src="img/SonyColumbia.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -483,62 +477,111 @@
           <div class="section__head">
             <h2>Текущие вакансии</h2>
           </div>
-          <div class="swiper-container slidermin__slider js-slidermin js-lightbox">
+          <div class="swiper-container slidermin__slider js-slidermin">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
+              <div class="swiper-slide"><a class="article --slider" href="#">
+                  <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info">
+                    <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img2.jpg" data-fancybox></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
+                  </div></a></div>
+              <div class="swiper-slide"><a class="article --slider" href="#">
+                  <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info">
+                    <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img3.jpg" data-fancybox></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
+                  </div></a></div>
+              <div class="swiper-slide"><a class="article --slider" href="#">
+                  <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info">
+                    <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
+                  </div></a></div>
+              <div class="swiper-slide"><a class="article --slider" href="#">
+                  <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info">
+                    <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img2.jpg" data-fancybox></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
+                  </div></a></div>
+              <div class="swiper-slide"><a class="article --slider" href="#">
+                  <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info">
+                    <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img3.jpg" data-fancybox></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
+                  </div></a></div>
+              <div class="swiper-slide"><a class="article --slider" href="#">
+                  <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info">
+                    <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
+                  </div></a></div>
+              <div class="swiper-slide"><a class="article --slider" href="#">
+                  <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info">
+                    <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div></a></div>
+              <div class="swiper-slide"><a class="article --slider" href="#">
+                  <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info">
+                    <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div></a></div>
+              <div class="swiper-slide"><a class="article --slider" href="#">
+                  <picture><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info">
+                    <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div></a></div>
+              <!--.swiper-slide-->
+              <!--  .article.--slider-->
+              <!--    picture-->
+              <!--      a(href="img/slider-img2.jpg" data-fancybox)-->
+              <!--      img(src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG")-->
+              <!--    .article__info-->
+              <!--      a(href="#")-->
+              <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+              <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+              <!---->
+              <!--.swiper-slide-->
+              <!--  .article.--slider-->
+              <!--    picture-->
+              <!--      a(href="img/slider-img3.jpg" data-fancybox)-->
+              <!--      img(src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG")-->
+              <!--    .article__info-->
+              <!--      a(href="#")-->
+              <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+              <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+              <!---->
+              <!--.swiper-slide-->
+              <!--  .article.--slider-->
+              <!--    picture-->
+              <!--      a(href="img/slider-img1.jpg" data-fancybox)-->
+              <!--      img(src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG")-->
+              <!--    .article__info-->
+              <!--      a(href="#")-->
+              <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+              <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+              <!---->
+              <!--.swiper-slide-->
+              <!--  .article.--slider-->
+              <!--    picture-->
+              <!--      a(href="img/slider-img2.jpg" data-fancybox)-->
+              <!--      img(src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG")-->
+              <!--    .article__info-->
+              <!--      a(href="#")-->
+              <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+              <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+              <!---->
+              <!--.swiper-slide-->
+              <!--  .article.--slider-->
+              <!--    picture-->
+              <!--      a(href="img/slider-img3.jpg" data-fancybox)-->
+              <!--      img(src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG")-->
+              <!--    .article__info-->
+              <!--      a(href="#")-->
+              <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+              <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev">
@@ -561,7 +604,7 @@
           <div class="section__head">
             <h2>Текущие вакансии</h2>
           </div>
-          <div class="swiper-container slidermin__slider js-slidermin js-lightbox">
+          <div class="swiper-container slidermin__slider js-slidermin">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="article --slider">
@@ -574,16 +617,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a href="img/slider-img2.jpg" data-fancybox></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
-                  <div class="article__info"><a href="#">
-                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
-                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="article --slider">
-                  <picture><a href="img/slider-img3.jpg" data-fancybox></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -601,7 +635,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a href="img/slider-img2.jpg" data-fancybox></a><img src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
@@ -610,13 +644,98 @@
               </div>
               <div class="swiper-slide">
                 <div class="article --slider">
-                  <picture><a href="img/slider-img3.jpg" data-fancybox></a><img src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG"></picture>
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
                   <div class="article__info"><a href="#">
                       <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
                     <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
                   </div>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="article --slider">
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info"><a href="#">
+                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="article --slider">
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info"><a href="#">
+                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="article --slider">
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info"><a href="#">
+                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="article --slider">
+                  <picture><a href="img/slider-img1.jpg" data-fancybox></a><img src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG"></picture>
+                  <div class="article__info"><a href="#">
+                      <h4>АйТек - Поздравляет всех клиентов с Новым Годом!</h4></a>
+                    <p>Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от</p>
+                  </div>
+                </div>
+              </div>
+              <!--.swiper-slide-->
+              <!--  .article.--slider-->
+              <!--    picture-->
+              <!--      a(href="img/slider-img2.jpg" data-fancybox)-->
+              <!--      img(src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG")-->
+              <!--    .article__info-->
+              <!--      a(href="#")-->
+              <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+              <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+              <!---->
+              <!--.swiper-slide-->
+              <!--  .article.--slider-->
+              <!--    picture-->
+              <!--      a(href="img/slider-img3.jpg" data-fancybox)-->
+              <!--      img(src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG")-->
+              <!--    .article__info-->
+              <!--      a(href="#")-->
+              <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+              <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+              <!---->
+              <!--.swiper-slide-->
+              <!--  .article.--slider-->
+              <!--    picture-->
+              <!--      a(href="img/slider-img1.jpg" data-fancybox)-->
+              <!--      img(src="img/slider-img1.jpg" srcset="img/slider-img1@2x.jpg" alt="IMG")-->
+              <!--    .article__info-->
+              <!--      a(href="#")-->
+              <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+              <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+              <!---->
+              <!--.swiper-slide-->
+              <!--  .article.--slider-->
+              <!--    picture-->
+              <!--      a(href="img/slider-img2.jpg" data-fancybox)-->
+              <!--      img(src="img/slider-img2.jpg" srcset="img/slider-img2@2x.jpg" alt="IMG")-->
+              <!--    .article__info-->
+              <!--      a(href="#")-->
+              <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+              <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
+              <!---->
+              <!--.swiper-slide-->
+              <!--  .article.--slider-->
+              <!--    picture-->
+              <!--      a(href="img/slider-img3.jpg" data-fancybox)-->
+              <!--      img(src="img/slider-img3.jpg" srcset="img/slider-img3@2x.jpg" alt="IMG")-->
+              <!--    .article__info-->
+              <!--      a(href="#")-->
+              <!--        h4 АйТек - Поздравляет всех клиентов с Новым Годом!-->
+              <!--      p Угловая скорость заставляет перейти к более сложной системе уравнений, если добавить интеграл от-->
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev">
@@ -661,7 +780,7 @@
               </svg></a></span></div>
       </div>
     </footer>
-    <script src="js/main.min.js"></script>
-    <script src="js/vendor.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
   </body>
 </html>

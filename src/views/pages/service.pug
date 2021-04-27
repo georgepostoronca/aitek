@@ -5,28 +5,32 @@ block variables
   - const title = "service"
 
 block content
-  - var menuFixed = "--sticky"
-  include ../../blocks/modules/menu/menu
-  include ../../blocks/modules/headerbg/headerbg
+  #wrapper
+    - var menuFixed = "--sticky"
+    include ../../blocks/modules/menu/menu
 
-  - var sliderTitle = "Реализованные проекты"
-  - var sliderClass = "--page-service"
-  include ../../blocks/modules/slidermin/slidermin
+    main
+      include ../../blocks/modules/headerbg/headerbg
 
-  - var advantageClass = "--page-service"
-  include ../../blocks/modules/advantage/advantage
+      - var sliderTitle = "Реализованные проекты"
+      - var sliderClass = "--page-service"
+      include ../../blocks/modules/slidermin/slidermin
 
-  - var cybercomClass = "--page-service"
-  include ../../blocks/modules/cybercom/cybercom
+      - var advantageClass = "--page-service"
+      include ../../blocks/modules/advantage/advantage
 
-  - var improvecyberClass = "--page-service"
-  include ../../blocks/modules/improvecyber/improvecyber
+      - var cybercomClass = "--page-service"
+      include ../../blocks/modules/cybercom/cybercom
 
-  - var projectClass = "--page-service"
-  include ../../blocks/modules/project/project
-  include ../../blocks/modules/photogallery/photogallery
-  include ../../blocks/modules/blockblue/blockblue
-  include ../../blocks/modules/blockvideo/blockvideo
+      - var improvecyberClass = "--page-service"
+      include ../../blocks/modules/improvecyber/improvecyber
+
+      - var projectClass = "--page-service"
+      include ../../blocks/modules/project/project
+      include ../../blocks/modules/photogallery/photogallery
+      include ../../blocks/modules/blockblue/blockblue
+      include ../../blocks/modules/blockvideo/blockvideo
+
   include ../../blocks/modules/footer/footer
 
 block scripts

@@ -31,16 +31,23 @@
         h2.--fw-700 Заявка на ремонт
 
         .tingle-repair__check
-            - var radios = ["Негарантийный ремонт", "Гарантийный ремонт", "Гарантийный ремонт (Системный блок АйТек)", "Владимир", "Вл. область и другие регионы"]
-            for radio, index in radios
-                div
+            fieldset
+                - var radios = ["Негарантийный ремонт", "Гарантийный ремонт", "Гарантийный ремонт (Системный блок АйТек)"]
+                for radio, index in radios
                     label(for="input-radio-"+index).input-checbox.--radio
                         input(type="radio" name="radio" id="input-radio-"+index required)
                         span=radio
 
+            fieldset
+                - var radios2 = ["Владимир", "Вл. область и другие регионы"]
+                for radio, index in radios2
+                    label(for="input-radio2-"+index).input-checbox.--radio
+                        input(type="radio" name="radio2" id="input-radio2-"+index required)
+                        span=radio
+
         .tingle-repair__form
-            input(type="text" placeholder="Компания" name="company" required)
-            input(type="text" placeholder="Наименование товара" name="name-prod" required)
+            input(type="text" placeholder="Компания" name="company" required).--min
+            input(type="text" placeholder="Наименование товара" name="name-prod" required).--min
             input(type="text" placeholder="Контактное лицо" name="contact" required)
             input(type="text" placeholder="Заявленная неисправность" name="zaiav-neispr" required)
             input.js-input-phone(type="phone" placeholder="Телефон для связи" name="name" required)

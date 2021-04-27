@@ -14,11 +14,11 @@
     <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" async rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" async rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" async rel="stylesheet">
   </head>
   <body>
     <div id="wrapper">
@@ -121,20 +121,131 @@
               <div class="repair__grid row">
                 <div class="repair__grid-item col-12 col-md-6 col-xl-4"><b>Гарантийный ремонт</b><span>(кроме системных блоков АйТек):</span>
                   <div><span><b>45</b>рабочих дней</span><span><b>50</b>рабочих дней</span></div>
-                  <button class="btn --light"><span>Подробнее на схеме</span></button>
+                  <button class="btn --light" data-fancybox data-src="#tingle-img"><span>Подробнее на схеме</span></button>
                 </div>
                 <div class="repair__grid-item col-12 col-md-6 col-xl-4"><b>Негарантийный ремонт</b><span></span>
                   <div><span><b>45</b>рабочих дней</span><span><b>50</b>рабочих дней</span></div>
-                  <button class="btn --light"><span>Подробнее на схеме</span></button>
+                  <button class="btn --light" data-fancybox data-src="#tingle-img"><span>Подробнее на схеме</span></button>
                 </div>
                 <div class="repair__grid-item col-12 col-md-6 col-xl-4"><b>Гарантийный ремонт</b><span>(кроме системных блоков АйТек):</span>
                   <div><span><b>45</b>рабочих дней</span><span><b>50</b>рабочих дней</span></div>
-                  <button class="btn --light"><span>Подробнее на схеме</span></button>
+                  <button class="btn --light" data-fancybox data-src="#tingle-img"><span>Подробнее на схеме</span></button>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <div class="tingle --min tingle-form" id="tingle-form">
+          <div class="tingle-form__content">
+            <h3 class="--min">Обратная связь</h3>
+            <form class="js-form-validator" data-submit="tingleFormSubmit">
+              <input type="text" placeholder="Имя" minlength="3" name="name" required>
+              <input class="js-input-phone" type="phone" placeholder="Телефон" name="name" required>
+              <input type="email" placeholder="Email" name="email" required>
+              <textarea placeholder="Сообщение" name="message" minlength="3" required></textarea>
+              <label class="input-checbox" for="input-1">
+                <input type="checkbox" name="check" id="input-1" required><span>Согласие на обработку данных</span>
+              </label>
+              <button class="btn" type="submit"><span>Отправить</span></button>
+            </form>
+          </div>
+          <script>
+            function tingleFormSubmit(e) {
+              console.log(e)
+            }
+            
+            
+          </script>
+        </div>
+        <div class="tingle --max tingle-repair" id="tingle-repair">
+          <div class="tingle-repair__head">
+            <h4>Плановый срок ремонта не более:<span>35 рабочих дней</span></h4>
+            <p>Это максимальный срок, учитывающий различныес ценарии и нормативы сервисного центра. Срок ремонта может быть изменен в случаях ремонта во внешнем сервисном центре.</p>
+          </div>
+          <form class="tingle-repair__content js-form-validator" data-submit="tingleRepairSubmit">
+            <h2 class="--fw-700">Заявка на ремонт</h2>
+            <div class="tingle-repair__check">
+              <fieldset>
+                <label class="input-checbox --radio" for="input-radio-0">
+                  <input type="radio" name="radio" id="input-radio-0" required><span>Негарантийный ремонт</span>
+                </label>
+                <label class="input-checbox --radio" for="input-radio-1">
+                  <input type="radio" name="radio" id="input-radio-1" required><span>Гарантийный ремонт</span>
+                </label>
+                <label class="input-checbox --radio" for="input-radio-2">
+                  <input type="radio" name="radio" id="input-radio-2" required><span>Гарантийный ремонт (Системный блок АйТек)</span>
+                </label>
+              </fieldset>
+              <fieldset>
+                <label class="input-checbox --radio" for="input-radio2-0">
+                  <input type="radio" name="radio2" id="input-radio2-0" required><span>Владимир</span>
+                </label>
+                <label class="input-checbox --radio" for="input-radio2-1">
+                  <input type="radio" name="radio2" id="input-radio2-1" required><span>Вл. область и другие регионы</span>
+                </label>
+              </fieldset>
+            </div>
+            <div class="tingle-repair__form">
+              <input class="--min" type="text" placeholder="Компания" name="company" required>
+              <input class="--min" type="text" placeholder="Наименование товара" name="name-prod" required>
+              <input type="text" placeholder="Контактное лицо" name="contact" required>
+              <input type="text" placeholder="Заявленная неисправность" name="zaiav-neispr" required>
+              <input class="js-input-phone" type="phone" placeholder="Телефон для связи" name="name" required>
+              <input type="text" placeholder="Серийный номер товара" name="name" required>
+              <input type="email" placeholder="Email" name="email" required>
+              <input type="text" placeholder="Номер документа о покупке" name="number-doc" required>
+              <textarea placeholder="Комментарий" name="message" minlength="3" required></textarea>
+              <div>
+                <button class="btn" type="submit"><span>Отправить</span></button>
+              </div>
+            </div>
+          </form>
+          <script>
+            function tingleRepairSubmit(e) {
+              console.log(e)
+            }
+            
+            
+          </script>
+        </div>
+        <div class="tingle --max tingle-img" id="tingle-img">
+          <div class="tingle-img__head">
+            <h4>Гарантий ремонт</h4><span>(кроме системных блоков АйТек):</span>
+          </div>
+          <div class="tingle-img__content"><img src="./img/remont-1.jpg" srcset="img/remont-1@2x.jpg 2x" alt="IMG"></div>
+        </div>
+        <div class="tingle --middle tingle-slider" id="tingle-slider">
+          <div class="tingle-slider__content">
+            <div class="modal-slider swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              </div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img/modal-img.png" srcset="img/modal-img@2x.png 2x" alt="IMG"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <div class="container-fluid">
@@ -165,7 +276,7 @@
         </div>
       </footer>
     </div>
-    <script src="js/main.min.js"></script>
-    <script src="js/vendor.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
   </body>
 </html>

@@ -52,6 +52,9 @@ if(changeNumberLink) {
 // Head Slider
 const headslid = new Swiper('.js-headslider', {
   loop: true,
+  autoplay: {
+    delay: 4000,
+  },
   pagination: {
     el: '.js-headslider-pagination',
     clickable: true
@@ -188,7 +191,7 @@ if(sliderminDetailEl) {
 const setttingsSliderTop = {
   spaceBetween: 28,
   slidesPerView: 5,
-  freeMode: true,
+  loopedSlides: 5,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
   autoHeight: true,
@@ -211,6 +214,7 @@ const setttingsSliderTop = {
 const setttingsSliderBottom = {
   spaceBetween: 10,
   centeredSlides: true,
+  loop: true,
   thumbs: {
     swiper: galleryThumbs
   },
@@ -224,8 +228,16 @@ $("[data-fancybox]").fancybox({
     // console.log("show", galleryThumbs);
     galleryThumbs.destroy();
     galleryTop.destroy();
-    new Swiper('.gallery-thumbs', setttingsSliderTop);
-    new Swiper('.gallery-top', setttingsSliderBottom);
+
+    let galleryThumbsReinit = new Swiper('.gallery-thumbs', setttingsSliderTop);
+    new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      centeredSlides: true,
+      loop: true,
+      thumbs: {
+        swiper: galleryThumbsReinit
+      },
+    });
   }
 });
 
