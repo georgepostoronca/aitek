@@ -1100,12 +1100,13 @@ textarea {
     width: 156px;
 
     @media(max-width: 768px) {
+      margin: auto;
       margin-bottom: 15px;
     }
 
-    @media(max-width: 480px) {
-      width: 100%;
-    }
+    // @media(max-width: 480px) {
+    //   width: 100%;
+    // }
 
     img {
       width: 100%;

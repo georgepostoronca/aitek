@@ -5,24 +5,31 @@ section.contact
 
       address.address
         .address__item
-          span Для сообщений
-          a.ico(href="#viber")
+          h4 Общие вопросы
+          p 8 800 555 99 53
+          p info@aitek.ru
+          a.ico.telegram(href="#tel")
+            +svg("telegram3")
+            span telegram
+          a.ico.viber(href="#viber")
             +svg("viber")
-          a.ico(href="#telegram")
-            +svg("telegram")
-          a.phone(href="tel:88005559953") +8 800 555 99 53
+            span viber
+          a.ico.whatsapp(href="#whatsapp")
+            +svg("whatsapp")
+            span whatsapp
+          
+        .address__item
+          h4 Работа в АйТек
+          p 8 959 050 40 41, доб 4859
+          p hr@aitek.ru
 
         .address__item
-          span Для сервиса
-          a.ico(href="#telegram")
-            +svg("telegram")
-          a.phone(href="tel:88005559953") +8 800 555 99 53
-
-        .address__item
-          span Тех.поддержка
-          a.ico(href="#telegram")
-            +svg("telegram")
-          a.phone(href="mailto:aitek@gmail.com") aitek@gmail.com
+          h4 Техническая поддержка
+          p 8 800 555 99 53
+          p info@aitek.ru
+          a.ico.telegram(href="#telegram")
+            +svg("telegram3")
+            span telegram
 
       .contact-tab.js-tab
         .contact-tab__head
@@ -39,6 +46,7 @@ section.contact
                   li
                     em Адрес
                     span 11745 улица Дорожная дом 70б
+                    small Отдельный вход с левой стороны здания (со стороны ул. Мира) 3-й этаж
 
                   li
                     em Телефон

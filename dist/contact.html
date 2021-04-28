@@ -14,11 +14,11 @@
     <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" async rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" async rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" async rel="stylesheet">
   </head>
   <body>
     <div id="wrapper">
@@ -117,21 +117,33 @@
             <div class="contact__wrap">
               <h2>Контакты</h2>
               <address class="address">
-                <div class="address__item"><span>Для сообщений</span><a class="ico" href="#viber">
+                <div class="address__item">
+                  <h4>Общие вопросы</h4>
+                  <p>8 800 555 99 53</p>
+                  <p>info@aitek.ru</p><a class="ico telegram" href="#tel">
+                    <svg class="icon">
+                      <use xlink:href="img/sprites/sprite.svg#telegram3"></use>
+                    </svg><span>telegram</span></a><a class="ico viber" href="#viber">
                     <svg class="icon">
                       <use xlink:href="img/sprites/sprite.svg#viber"></use>
-                    </svg></a><a class="ico" href="#telegram">
+                    </svg><span>viber</span></a><a class="ico whatsapp" href="#whatsapp">
                     <svg class="icon">
-                      <use xlink:href="img/sprites/sprite.svg#telegram"></use>
-                    </svg></a><a class="phone" href="tel:88005559953">+8 800 555 99 53</a></div>
-                <div class="address__item"><span>Для сервиса</span><a class="ico" href="#telegram">
+                      <use xlink:href="img/sprites/sprite.svg#whatsapp"></use>
+                    </svg><span>whatsapp</span></a>
+                </div>
+                <div class="address__item">
+                  <h4>Работа в АйТек</h4>
+                  <p>8 959 050 40 41, доб 4859</p>
+                  <p>hr@aitek.ru</p>
+                </div>
+                <div class="address__item">
+                  <h4>Техническая поддержка</h4>
+                  <p>8 800 555 99 53</p>
+                  <p>info@aitek.ru</p><a class="ico telegram" href="#telegram">
                     <svg class="icon">
-                      <use xlink:href="img/sprites/sprite.svg#telegram"></use>
-                    </svg></a><a class="phone" href="tel:88005559953">+8 800 555 99 53</a></div>
-                <div class="address__item"><span>Тех.поддержка</span><a class="ico" href="#telegram">
-                    <svg class="icon">
-                      <use xlink:href="img/sprites/sprite.svg#telegram"></use>
-                    </svg></a><a class="phone" href="mailto:aitek@gmail.com">aitek@gmail.com</a></div>
+                      <use xlink:href="img/sprites/sprite.svg#telegram3"></use>
+                    </svg><span>telegram</span></a>
+                </div>
               </address>
               <div class="contact-tab js-tab">
                 <div class="contact-tab__head">
@@ -145,7 +157,7 @@
                     <div>
                       <h3>Офис г. Владимир 1</h3>
                       <ul>
-                        <li><em>Адрес</em><span>11745 улица Дорожная дом 70б</span></li>
+                        <li><em>Адрес</em><span>11745 улица Дорожная дом 70б</span><small>Отдельный вход с левой стороны здания (со стороны ул. Мира) 3-й этаж</small></li>
                         <li><em>Телефон</em><a href="tel:89590504041">8 959 050 40 41</a></li>
                         <li><em>Email</em><a href="mailto:aitek@gmail.com">aitek@gmail.com</a></li>
                       </ul>
@@ -158,7 +170,7 @@
                     <div>
                       <h3>Офис г. Владимир 2</h3>
                       <ul>
-                        <li><em>Адрес</em><span>11745 улица Дорожная дом 70б</span></li>
+                        <li><em>Адрес</em><span>11745 улица Дорожная дом 70б</span><small>Отдельный вход с левой стороны здания (со стороны ул. Мира) 3-й этаж</small></li>
                         <li><em>Телефон</em><a href="tel:89590504041">8 959 050 40 41</a></li>
                         <li><em>Email</em><a href="mailto:aitek@gmail.com">aitek@gmail.com</a></li>
                       </ul>
@@ -171,7 +183,7 @@
                     <div>
                       <h3>Офис г. Владимир 3</h3>
                       <ul>
-                        <li><em>Адрес</em><span>11745 улица Дорожная дом 70б</span></li>
+                        <li><em>Адрес</em><span>11745 улица Дорожная дом 70б</span><small>Отдельный вход с левой стороны здания (со стороны ул. Мира) 3-й этаж</small></li>
                         <li><em>Телефон</em><a href="tel:89590504041">8 959 050 40 41</a></li>
                         <li><em>Email</em><a href="mailto:aitek@gmail.com">aitek@gmail.com</a></li>
                       </ul>
@@ -184,7 +196,7 @@
                     <div>
                       <h3>Офис г. Владимир 4</h3>
                       <ul>
-                        <li><em>Адрес</em><span>11745 улица Дорожная дом 70б</span></li>
+                        <li><em>Адрес</em><span>11745 улица Дорожная дом 70б</span><small>Отдельный вход с левой стороны здания (со стороны ул. Мира) 3-й этаж</small></li>
                         <li><em>Телефон</em><a href="tel:89590504041">8 959 050 40 41</a></li>
                         <li><em>Email</em><a href="mailto:aitek@gmail.com">aitek@gmail.com</a></li>
                       </ul>
@@ -251,7 +263,7 @@
         </div>
       </footer>
     </div>
-    <script src="js/main.min.js"></script>
-    <script src="js/vendor.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
   </body>
 </html>
