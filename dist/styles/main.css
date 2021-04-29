@@ -5323,6 +5323,10 @@ textarea {
   display: none;
 }
 
+.slidermin {
+  max-width: 100vw;
+}
+
 .slidermin.--page-service .slidermin__wrap {
   padding-top: 66px;
   padding-bottom: 0;
@@ -5531,6 +5535,10 @@ textarea {
 
 .advantage__grid-item h4 {
   margin-bottom: 19px;
+}
+
+.cybercom {
+  max-width: 100vw;
 }
 
 .cybercom.--page-service .cybercom__wrap {
@@ -6713,8 +6721,9 @@ table tbody b {
 }
 
 .parteners-grid__scroll {
-  height: 493px;
-  overflow: auto;
+  height: 335px;
+  overflow: hidden;
+  transition: height 0.5s;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 38px;

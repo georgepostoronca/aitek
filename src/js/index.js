@@ -330,6 +330,16 @@ function scrolled(o, type) {
 window.scrolledFn = scrolled;
 
 
+// scroll parteners off from start
+$(document).ready(function() {
+  if($('.more-parteners').length) {
+    $('.more-parteners').on('click', function(e) {
+      e.preventDefault();
+      $('.parteners-grid__scroll').css({'overflow': 'auto', 'height': '493px'})
+    })
+  }
+})
+
 
 // Tab ID
 let tabIDItem = [].slice.call(document.querySelectorAll(".js-tab-id"));
