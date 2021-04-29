@@ -6990,6 +6990,10 @@ table tbody b {
   margin-right: 4px;
 }
 
+.bdetail {
+  max-width: 100vw;
+}
+
 .bdetail-slider {
   margin-top: 75px;
   padding-bottom: 39px;
