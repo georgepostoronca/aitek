@@ -3684,7 +3684,7 @@ textarea {
 
 .btn.--light span {
   color: #2871B6;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 13px;
   transition: .2s;
 }
@@ -4458,6 +4458,32 @@ textarea {
 
 .link-more:hover span {
   color: #323044;
+}
+
+.notfound404 {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound {
+  display: flex;
+  align-items: center;
+}
+
+.notfound .icon {
+  width: 450px;
+  height: 300px;
+}
+
+.notfound p {
+  height: 85px;
+  font-size: 20px;
+  line-height: 85px;
+  margin-left: 50px;
+  border-left: 1px solid #DDDDDD;
+  padding-left: 50px;
 }
 
 .footer__wrap {
@@ -9891,6 +9917,16 @@ table tbody b {
     width: 100%;
   }
 
+  .notfound {
+    flex-direction: column;
+  }
+
+  .notfound p {
+    margin-left: 0;
+    border-left: none;
+    padding-left: 0;
+  }
+
   .headslid .swiper-slide {
     padding-bottom: 60px;
     box-sizing: border-box;
@@ -10881,6 +10917,10 @@ table tbody b {
     width: 100%;
   }
 
+  .notfound .icon {
+    width: 100%;
+  }
+
   .footer__wrap ul li {
     width: 100%;
     justify-content: center;
@@ -11037,8 +11077,13 @@ table tbody b {
     margin-top: 12px;
   }
 
+  .service__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .service__item {
-    width: 100%;
+    width: 180px;
   }
 
   .parteners-grid__scroll {

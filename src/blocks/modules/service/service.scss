@@ -29,6 +29,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media(max-width: 420px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item {
@@ -40,7 +45,7 @@
     }
 
     @media(max-width: 420px) {
-      width: 100%;
+      width: 180px;
     }
 
     i {

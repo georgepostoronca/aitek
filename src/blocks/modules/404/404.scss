@@ -1,0 +1,39 @@
+.notfound404 {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.notfound {
+  display: flex;
+  align-items: center;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .icon {
+    width: 450px;
+    height: 300px;
+
+    @media(max-width: 480px) {
+      width: 100%;
+    }
+  }
+  p {
+    height: 85px;
+    font-size: 20px;
+    line-height: 85px;
+    margin-left: 50px;
+    border-left: 1px solid #DDDDDD;
+    padding-left: 50px;
+
+    @media(max-width: 768px) {
+      margin-left: 0;
+      border-left: none;
+      padding-left: 0;
+    }
+  }
+}
