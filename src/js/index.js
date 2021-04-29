@@ -336,6 +336,7 @@ $(document).ready(function() {
     $('.more-parteners').on('click', function(e) {
       e.preventDefault();
       $('.parteners-grid__scroll').css({'overflow': 'auto', 'height': '493px'})
+      $('.more-parteners').css({'display': 'none'})
     })
   }
 })

@@ -6129,6 +6129,11 @@ table tbody b {
   margin-bottom: 23px;
 }
 
+.reviews__item .preview-mb {
+  display: none;
+  text-decoration: underline;
+}
+
 .gridimg__item {
   margin-top: 26px;
 }
@@ -7309,6 +7314,23 @@ table tbody b {
 .support-grid__item .btn {
   margin: 10px 0;
   margin-right: 10px;
+}
+
+.support-grid__item .btn-support {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(40, 113, 182, 0.2);
+  outline: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 13px;
+  color: #2871B6;
+  display: inline-block;
+  padding: 10px 0 3px 0;
+}
+
+.support-grid__item .btn-support:first-child {
+  margin-right: 30px;
 }
 
 .support-grid__item .footer {
@@ -10802,6 +10824,14 @@ table tbody b {
 
   .cybercom .section__head {
     margin-bottom: 0;
+  }
+
+  .reviews__item .preview-mb {
+    display: block;
+  }
+
+  .reviews__item .preview-pc {
+    display: none;
   }
 }
 

@@ -5779,6 +5779,9 @@ $(document).ready(function () {
         'overflow': 'auto',
         'height': '493px'
       });
+      $('.more-parteners').css({
+        'display': 'none'
+      });
     });
   }
 }); // Tab ID

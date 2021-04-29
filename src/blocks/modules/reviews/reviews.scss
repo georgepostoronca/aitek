@@ -82,5 +82,17 @@
     .review {
       margin-bottom: 23px;
     }
+    .preview-mb {
+      display: none;
+      text-decoration: underline;
+    }
+    @media (max-width: 576px) {
+      .preview-mb {
+        display: block;
+      }
+      .preview-pc {
+        display: none;
+      }
+    }
   }
 }
