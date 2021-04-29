@@ -6044,6 +6044,10 @@ table tbody b {
   opacity: 0.7;
 }
 
+.portfolio__bottom {
+  text-align: center;
+}
+
 .reviews {
   height: 100%;
 }
@@ -10352,9 +10356,6 @@ table tbody b {
   }
 
   .address__item .ico {
-    width: 25px;
-    height: 25px;
-    margin-left: 4px;
     margin-right: 4px;
     margin-bottom: 15px;
   }
