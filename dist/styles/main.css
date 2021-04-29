@@ -9607,6 +9607,9 @@ table tbody b {
   .service__item {
     width: 45%;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .blockblue.--silver {
