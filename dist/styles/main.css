@@ -6631,6 +6631,10 @@ table tbody b {
   border-color: rgba(255, 255, 255, 0.8);
 }
 
+.vacancy-detail .btn span {
+  font-weight: 700;
+}
+
 .parteners-grid {
   margin-top: 84px;
   margin-bottom: 101px;
@@ -7439,6 +7443,10 @@ table tbody b {
   font-size: 16px;
   line-height: 22px;
   font-family: "Muller", sans-serif;
+}
+
+.support-mb {
+  display: none;
 }
 
 .fancybox-container .fancybox-content {
@@ -10832,6 +10840,14 @@ table tbody b {
 
   .reviews__item .preview-pc {
     display: none;
+  }
+
+  .support-pc {
+    display: none;
+  }
+
+  .support-mb {
+    display: inline;
   }
 }
 

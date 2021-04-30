@@ -280,4 +280,17 @@
       }
     }
   }
+
+  &-pc {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+  &-mb {
+    display: none;
+
+    @media (max-width: 576px) {
+      display: inline;
+    }
+  }
 }
