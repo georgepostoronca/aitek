@@ -1,5 +1,19 @@
 section.vacancy.js-vacancy.--content-center(class=vacancyClass)
     .container-fluid
+        .content__top
+            ul.breadcrumbs
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="/")
+                        span Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="/vacancy.html")
+                        span Вакансии
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link
+                        span Менеджер по работе с клиентами
+                        
         .vacancy__wrap.js-vacancy-wrap
             .vacancy-detail.active.js-vacancy-detail(id="detail-" + i)
                 .vacancy-detail__item

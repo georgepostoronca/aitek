@@ -10,6 +10,17 @@ block content
         include ../../blocks/modules/menu/menu
 
         main
+            .container-fluid
+                .content__top
+                    ul.breadcrumbs
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="/")
+                                span Главная
+
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link
+                                span Работа в АйТек
+
             - var vcncyblockTitle = "Работа в АйТек"
             include ../../blocks/modules/vcncyblock/vcncyblock
             include ../../blocks/modules/gridimg/gridimg
