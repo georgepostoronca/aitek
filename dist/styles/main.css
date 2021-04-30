@@ -3454,6 +3454,7 @@ h1 b.--pr-none,
     background-image: linear-gradient(to right, #2D84C9 0%, #2DAAC6 100%);
     background-size: cover;
     -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
