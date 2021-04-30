@@ -3,6 +3,7 @@ import customSelect from 'custom-select';
 import SimpleLightbox from "simple-lightbox";
 import IMask from './imask';
 import Bouncer from './bouncer.polyfills.min';
+import print from 'print-js';
 
 import Plyr from 'plyr';
 const player = new Plyr('#player');

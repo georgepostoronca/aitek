@@ -5443,8 +5443,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _imask__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_imask__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _bouncer_polyfills_min__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./bouncer.polyfills.min */ "./src/js/bouncer.polyfills.min.js");
 /* harmony import */ var _bouncer_polyfills_min__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_bouncer_polyfills_min__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var plyr__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! plyr */ "./node_modules/plyr/dist/plyr.min.js");
-/* harmony import */ var plyr__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(plyr__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var print_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! print-js */ "./node_modules/print-js/dist/print.js");
+/* harmony import */ var print_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(print_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var plyr__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! plyr */ "./node_modules/plyr/dist/plyr.min.js");
+/* harmony import */ var plyr__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(plyr__WEBPACK_IMPORTED_MODULE_6__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
@@ -5453,7 +5455,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-var player = new plyr__WEBPACK_IMPORTED_MODULE_5___default.a('#player');
+
+var player = new plyr__WEBPACK_IMPORTED_MODULE_6___default.a('#player');
 
 var jquery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
