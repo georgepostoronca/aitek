@@ -4509,8 +4509,13 @@ textarea {
   cursor: pointer;
 }
 
+.page404__wrapper {
+  height: 100%;
+}
+
 .notfound404 {
   display: flex;
+  height: 100%;
   flex: 1 1 100%;
   justify-content: center;
   align-items: center;
