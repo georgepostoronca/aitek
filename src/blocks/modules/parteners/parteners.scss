@@ -1,4 +1,6 @@
 .parteners {
+  width: 100vw;
+  overflow: hidden;
   &__wrap {
 
   }
@@ -18,7 +20,11 @@
     h1, h2 {
       margin-bottom: 53px;
     }
-
+    .more-parteners {
+      @media(max-width: 762px) {
+        display: none;
+      }
+    }
     &__wrap {
       position: relative;
       display: flex;
@@ -169,14 +175,13 @@
         grid-row-gap: 20px;
       }
 
-      @media(max-width: 680px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      @media(max-width: 420px) {
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+      @media(max-width: 762px) {
+        display: flex;
+        width: 100vw;
+        overflow: unset;
+        grid-template-columns: none; 
+        grid-column-gap: 0; 
+        grid-row-gap: 0;
       }
     }
 
@@ -261,6 +266,7 @@
       }
     }
   }
+
 
 
   //Service

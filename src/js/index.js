@@ -223,6 +223,44 @@ const setttingsSliderBottom = {
 const galleryThumbs = new Swiper('.gallery-thumbs', setttingsSliderTop);
 const galleryTop = new Swiper('.gallery-top', setttingsSliderBottom);
 
+// parteners Slider
+const sliderParteners = document.querySelector('.parteners-grid__slider');
+let sliderPartenersMobile = false;
+let partenersSwiper;
+function mobileSlider() {
+  if (sliderParteners) {
+    if (window.innerWidth <= 762 && sliderPartenersMobile === false) {
+        partenersSwiper = new Swiper(sliderParteners, {
+          spaceBetween: 28,
+          slidesPerView: 2.3,
+          loop: true,
+          autoHeight: true,
+          breakpoints: {
+            0: {
+              slidesPerView: 1.3,
+              spaceBetween: 10,
+              // centeredSlides: true,
+            },
+            510: {
+              slidesPerView: 2.3,
+              spaceBetween: 20,
+            },
+          }
+        });
+        sliderPartenersMobile = true
+    } 
+    if (window.innerWidth > 762 && sliderPartenersMobile === true) {
+      partenersSwiper.destroy();
+      sliderPartenersMobile = false;
+    }
+  }
+}
+mobileSlider()
+window.addEventListener('resize', () => {
+  mobileSlider();
+});
+
+
 $.fancybox.defaults.backFocus = false;
 $("[data-fancybox]").fancybox({
   afterShow: function( instance, slide ) {
