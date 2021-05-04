@@ -9539,6 +9539,37 @@ table tbody b {
   }
 }
 
+@media (min-width: 1600px) {
+  .menu .container-fluid {
+    max-width: 100%;
+    padding: 0 65px;
+  }
+
+  .menu__logo {
+    position: relative;
+    bottom: 20px;
+    left: 32px;
+    transform: scale(1.7);
+  }
+
+  .menu__nav a,
+  .menu__mail a,
+  .menu__contact > a,
+  .menu__contact .custom-select-container .custom-select-opener span {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .menu__mail {
+    line-height: 32px;
+  }
+
+  .menu .social a svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 @media (min-width: 1921px) {
   .headslid .swiper-slide img {
     width: 60%;

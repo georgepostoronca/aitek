@@ -5,6 +5,7 @@
   z-index: 100;
   transition: .2s;
 
+
   @media print {
     display: none;
   }
@@ -714,6 +715,32 @@
       }
     }
   }
+  @media (min-width: 1600px) {
+
+    .container-fluid {
+      max-width: 100%;
+      padding: 0 65px;
+    };
+
+    &__logo {
+      position: relative;
+      bottom: 20px;
+      left: 32px;
+      transform: scale(1.7);
+    }
+    &__nav a, &__mail a, &__contact > a, &__contact .custom-select-container .custom-select-opener span {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &__mail {
+      line-height: 32px;
+    }
+    .social a svg {
+      width: 32px;
+      height: 32px;
+    }
+  };
+  
 }
 
 .social {
