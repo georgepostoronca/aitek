@@ -9660,9 +9660,21 @@ table tbody b {
 }
 
 @media (min-width: 1600px) {
-  .menu__nav a {
+  .menu__nav a,
+  .menu__mail a,
+  .menu__contact > a,
+  .menu__contact .custom-select-container .custom-select-opener span {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .menu__mail {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__social {
+    display: flex;
   }
 }
 
