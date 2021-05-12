@@ -596,7 +596,6 @@
       height: 56px;
       display: block;
       fill: $blue;
-
       @media(max-width: 992px) {
         width: 70px;
         height: 44px;
@@ -715,29 +714,24 @@
       }
     }
   }
-  @media (min-width: 1600px) {
-
-    .container-fluid {
-      max-width: 100%;
-      padding: 0 65px;
-    };
+  @media (min-width: 1366px) {
 
     &__logo {
-      position: relative;
-      bottom: 20px;
-      left: 32px;
-      transform: scale(1.7);
+      svg {
+        width: 6.32vw;
+        height: 3.89vw;
+      }
     }
     &__nav a, &__mail a, &__contact > a, &__contact .custom-select-container .custom-select-opener span {
-      font-size: 20px;
-      line-height: 20px;
+      font-size: 0.98vw;
+      line-height: 0.99vw;
     }
     &__mail {
-      line-height: 32px;
+      line-height: 2.22vw;
     }
     .social a svg {
-      width: 32px;
-      height: 32px;
+      width: 1.67vw;
+      height: 1.67vw;
     }
   };
   

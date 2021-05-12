@@ -1,7 +1,6 @@
 .headslid {
+  background: linear-gradient(111.34deg, rgba(112, 229, 211, 0.3) 0%, rgba(255, 255, 255, 0.3) 28.65%, rgba(92, 151, 221, 0.3) 52.08%, rgba(255, 255, 255, 0.3) 80.21%, rgba(58, 202, 242, 0.3) 100%);
   width: 100%;
-  background: url("../img/bg.svg") top right no-repeat;
-  background-size: cover;
   //min-height: 100vh;
   height: 100vh;
 
@@ -9,7 +8,12 @@
     background: url("../img/bg-mobile.svg") bottom center no-repeat;
     background-size: 100% auto;
   }
-
+  &__wrap {
+    background: url("../img/bg.svg") top right no-repeat;
+    background-size: 67vw;
+    //min-height: 100vh;
+    height: 100vh;
+  }
   &__item {
     width: 640px;
     height: 100%;
@@ -22,6 +26,10 @@
     //padding-bottom: 122px;
     padding-bottom: 140px;
     box-sizing: border-box;
+    @media(min-width: 1366px) {
+      width: 44.44vw;
+      padding-top: 9.72vw;
+    }
 
     @media(max-width: 767px) {
       //min-height: inherit;
@@ -45,6 +53,9 @@
 
       h1 {
         margin-bottom: 25px;
+        @media(min-width: 1366px) {
+          font-size: 4.86vw;
+        }
 
         b {
           display: inline;
@@ -67,6 +78,11 @@
         line-height: 26px;
         font-family: $muller;
         margin-top: 0;
+        
+        @media(min-width: 1366px) {
+          font-size: 1.39vw;
+          line-height: 1.8vw;
+        }
 
         @media(max-width: 1180px) {
           width: 50%;

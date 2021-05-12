@@ -96,6 +96,10 @@ h1, h2, h3, h4, h5, h6, ul {
   margin-right: auto;
   max-width: 1200px;
   box-sizing: border-box;
+  @media (min-width: 1366px) {
+    max-width: 83.33vw;
+
+  }
 }
 
 h1, .h1 {
@@ -480,6 +484,11 @@ textarea {
   will-change: transform;
   overflow: hidden;
 
+  @media(min-width: 1366px) {
+    min-width: 15.83vw;
+    padding: 1.39vw;
+  }
+
   &.--max {
     min-width: 261px;
   }
@@ -583,6 +592,9 @@ textarea {
     position: relative;
     font-weight: 500;
     font-family: $muller;
+    @media(min-width: 1366px) {
+      font-size: 1.11vw;
+    }
   }
 }
 
@@ -753,6 +765,10 @@ textarea {
     height: 307px;
     overflow: hidden;
 
+    @media(min-width: 1366px) {
+      height: 21.32vw;
+    }
+
     @media(max-width: 767px) {
       height: 228px;
     }
@@ -815,6 +831,11 @@ textarea {
       line-height: 1.2;
       transition: .2s;
 
+      @media(min-width: 1366px) {
+        font-size: 1.46vw;
+        margin-bottom: 1.32vw;
+      }
+
       @media(max-width: 767px) {
         font-size: 16px;
         line-height: 21px;
@@ -831,6 +852,10 @@ textarea {
       display: block;
       color: $black-2;
       line-height: 1.42;
+      @media(min-width: 1366px) {
+        font-size: 1.11vw;
+        margin-bottom: 1.52vw;
+      }
 
       @media(max-width: 767px) {
         font-size: 13px;
@@ -846,6 +871,10 @@ textarea {
       font-size: 14px;
       font-family: $muller;
       color: $black-2;
+
+      @media(min-width: 1366px) {
+        font-size: 0.97vw;
+      }
 
       @media(max-width: 767px) {
         display: none;
@@ -876,7 +905,11 @@ textarea {
     font-size: 16px;
     line-height: 24px;
     margin-right: 10px;
-
+    @media(min-width: 1366px) {
+      font-size: 1.11vw;
+      line-height: 1.67vw;
+      margin-right: 0.69vw;
+    }
     @extend .text-gradient;
   }
 
@@ -885,6 +918,10 @@ textarea {
     height: 20px;
     transform-origin: center center;
     transition: .2s;
+    @media(min-width: 1366px) {
+      width: 1.39vw;
+      height: 1.39vw;
+    }
   }
 }
 

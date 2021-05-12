@@ -3,7 +3,9 @@
 
   &__wrap {
     padding-top: 90px;
-
+    @media(min-width: 1366px) {
+      padding-top: 6.25vw;
+    }
     @media(max-width: 767px) {
       padding-top: 33px;
     }
@@ -15,6 +17,10 @@
 
     h2 {
       margin-bottom: 31px;
+      @media(min-width: 1366px) {
+        font-size: 3.47vw;
+        margin-bottom: 2.15vw;
+      }
 
       @media(max-width: 767px) {
         //margin-bottom: 5px;

@@ -1,12 +1,15 @@
 .parteners {
   width: 100vw;
   overflow: hidden;
+  @media (max-width: 850px) {
+    margin-top: 30px;
+  }
   &__wrap {
 
   }
 
   &-grid {
-    margin-top: 84px;
+    margin-top: 50px;
     margin-bottom: 101px;
 
     @media(max-width: 992px) {
@@ -137,7 +140,7 @@
       grid-row-gap: 36px;
 
       padding-right: 53px;
-      width: calc(100% + 53px);
+      width: 100%;
 
       @media(max-width: 992px) {
         width: 100%;

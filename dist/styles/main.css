@@ -4688,9 +4688,14 @@ textarea {
 }
 
 .headslid {
+  background: linear-gradient(111.34deg, rgba(112, 229, 211, 0.3) 0%, rgba(255, 255, 255, 0.3) 28.65%, rgba(92, 151, 221, 0.3) 52.08%, rgba(255, 255, 255, 0.3) 80.21%, rgba(58, 202, 242, 0.3) 100%);
   width: 100%;
+  height: 100vh;
+}
+
+.headslid__wrap {
   background: url("../img/bg.svg") top right no-repeat;
-  background-size: cover;
+  background-size: 67vw;
   height: 100vh;
 }
 
@@ -6695,7 +6700,7 @@ table tbody b {
 }
 
 .parteners-grid {
-  margin-top: 84px;
+  margin-top: 50px;
   margin-bottom: 101px;
 }
 
@@ -6797,7 +6802,7 @@ table tbody b {
   grid-column-gap: 38px;
   grid-row-gap: 36px;
   padding-right: 53px;
-  width: calc(100% + 53px);
+  width: 100%;
 }
 
 .parteners-grid__scroll {
@@ -9539,34 +9544,119 @@ table tbody b {
   }
 }
 
-@media (min-width: 1600px) {
-  .menu .container-fluid {
-    max-width: 100%;
-    padding: 0 65px;
+@media (min-width: 1366px) {
+  .container-fluid {
+    max-width: 83.33vw;
   }
 
-  .menu__logo {
-    position: relative;
-    bottom: 20px;
-    left: 32px;
-    transform: scale(1.7);
+  .btn {
+    min-width: 15.83vw;
+    padding: 1.39vw;
+  }
+
+  .btn span {
+    font-size: 1.11vw;
+  }
+
+  .article picture {
+    height: 21.32vw;
+  }
+
+  .article__info h4 {
+    font-size: 1.46vw;
+    margin-bottom: 1.32vw;
+  }
+
+  .article__info span,
+  .article__info p {
+    font-size: 1.11vw;
+    margin-bottom: 1.52vw;
+  }
+
+  .article__info em {
+    font-size: 0.97vw;
+  }
+
+  .btn-refresh span {
+    font-size: 1.11vw;
+    line-height: 1.67vw;
+    margin-right: 0.69vw;
+  }
+
+  .btn-refresh svg {
+    width: 1.39vw;
+    height: 1.39vw;
+  }
+
+  .footer__wrap ul li a {
+    font-size: 1.11vw;
+  }
+
+  .footer__bottom a.link {
+    font-size: 0.97vw;
+  }
+
+  .footer__bottom .dev em {
+    font-size: 0.97vw;
+  }
+
+  .footer__bottom .dev a svg {
+    width: 3.82vw;
+    height: 0.76vw;
+  }
+
+  .footer-search {
+    width: 16.94vw;
+    height: 3.47vw;
+  }
+
+  .footer-search input {
+    font-size: 0.9vw;
+  }
+
+  .headslid__item {
+    width: 44.44vw;
+    padding-top: 9.72vw;
+  }
+
+  .headslid__item-content h1 {
+    font-size: 4.86vw;
+  }
+
+  .headslid__item-content p {
+    font-size: 1.39vw;
+    line-height: 1.8vw;
+  }
+
+  .menu__logo svg {
+    width: 6.32vw;
+    height: 3.89vw;
   }
 
   .menu__nav a,
   .menu__mail a,
   .menu__contact > a,
   .menu__contact .custom-select-container .custom-select-opener span {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 0.98vw;
+    line-height: 0.99vw;
   }
 
   .menu__mail {
-    line-height: 32px;
+    line-height: 2.22vw;
   }
 
   .menu .social a svg {
-    width: 32px;
-    height: 32px;
+    width: 1.67vw;
+    height: 1.67vw;
+  }
+
+  .news__wrap {
+    padding-top: 6.25vw;
+  }
+
+  .news__wrap h2 {
+    font-size: 3.47vw;
+    margin-bottom: 2.15vw;
   }
 }
 
@@ -10006,6 +10096,10 @@ table tbody b {
   .social a svg {
     width: 18px;
     height: 18px;
+  }
+
+  .parteners {
+    margin-top: 30px;
   }
 }
 
