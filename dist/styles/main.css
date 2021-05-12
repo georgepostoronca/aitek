@@ -9659,6 +9659,13 @@ table tbody b {
   }
 }
 
+@media (min-width: 1600px) {
+  .menu__nav a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 @media (min-width: 1921px) {
   .headslid .swiper-slide img {
     width: 60%;

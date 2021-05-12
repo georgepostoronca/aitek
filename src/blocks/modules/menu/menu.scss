@@ -727,8 +727,8 @@
       }
     }
   }
-  @media (min-width: 1366px) {
 
+  @media (min-width: 1366px) {
     &__logo {
       svg {
         width: 6.32vw;
@@ -747,6 +747,12 @@
     //   height: 1.67vw;
     // }
   };
+  @media (min-width: 1600px) {
+    &__nav a {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
 
 }
 
