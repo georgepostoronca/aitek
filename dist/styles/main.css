@@ -5002,6 +5002,7 @@ textarea {
 }
 
 .menu__contact {
+  padding-top: 5px;
   width: 35%;
   display: inline-flex;
   justify-content: flex-end;
@@ -9660,10 +9661,14 @@ table tbody b {
 }
 
 @media (min-width: 1600px) {
-  .menu__nav a,
   .menu__mail a,
   .menu__contact > a,
   .menu__contact .custom-select-container .custom-select-opener span {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .menu__nav a {
     font-size: 20px;
     line-height: 20px;
   }

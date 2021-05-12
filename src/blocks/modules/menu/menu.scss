@@ -310,6 +310,7 @@
   }
 
   &__contact {
+    padding-top: 5px;
     width: 35%;
     display: inline-flex;
     justify-content: flex-end;
@@ -748,7 +749,11 @@
     // }
   };
   @media (min-width: 1600px) {
-    &__nav a, &__mail a, &__contact > a, &__contact .custom-select-container .custom-select-opener span {
+    &__mail a, &__contact > a, &__contact .custom-select-container .custom-select-opener span {
+      font-size: 18px;
+      line-height: 18px;
+    }
+    &__nav a {
       font-size: 20px;
       line-height: 20px;
     }
