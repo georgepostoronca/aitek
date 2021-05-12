@@ -78,7 +78,7 @@
         line-height: 26px;
         font-family: $muller;
         margin-top: 0;
-        
+
         @media(min-width: 1366px) {
           font-size: 1.39vw;
           line-height: 1.8vw;
@@ -140,6 +140,10 @@
         //max-width: 870px;
         max-width: 833px;
         max-height: 65vh;
+
+        @media(min-width: 1366px) {
+          max-width: 57.85vw;
+        }
 
         @media(max-width: 1300px) {
           width: 60%;

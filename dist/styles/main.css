@@ -9628,26 +9628,25 @@ table tbody b {
     line-height: 1.8vw;
   }
 
+  .headslid .swiper-slide img {
+    max-width: 57.85vw;
+  }
+
+  .menu__social {
+    padding-left: 15.21vw;
+  }
+
+  .menu__bottom:after {
+    width: calc(100% - 15.21vw);
+  }
+
+  .menu__nav ul {
+    padding-left: 8.82vw;
+  }
+
   .menu__logo svg {
     width: 6.32vw;
     height: 3.89vw;
-  }
-
-  .menu__nav a,
-  .menu__mail a,
-  .menu__contact > a,
-  .menu__contact .custom-select-container .custom-select-opener span {
-    font-size: 0.98vw;
-    line-height: 0.99vw;
-  }
-
-  .menu__mail {
-    line-height: 2.22vw;
-  }
-
-  .menu .social a svg {
-    width: 1.67vw;
-    height: 1.67vw;
   }
 
   .news__wrap {
