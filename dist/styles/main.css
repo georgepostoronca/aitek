@@ -5002,7 +5002,7 @@ textarea {
 }
 
 .menu__contact {
-  padding-top: 5px;
+  padding-top: 2px;
   width: 35%;
   display: inline-flex;
   justify-content: flex-end;
@@ -9666,6 +9666,10 @@ table tbody b {
   .menu__contact .custom-select-container .custom-select-opener span {
     font-size: 18px;
     line-height: 18px;
+  }
+
+  .menu__contact {
+    padding-top: 5px;
   }
 
   .menu__nav a {

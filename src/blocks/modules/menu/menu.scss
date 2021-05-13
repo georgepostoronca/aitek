@@ -310,7 +310,7 @@
   }
 
   &__contact {
-    padding-top: 5px;
+    padding-top: 2px;
     width: 35%;
     display: inline-flex;
     justify-content: flex-end;
@@ -752,6 +752,9 @@
     &__mail a, &__contact > a, &__contact .custom-select-container .custom-select-opener span {
       font-size: 18px;
       line-height: 18px;
+    }
+    &__contact {
+      padding-top: 5px;
     }
     &__nav a {
       font-size: 20px;
