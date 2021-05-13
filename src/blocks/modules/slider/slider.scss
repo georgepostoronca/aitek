@@ -171,6 +171,9 @@
           width: 90%;
           margin-top: 20px;
         }
+        @media(max-height: 480px) {
+          display: none;
+        }
       }
     }
 

@@ -7403,7 +7403,6 @@ table tbody b {
 }
 
 .support-grid__item .footer {
-  padding-top: 22px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 33px;
 }
@@ -7444,7 +7443,7 @@ table tbody b {
 .support-grid__item.two {
   background: url("../img/svg/support-2.svg") top center no-repeat;
   background-size: cover;
-  padding-top: 143px;
+  padding-top: 39px;
 }
 
 .support-grid__item.two p {
@@ -7468,6 +7467,10 @@ table tbody b {
   letter-spacing: -0.03em;
   display: block;
   line-height: 1;
+}
+
+.support-grid .support-grid__wrap:first-child {
+  display: flex;
 }
 
 .support-serv {
@@ -9658,6 +9661,14 @@ table tbody b {
     font-size: 3.47vw;
     margin-bottom: 2.15vw;
   }
+
+  .support-grid__item.first p {
+    height: 150px;
+  }
+
+  .support-grid__item.two p {
+    height: 150px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -9691,6 +9702,12 @@ table tbody b {
   .headslid .swiper-slide img {
     width: 60%;
     max-width: inherit;
+  }
+}
+
+@media (min-width: 2300px) {
+  .support-grid__item.first {
+    background-size: cover;
   }
 }
 
@@ -11509,6 +11526,12 @@ table tbody b {
 @media (max-height: 700px) {
   #wrapper.page-reviews main {
     height: auto;
+  }
+}
+
+@media (max-height: 480px) {
+  .headslid .swiper-slide img {
+    display: none;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
