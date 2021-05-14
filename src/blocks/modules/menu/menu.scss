@@ -756,10 +756,6 @@
     &__contact {
       padding-top: 5px;
     }
-    &__nav a {
-      font-size: 20px;
-      line-height: 20px;
-    }
     &__mail {
       display: flex;
       align-items: center;
@@ -768,6 +764,25 @@
       display: flex;
     }
   }
+  &__nav a {
+    @media (min-width: 1600px) {
+      font-size: 18px;
+      line-height: 1;
+    }
+    @media (min-width: 1800px) {
+      font-size: 20px;
+    }
+    @media (min-width: 2000px) {
+      font-size: 22px;
+    }
+    @media (min-width: 2200px) {
+      font-size: 24px;
+    }
+    @media (min-width: 2400px) {
+      font-size: 26px;
+    }
+  }
+  
 
 }
 

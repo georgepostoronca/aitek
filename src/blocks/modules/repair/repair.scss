@@ -1,10 +1,6 @@
 .repair {
 
-  .container-fluid {
-    @media(min-width: 1600px) {
-      padding-left: 15.21vw;
-    }
-  }
+
   
   &__wrap {
 
@@ -28,8 +24,32 @@
   }
 
   &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     &-item {
       margin-bottom: 50px;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      margin-right: 50px;
+      &:last-child {
+        margin-right: 0;
+      }
+      @media(max-width: 1032px) {
+        margin-right: 0;
+        &:first-child {
+          margin-right: 180px;
+        }
+      }
+      @media(max-width: 850px) {
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+      @media(max-width: 768px) {
+        width: 100%;
+      }
 
       > b {
         font-size: 30px;
@@ -55,7 +75,7 @@
         margin-bottom: 20px;
 
         span {
-          width: 45%;
+          // width: 45%;
           font-size: 13px;
           font-family: $muller;
 

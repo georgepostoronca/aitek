@@ -8,11 +8,7 @@
     background: url("../img/bg-mobile.svg") bottom center no-repeat;
     background-size: 100% auto;
   }
-  .container-fluid {
-    @media(min-width: 1600px) {
-      padding-left: 15.21vw;
-    }
-  }
+
   &__wrap {
     background: url("../img/bg.svg") top right no-repeat;
     background-size: 67vw;

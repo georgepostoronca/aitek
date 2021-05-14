@@ -1,10 +1,6 @@
 .advantage {
 
-  .container-fluid {
-    @media(min-width: 1600px) {
-      padding-left: 15.21vw;
-    }
-  }
+
 
   &.--page-service &__wrap {
     padding-bottom: 0;
@@ -52,7 +48,7 @@
       }
 
       p {
-
+        max-width: 410px;
       }
     }
   }

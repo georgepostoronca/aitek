@@ -1,11 +1,7 @@
 .reviews {
   height: 100%;
 
-  .container-fluid {
-    @media(min-width: 1600px) {
-      padding-left: 15.21vw;
-    }
-  }
+
   
   &__wrap {
     width: 786px;
@@ -15,7 +11,9 @@
     padding-top: 69px;
 
     height: 100%;
-
+    @media(min-width: 1366px) {
+      width: 65%;
+    }
     @media(max-width: 836px) {
       width: 100%;
     }

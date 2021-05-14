@@ -1,10 +1,6 @@
 .news {
   background: $gradient-violet;
-  .container-fluid {
-    @media(min-width: 1600px) {
-      padding-left: 15.21vw;
-    }
-  }
+
   &__wrap {
     padding-top: 90px;
     @media(min-width: 1366px) {
@@ -21,10 +17,6 @@
 
     h2 {
       margin-bottom: 31px;
-      @media(min-width: 1366px) {
-        font-size: 3.47vw;
-        margin-bottom: 2.15vw;
-      }
 
       @media(max-width: 767px) {
         //margin-bottom: 5px;

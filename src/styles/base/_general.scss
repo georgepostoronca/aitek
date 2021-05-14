@@ -765,10 +765,6 @@ textarea {
     height: 307px;
     overflow: hidden;
 
-    @media(min-width: 1366px) {
-      height: 21.32vw;
-    }
-
     @media(max-width: 767px) {
       height: 228px;
     }
@@ -1568,11 +1564,7 @@ textarea {
   cursor: pointer;
 }
 .work {
-  .container-fluid {
-    @media(min-width: 1600px) {
-      padding-left: 15.21vw;
-    }
-  }
+
 }
 
 
