@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6, ul {
   box-sizing: border-box;
   @media (min-width: 1366px) {
     max-width: 83.33vw;
-
+    padding: 0;
   }
 }
 
@@ -1566,6 +1566,13 @@ textarea {
 
 .breadcrumbs__link:not(:last-child) {
   cursor: pointer;
+}
+.work {
+  .container-fluid {
+    @media(min-width: 1600px) {
+      padding-left: 15.21vw;
+    }
+  }
 }
 
 

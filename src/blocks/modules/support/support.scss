@@ -1,4 +1,9 @@
 .support {
+  .container-fluid {
+    @media(min-width: 1600px) {
+      padding-left: 15.21vw;
+    }
+  }
   &__wrap {
     h1 {
       margin-top: 43px;
@@ -151,7 +156,7 @@
           padding-top: 12px;
         }
       }
-      
+
       &.first {
         background: url("../img/svg/support-1.svg") top center no-repeat;
         background-size: contain;
@@ -159,7 +164,7 @@
           background-size: cover;
         }
         p {
-          
+
           padding-right: 35px;
           @media(min-width: 1366px) {
             height: 150px;

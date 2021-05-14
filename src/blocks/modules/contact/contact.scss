@@ -1,6 +1,11 @@
 .contact {
   background-color: $silver-2;
   padding-bottom: 81px;
+  .container-fluid {
+    @media(min-width: 1600px) {
+      padding-left: 15.21vw;
+    }
+  }
 
   @media(max-width: 767px) {
     padding-bottom: 30px;
@@ -311,7 +316,7 @@
       margin-right: 8px;
       margin-bottom: 8px;
 
-      
+
 
       @media(max-width: 767px) {
         margin-right: 4px;
@@ -343,7 +348,7 @@
         fill: #22B04A;
       }
     }
-    
+
 
     .phone {
       display: inline-block;

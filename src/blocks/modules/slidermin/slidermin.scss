@@ -3,6 +3,11 @@
   @media print {
     display: none;
   }
+  .container-fluid {
+    @media(min-width: 1600px) {
+      padding-left: 15.21vw;
+    }
+  }
 
   &.--page-service &__wrap {
     padding-top: 66px;

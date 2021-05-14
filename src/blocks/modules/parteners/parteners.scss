@@ -4,6 +4,13 @@
   @media (max-width: 850px) {
     margin-top: 30px;
   }
+
+  .container-fluid {
+    @media(min-width: 1600px) {
+      padding-left: 15.21vw;
+    }
+  }
+  
   &__wrap {
 
   }
@@ -182,8 +189,8 @@
         display: flex;
         width: 100vw;
         overflow: unset;
-        grid-template-columns: none; 
-        grid-column-gap: 0; 
+        grid-template-columns: none;
+        grid-column-gap: 0;
         grid-row-gap: 0;
       }
     }

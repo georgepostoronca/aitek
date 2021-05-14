@@ -1,5 +1,12 @@
 .cybercom {
   max-width: 100vw;
+
+  .container-fluid {
+    @media(min-width: 1600px) {
+      padding-left: 15.21vw;
+    }
+  }
+  
   &.--page-service &__wrap {
     padding-top: 60px;
     padding-bottom: 0;

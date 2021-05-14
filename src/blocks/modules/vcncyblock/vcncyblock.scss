@@ -1,4 +1,9 @@
 .vacancyblock {
+  .container-fluid {
+    @media(min-width: 1600px) {
+      padding-left: 15.21vw;
+    }
+  }
   &__title {
     h1 {
       text-align: center;
@@ -113,5 +118,5 @@
       margin-top: 20px;
     }
   }
-  
+
 }

@@ -1,5 +1,9 @@
 .vacancy {
-
+  .container-fluid {
+    @media(min-width: 1600px) {
+      padding-left: 15.21vw;
+    }
+  }
   &.--colored {
     background-color: $blue;
     color: $white;

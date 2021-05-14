@@ -9551,6 +9551,7 @@ table tbody b {
 @media (min-width: 1366px) {
   .container-fluid {
     max-width: 83.33vw;
+    padding: 0;
   }
 
   .btn {
@@ -9672,6 +9673,14 @@ table tbody b {
 }
 
 @media (min-width: 1600px) {
+  .work .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .headslid .container-fluid {
+    padding-left: 15.21vw;
+  }
+
   .menu__mail a,
   .menu__contact > a,
   .menu__contact .custom-select-container .custom-select-opener span {
@@ -9696,12 +9705,97 @@ table tbody b {
   .menu__social {
     display: flex;
   }
+
+  .news .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .service .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .blockblue .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .blockvideo .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .slidermin .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .headerbg .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .advantage .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .cybercom .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .improvecyber .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .photogallery .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .contact .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .vacancyblock .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .portfolio .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .reviews .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .gridimg .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .benefits .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .vacancy .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .parteners .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .repair .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .bdetail .container-fluid {
+    padding-left: 15.21vw;
+  }
+
+  .support .container-fluid {
+    padding-left: 15.21vw;
+  }
 }
 
 @media (min-width: 1921px) {
   .headslid .swiper-slide img {
     width: 60%;
     max-width: inherit;
+    right: -9%;
   }
 }
 
@@ -9795,6 +9889,15 @@ table tbody b {
 }
 
 @media (max-width: 1080px) {
+  .headslid__item-content {
+    width: 80%;
+  }
+
+  .headslid__item-content h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
   .menu__social {
     padding-left: 0;
   }
@@ -10350,6 +10453,7 @@ table tbody b {
 
   .headslid__item-content {
     text-align: center;
+    width: 100%;
   }
 
   .headslid__item-content h1 b {
@@ -11011,6 +11115,11 @@ table tbody b {
 
   .section__wrap {
     padding-top: 21px;
+  }
+
+  .headslid__item-content h1 {
+    font-size: 35px;
+    line-height: 43px;
   }
 
   .news__wrap {
