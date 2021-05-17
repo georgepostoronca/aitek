@@ -162,6 +162,10 @@
       @media(max-width: 992px) {
         width: 100%;
       }
+      &:first-child {
+          max-width: 550px;
+      }
+     
 
       em {
         font-style: normal;
@@ -175,6 +179,9 @@
         @media(max-width: 767px) {
           margin-bottom: 12px;
         }
+        @media(min-width: 1600px) {
+          font-size: 16px;
+        }
       }
 
       span {
@@ -187,6 +194,9 @@
         @media(max-width: 767px) {
           font-size: 16px;
           line-height: 1.2;
+        }
+        @media(min-width: 1600px) {
+          font-size: 20px;
         }
       }
 
@@ -229,6 +239,9 @@
         @media(max-width: 767px) {
           font-size: 16px;
           line-height: 22px;
+        }
+        @media(min-width: 1600px) {
+          font-size: 20px;
         }
       }
 
@@ -295,6 +308,9 @@
 
             @media(max-width: 767px) {
               font-size: 14px;
+            }
+            @media(min-width: 1600px) {
+              font-size: 16px;
             }
           }
         }

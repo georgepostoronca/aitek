@@ -150,10 +150,10 @@
         z-index: -1;
         //max-width: 870px;
         max-width: 833px;
-        max-height: 65vh;
+        // max-height: 65vh;
 
         @media(min-width: 1366px) {
-          max-width: 57.85vw;
+          max-width: 50vw;
         }
 
         @media(max-width: 1300px) {
@@ -162,9 +162,9 @@
         }
 
         @media(min-width: 1921px) {
-          width: 60%;
+          width: 38%;
           max-width: inherit;
-          right: -9%;
+          right: 0%;
         }
 
         @media(max-width: 767px) {

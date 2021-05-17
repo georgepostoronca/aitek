@@ -3932,7 +3932,7 @@ textarea {
 }
 
 .article__info {
-  padding: 50px 35px;
+  padding: 25px 25px;
   flex: 1;
 }
 
@@ -4509,6 +4509,12 @@ textarea {
   cursor: pointer;
 }
 
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(34, 34, 34, 0.15);
+}
+
 .page404__wrapper {
   height: 100%;
 }
@@ -4747,7 +4753,6 @@ textarea {
   transform: translateY(-50%);
   z-index: -1;
   max-width: 833px;
-  max-height: 65vh;
 }
 
 .headslid .swiper-pagination {
@@ -6378,7 +6383,7 @@ table tbody b {
 }
 
 .benefits__item {
-  width: 300px;
+  flex: 0 0 33%;
   margin-bottom: 69px;
 }
 
@@ -6394,6 +6399,7 @@ table tbody b {
 .benefits__item p {
   font-style: normal;
   font-weight: normal;
+  width: 300px;
   font-size: 16px;
   font-family: "Muller", sans-serif;
   line-height: 1.4;
@@ -7209,6 +7215,10 @@ table tbody b {
   width: 50%;
   padding-right: 48px;
   box-sizing: border-box;
+}
+
+.bdetail-print__ul:first-child {
+  max-width: 550px;
 }
 
 .bdetail-print__ul em {
@@ -9647,7 +9657,7 @@ table tbody b {
   }
 
   .headslid .swiper-slide img {
-    max-width: 57.85vw;
+    max-width: 50vw;
   }
 
   .menu__social {
@@ -9709,6 +9719,23 @@ table tbody b {
     font-size: 18px;
     line-height: 1;
   }
+
+  .bdetail-print__ul em {
+    font-size: 16px;
+  }
+
+  .bdetail-print__ul span {
+    font-size: 20px;
+  }
+
+  .bdetail-print__ul p,
+  .bdetail-print__ul li {
+    font-size: 20px;
+  }
+
+  .bdetail-print__list ul li span {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1800px) {
@@ -9719,9 +9746,9 @@ table tbody b {
 
 @media (min-width: 1921px) {
   .headslid .swiper-slide img {
-    width: 60%;
+    width: 38%;
     max-width: inherit;
-    right: -9%;
+    right: 0%;
   }
 }
 

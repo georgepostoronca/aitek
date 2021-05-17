@@ -5571,7 +5571,7 @@ if (newsSlider) {
         slidesPerView: 3
       },
       1400: {
-        spaceBetween: 20
+        spaceBetween: 30
       },
       1600: {
         spaceBetween: 70
