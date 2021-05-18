@@ -9749,7 +9749,7 @@ table tbody b {
   }
 
   .bdetail-print__text {
-    width: calc(100% - 400px);
+    width: 70%;
   }
 
   .bdetail-print__ul em {
@@ -9766,7 +9766,7 @@ table tbody b {
   }
 
   .bdetail-print__list {
-    width: 400px;
+    width: 30%;
   }
 
   .bdetail-print__list ul li span {
