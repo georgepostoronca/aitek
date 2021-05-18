@@ -3900,7 +3900,7 @@ textarea {
 
 .article picture {
   display: block;
-  height: 307px;
+  height: 247px;
   overflow: hidden;
 }
 
@@ -4753,6 +4753,7 @@ textarea {
   transform: translateY(-50%);
   z-index: -1;
   max-width: 833px;
+  max-height: 65vh;
 }
 
 .headslid .swiper-pagination {
@@ -6383,7 +6384,8 @@ table tbody b {
 }
 
 .benefits__item {
-  flex: 0 0 33%;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 69px;
 }
 
@@ -6403,6 +6405,10 @@ table tbody b {
   font-size: 16px;
   font-family: "Muller", sans-serif;
   line-height: 1.4;
+}
+
+.benefits__item:nth-child(4) {
+  margin-left: 0 !important;
 }
 
 .vacancy.--colored {
@@ -9113,6 +9119,12 @@ table tbody b {
   }
 }
 
+@media (min-width: 993px) {
+  .benefits__item ~ .benefits__item {
+    margin-left: 15px;
+  }
+}
+
 @media (min-width: 1024px) {
   .plyr:-webkit-full-screen .plyr__captions {
     font-size: 21px;
@@ -9616,10 +9628,6 @@ table tbody b {
     height: 1.39vw;
   }
 
-  .footer__wrap ul li a {
-    font-size: 1.11vw;
-  }
-
   .footer__bottom a.link {
     font-size: 0.97vw;
   }
@@ -9657,7 +9665,9 @@ table tbody b {
   }
 
   .headslid .swiper-slide img {
-    max-width: 50vw;
+    max-width: 47vw;
+    max-height: unset;
+    right: -9.6%;
   }
 
   .menu__social {
@@ -9685,6 +9695,10 @@ table tbody b {
     width: 65%;
   }
 
+  .benefits__item ~ .benefits__item {
+    margin-left: 10%;
+  }
+
   .support-grid__item.first p {
     height: 150px;
   }
@@ -9695,6 +9709,11 @@ table tbody b {
 }
 
 @media (min-width: 1600px) {
+  .footer__wrap ul li a {
+    font-size: 18px;
+    line-height: 1;
+  }
+
   .menu__mail a,
   .menu__contact > a,
   .menu__contact .custom-select-container .custom-select-opener span {
@@ -9720,6 +9739,19 @@ table tbody b {
     line-height: 1;
   }
 
+  .benefits__item b {
+    font-size: 24px;
+  }
+
+  .benefits__item p {
+    font-size: 18px;
+    width: 350px;
+  }
+
+  .bdetail-print__text {
+    width: calc(100% - 400px);
+  }
+
   .bdetail-print__ul em {
     font-size: 16px;
   }
@@ -9733,12 +9765,20 @@ table tbody b {
     font-size: 20px;
   }
 
+  .bdetail-print__list {
+    width: 400px;
+  }
+
   .bdetail-print__list ul li span {
     font-size: 16px;
   }
 }
 
 @media (min-width: 1800px) {
+  .footer__wrap ul li a {
+    font-size: 20px;
+  }
+
   .menu__nav a {
     font-size: 20px;
   }
@@ -9746,19 +9786,31 @@ table tbody b {
 
 @media (min-width: 1921px) {
   .headslid .swiper-slide img {
-    width: 38%;
+    width: 32%;
     max-width: inherit;
-    right: 0%;
+    right: 6%;
+  }
+
+  .benefits__item ~ .benefits__item {
+    margin-left: 17%;
   }
 }
 
 @media (min-width: 2000px) {
+  .footer__wrap ul li a {
+    font-size: 22px;
+  }
+
   .menu__nav a {
     font-size: 22px;
   }
 }
 
 @media (min-width: 2200px) {
+  .footer__wrap ul li a {
+    font-size: 24px;
+  }
+
   .menu__nav a {
     font-size: 24px;
   }
@@ -9771,14 +9823,22 @@ table tbody b {
 }
 
 @media (min-width: 2400px) {
+  .footer__wrap ul li a {
+    font-size: 26px;
+  }
+
   .menu__nav a {
     font-size: 26px;
+  }
+
+  .benefits__item ~ .benefits__item {
+    margin-left: 23%;
   }
 }
 
 @media (max-width: 1300px) {
   .headslid .swiper-slide img {
-    width: 60%;
+    width: 54%;
     max-width: inherit;
   }
 }
@@ -10361,6 +10421,12 @@ table tbody b {
     width: 100%;
   }
 
+  .repair__grid-item .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
   .bdetail-slider__control {
     bottom: -2px;
   }
@@ -10911,12 +10977,6 @@ table tbody b {
     padding-bottom: 20px;
   }
 
-  .repair__grid-item .btn {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
   .bdetail-print__text {
     width: calc(100% - 250px);
   }
@@ -11339,7 +11399,7 @@ table tbody b {
 
   .headslid .swiper-slide img {
     width: 90%;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   .headslid .swiper-pagination {

@@ -150,21 +150,24 @@
         z-index: -1;
         //max-width: 870px;
         max-width: 833px;
-        // max-height: 65vh;
+        max-height: 65vh;
 
         @media(min-width: 1366px) {
-          max-width: 50vw;
+          max-width: 47vw;
+          max-height: unset;
+          right: -9.6%;
         }
 
         @media(max-width: 1300px) {
-          width: 60%;
+          width: 54%;
           max-width: inherit;
+          
         }
 
         @media(min-width: 1921px) {
-          width: 38%;
+          width: 32%;
           max-width: inherit;
-          right: 0%;
+          right: 6%;
         }
 
         @media(max-width: 767px) {
@@ -181,7 +184,7 @@
 
         @media(max-width: 480px) {
           width: 90%;
-          margin-top: 20px;
+          margin-top: 50px;
         }
         @media(max-height: 480px) {
           display: none;
