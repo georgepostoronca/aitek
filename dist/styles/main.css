@@ -9784,6 +9784,12 @@ table tbody b {
   }
 }
 
+@media (min-width: 1920px) {
+  .bdetail-print__ul {
+    width: unset;
+  }
+}
+
 @media (min-width: 1921px) {
   .headslid .swiper-slide img {
     width: 32%;
