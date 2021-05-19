@@ -9709,6 +9709,70 @@ table tbody b {
 }
 
 @media (min-width: 1600px) {
+  .btn.--light span {
+    font-size: 16px;
+  }
+
+  .btn.--blue span {
+    font-size: 16px;
+  }
+
+  .custom-select-container .custom-select-opener span {
+    font-size: 17px;
+  }
+
+  .review__content p {
+    font-size: 20px;
+  }
+
+  .review footer b {
+    font-size: 20px;
+  }
+
+  .review footer em {
+    font-size: 17px;
+  }
+
+  .link-arrow.--max span {
+    font-size: 20px;
+  }
+
+  .link-arrow span {
+    font-size: 16px;
+  }
+
+  .article-vcncy {
+    height: 215px;
+  }
+
+  .article-vcncy b {
+    font-size: 30px;
+  }
+
+  .article-vcncy em {
+    margin-bottom: 16px;
+  }
+
+  .article-vcncy p {
+    font-size: 20px;
+  }
+
+  .card h3 {
+    font-size: 30px;
+  }
+
+  .card em {
+    margin-bottom: 16px;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+
+  .card .btn span {
+    font-size: 20px;
+  }
+
   .footer__wrap ul li a {
     font-size: 18px;
     line-height: 1;
@@ -9739,13 +9803,190 @@ table tbody b {
     line-height: 1;
   }
 
+  .service__item h3 {
+    font-size: 31px;
+  }
+
+  .service__item ul li {
+    font-size: 20px;
+  }
+
+  .blockblue__content p {
+    font-size: 21px;
+  }
+
+  .headerbg__wrap p {
+    font-size: 20px;
+  }
+
+  .advantage__grid-item h4 {
+    font-size: 26px;
+  }
+
+  .advantage__grid-item p {
+    font-size: 20px;
+  }
+
+  .cybercom .section__head p {
+    font-size: 20px;
+  }
+
+  table thead span {
+    font-size: 20px;
+  }
+
+  table tbody span {
+    font-size: 20px;
+  }
+
+  table tbody b {
+    font-size: 20px;
+  }
+
+  .improvecyber__wrap p {
+    font-size: 20px;
+  }
+
+  .contact-tab__head button {
+    font-size: 25px;
+  }
+
+  .contact-tab__item ul li em {
+    font-size: 20px;
+  }
+
+  .contact-tab__item ul li span,
+  .contact-tab__item ul li a {
+    font-size: 22px;
+  }
+
+  .contact-tab__item ul li small {
+    font-size: 18px;
+  }
+
+  .address__item {
+    width: 350px;
+    margin-right: 60px;
+  }
+
+  .address__item h4 {
+    margin-bottom: 27px;
+    font-size: 25px;
+  }
+
+  .address__item p {
+    font-size: 20px;
+    margin-bottom: 34px;
+  }
+
+  .address__item span {
+    font-size: 20px;
+  }
+
+  .address__item .ico svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .vacancyblock__wrap ul li b {
+    font-size: 40px;
+  }
+
+  .vacancyblock__wrap ul li span {
+    font-size: 20px;
+  }
+
+  .portfolio__head h1 em {
+    font-size: 20px;
+  }
+
+  .portfolio__label-item span {
+    font-size: 16px;
+  }
+
+  .artclimg.--link span {
+    font-size: 18px;
+  }
+
+  .artclimg__content h4 {
+    font-size: 21px;
+  }
+
+  .artclimg__content p {
+    font-size: 16px;
+  }
+
   .benefits__item b {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .benefits__item p {
-    font-size: 18px;
+    font-size: 20px;
     width: 350px;
+  }
+
+  .vacancy-detail__back .link-arrow span {
+    font-size: 16px;
+  }
+
+  .vacancy-detail__tab-head button span {
+    font-size: 20px;
+  }
+
+  .vacancy-detail__tab-item ul li {
+    font-size: 20px;
+  }
+
+  .vacancy-detail__tab-item footer h4 {
+    font-size: 30px;
+  }
+
+  .vacancy-detail__tab-item footer p {
+    font-size: 20px;
+  }
+
+  .parteners-grid__item b {
+    font-size: 20px;
+  }
+
+  .parteners-grid__item span {
+    font-size: 16px;
+  }
+
+  .parteners-grid__link a {
+    font-size: 16px;
+  }
+
+  .parteners-service .table .td b {
+    font-size: 30px;
+  }
+
+  .parteners-service .table .td span {
+    font-size: 16px;
+  }
+
+  .parteners-service .table .td ul li {
+    font-size: 20px;
+  }
+
+  .parteners-service .table .td a {
+    font-size: 16px;
+  }
+
+  .repair__grid-item > b {
+    font-size: 35px;
+  }
+
+  .repair__grid-item > span {
+    font-size: 20px;
+  }
+
+  .repair__grid-item div span {
+    font-size: 16px;
+  }
+
+  .repair__grid-item div span b {
+    font-size: 25px;
   }
 
   .bdetail-print__text {
@@ -9769,8 +10010,39 @@ table tbody b {
     width: 30%;
   }
 
+  .bdetail-print__list ul li {
+    padding: 26px;
+    margin-bottom: 15px;
+  }
+
+  .bdetail-print__list ul li svg {
+    width: 31px;
+    height: 31px;
+  }
+
   .bdetail-print__list ul li span {
+    font-size: 26px;
+    padding-left: 30px;
+  }
+
+  .support-grid__item h3 {
+    font-size: 28px;
+  }
+
+  .support-grid__item h4 {
+    font-size: 20px;
+  }
+
+  .support-grid__item p {
     font-size: 16px;
+  }
+
+  .support-grid__item .footer a {
+    font-size: 16px;
+  }
+
+  .support-serv__item span {
+    font-size: 20px;
   }
 }
 
@@ -9792,7 +10064,7 @@ table tbody b {
 
 @media (min-width: 1921px) {
   .headslid .swiper-slide img {
-    width: 32%;
+    width: 36%;
     max-width: inherit;
     right: 6%;
   }
@@ -11405,7 +11677,7 @@ table tbody b {
 
   .headslid .swiper-slide img {
     width: 90%;
-    margin-top: 50px;
+    margin-top: 110px;
   }
 
   .headslid .swiper-pagination {

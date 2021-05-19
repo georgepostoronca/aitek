@@ -62,6 +62,9 @@
       @media(max-width: 768px) {
         width: 100%;
       }
+      @media(min-width: 1600px) {
+        font-size: 21px;
+      }
     }
   }
 }

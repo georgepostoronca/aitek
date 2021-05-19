@@ -303,10 +303,17 @@
           @media(max-width: 767px) {
             padding: 14px;
           }
-
+          @media(min-width: 1600px) {
+            padding: 26px;
+            margin-bottom: 15px;
+          }
           svg {
             width: 18px;
             height: 18px;
+            @media(min-width: 1600px) {
+              width: 31px;
+              height: 31px;
+            }
           }
 
           span {
@@ -320,7 +327,8 @@
               font-size: 14px;
             }
             @media(min-width: 1600px) {
-              font-size: 16px;
+              font-size: 26px;
+              padding-left: 30px;
             }
           }
         }

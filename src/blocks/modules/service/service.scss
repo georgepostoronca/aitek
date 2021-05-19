@@ -113,6 +113,9 @@
         line-height: 1.1;
         margin-bottom: 15px;
       }
+      @media(min-width: 1600px) {
+        font-size: 31px;
+      }
 
       a {
         font-size: inherit;
@@ -134,6 +137,9 @@
           margin-bottom: 10px;
           font-size: 14px;
           padding-left: 15px;
+        }
+        @media(min-width: 1600px) {
+          font-size: 20px;
         }
 
         a {

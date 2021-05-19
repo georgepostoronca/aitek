@@ -58,6 +58,9 @@
         color: $blue;
         margin-bottom: 5px;
         display: inline-block;
+        @media(min-width: 1600px) {
+          font-size: 35px;
+        }
       }
 
       > span {
@@ -68,6 +71,9 @@
         font-size: 16px;
         letter-spacing: -0.03em;
         margin-bottom: 22px;
+        @media(min-width: 1600px) {
+          font-size: 20px;
+        }
       }
 
       div {
@@ -78,11 +84,17 @@
           // width: 45%;
           font-size: 13px;
           font-family: $muller;
+          @media(min-width: 1600px) {
+            font-size: 16px;
+          }
 
           b {
             font-weight: 600;
             font-size: 20px;
             margin-right: 4px;
+            @media(min-width: 1600px) {
+              font-size: 25px;
+            }
           }
         }
       }

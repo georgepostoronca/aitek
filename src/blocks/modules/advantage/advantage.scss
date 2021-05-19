@@ -45,10 +45,16 @@
         @media(max-width: 576px) {
           margin-bottom: 10px;
         }
+        @media(min-width: 1600px) {
+          font-size: 26px;
+        }
       }
 
       p {
         max-width: 410px;
+        @media(min-width: 1600px) {
+          font-size: 20px;
+        }
       }
     }
   }

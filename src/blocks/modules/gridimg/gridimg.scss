@@ -161,6 +161,9 @@
       font-size: 16px;
       line-height: 24px;
       color: #fff;
+      @media(min-width: 1600px) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -196,11 +199,17 @@
         font-size: 20px;
         line-height: 1.2;
       }
+      @media(min-width: 1600px) {
+        font-size: 21px;
+      }
     }
 
     p {
       font-size: 13px;
       line-height: 21px;
+      @media(min-width: 1600px) {
+        font-size: 16px;
+      }
     }
   }
 }

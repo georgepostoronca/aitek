@@ -515,6 +515,9 @@ textarea {
       font-weight: 700;
       font-size: 13px;
       transition: .2s;
+      @media(min-width: 1600px) {
+        font-size: 16px;
+      }
     }
 
     &:after {
@@ -551,6 +554,9 @@ textarea {
 
     span {
       font-size: 13px;
+      @media(min-width: 1600px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -987,6 +993,9 @@ textarea {
       white-space: nowrap;
       display: block;
       transition: .2s;
+      @media(min-width: 1600px) {
+        font-size: 17px;
+      }
     }
   }
 
@@ -1166,6 +1175,9 @@ textarea {
       @media(max-width: 520px) {
         margin-bottom: 15px;
       }
+      @media(min-width: 1600px) {
+        font-size: 20px;
+      }
     }
   }
 
@@ -1181,6 +1193,9 @@ textarea {
       font-weight: bold;
       font-size: 16px;
       display: block;
+      @media(min-width: 1600px) {
+        font-size: 20px;
+      }
     }
 
     em {
@@ -1192,6 +1207,9 @@ textarea {
       @media(max-width: 520px) {
         width: 100%;
         margin-bottom: 20px;
+      }
+      @media(min-width: 1600px) {
+        font-size: 17px;
       }
     }
   }
@@ -1212,6 +1230,9 @@ textarea {
     span {
       font-size: 16px;
       font-weight: 700;
+      @media(min-width: 1600px) {
+        font-size: 20px;
+      }
     }
 
     svg {
@@ -1265,6 +1286,9 @@ textarea {
     color: $blue;
     transition: .2s;
     letter-spacing: 0.9px;
+    @media(min-width: 1600px) {
+      font-size: 16px;
+    }
   }
 
   svg {
@@ -1298,6 +1322,9 @@ textarea {
   color: $white;
   padding: 46px 31px 11px 31px;
   border-radius: 15px;
+  @media(min-width: 1600px) {
+    height: 215px;
+  }
 
   &.--blue {
     background-color: $blue;
@@ -1321,6 +1348,9 @@ textarea {
 
     margin-bottom: 5px;
     display: inline-block;
+    @media(min-width: 1600px) {
+      font-size: 30px;
+    }
   }
 
   em {
@@ -1330,10 +1360,16 @@ textarea {
     display: block;
     font-family: $muller;
     margin-bottom: 14px;
+    @media(min-width: 1600px) {
+      margin-bottom: 16px;
+    }
   }
 
    p {
      line-height: 25px;
+     @media(min-width: 1600px) {
+      font-size: 20px;
+    }
    }
 }
 
@@ -1427,6 +1463,9 @@ textarea {
     line-height: 30px;
     margin-bottom: 2px;
     font-family: $muller;
+    @media(min-width: 1600px) {
+      font-size: 30px;
+    }
   }
 
   em {
@@ -1438,6 +1477,9 @@ textarea {
     display: inline-block;
     font-family: $muller;
     margin-bottom: 7px;
+    @media(min-width: 1600px) {
+      margin-bottom: 16px;
+    }
   }
 
   p {
@@ -1445,6 +1487,9 @@ textarea {
     margin-top: auto;
     font-family: $muller;
     line-height: 25px;
+    @media(min-width: 1600px) {
+      font-size: 20px;
+    }
   }
 
   .btn {
@@ -1467,6 +1512,9 @@ textarea {
     span {
       color: $white;
       font-size: 16px;
+      @media(min-width: 1600px) {
+        font-size: 20px;
+      }
     }
   }
 

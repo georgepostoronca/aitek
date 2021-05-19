@@ -68,6 +68,9 @@
           color: inherit;
           display: block;
           margin-bottom: 12px;
+          @media(min-width: 1600px) {
+            font-size: 40px;
+          }
 
           em {
             font-family: inherit;
@@ -96,9 +99,13 @@
           letter-spacing: -0.03em;
           min-height: 40px;
           display: inline-block;
+          
 
           @media(max-width: 992px) {
             line-height: 1.2;
+          }
+          @media(min-width: 1600px) {
+            font-size: 20px;
           }
         }
       }
