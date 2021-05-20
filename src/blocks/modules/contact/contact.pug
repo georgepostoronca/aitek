@@ -16,8 +16,10 @@ section.contact
       address.address
         .address__item
           h4 Общие вопросы
-          p 8 800 555 99 53
-          p info@aitek.ru
+          p
+            a(href="tel:+78005559953") 8 800 555 99 53
+          p 
+            a(href="mailto:info@aitek.ru") info@aitek.ru
           a.ico.telegram(href="#tel")
             +svg("telegram3")
             span telegram
@@ -30,13 +32,17 @@ section.contact
           
         .address__item
           h4 Работа в АйТек
-          p 8 959 050 40 41, доб 4859
-          p hr@aitek.ru
+          p 
+            a(href="tel:+79590504041") 8 959 050 40 41, доб 4859
+          p 
+            a(href="mailto:hr@aitek.ru") hr@aitek.ru
 
         .address__item
           h4 Техническая поддержка
-          p 8 800 555 99 53
-          p info@aitek.ru
+          p 
+            a(href="tel:+78005559953") 8 800 555 99 53
+          p 
+            a(href="mailto:info@aitek.ru") info@aitek.ru
           a.ico.telegram(href="#telegram")
             +svg("telegram3")
             span telegram
@@ -62,9 +68,6 @@ section.contact
                     em Телефон
                     a(href="tel:89590504041") 8 959 050 40 41
 
-                  li
-                    em Email
-                    a(href="mailto:aitek@gmail.com") aitek@gmail.com
               div.map(data-map="map"+i)
                 div.map__item(id="map"+i)
 

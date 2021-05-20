@@ -153,9 +153,9 @@
         max-height: 65vh;
 
         @media(min-width: 1366px) {
-          max-width: 47vw;
+          max-width: 50vw;
           max-height: unset;
-          right: -9.6%;
+          right: -5.6%;
         }
 
         @media(max-width: 1300px) {
@@ -164,11 +164,11 @@
           
         }
 
-        @media(min-width: 1921px) {
-          width: 36%;
-          max-width: inherit;
-          right: 6%;
-        }
+        // @media(min-width: 1921px) {
+        //   width: 36%;
+        //   max-width: inherit;
+        //   right: 6%;
+        // }
 
         @media(max-width: 767px) {
           //position: static;

@@ -135,6 +135,9 @@
         @media(max-width: 767px) {
           width: 100%;
         }
+        @media(min-width: 1600px) {
+          height: 400px;
+        }
       }
 
       h3 {
@@ -143,6 +146,9 @@
 
         @media(max-width: 480px) {
           margin-bottom: 15px;
+        }
+        @media(min-width: 1600px) {
+          font-size: 40px;
         }
       }
 
@@ -210,6 +216,7 @@
             }
             @media(min-width: 1600px) {
               font-size: 20px;
+              margin-bottom: 14px;
             }
           }
 
@@ -238,6 +245,7 @@
             line-height: 21px;
             @media(min-width: 1600px) {
               font-size: 18px;
+              margin-top: 18px;
             }
           }
           a {
@@ -307,11 +315,27 @@
 
     p {
       font-style: normal;
-      font-weight: 600;
+      font-weight: 400;
       font-size: 16px;
       line-height: 14.4px;
       font-family: $muller;
       display: block;
+      margin-bottom: 14px;
+
+      @media(max-width: 767px) {
+        margin-bottom: 10px;
+      }
+      @media(min-width: 1600px) {
+        font-size: 20px;
+        margin-bottom: 34px;
+      }
+    }
+    a {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 14.4px;
+      font-family: $muller;
       margin-bottom: 14px;
 
       @media(max-width: 767px) {

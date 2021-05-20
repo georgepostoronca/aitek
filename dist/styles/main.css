@@ -3911,6 +3911,10 @@ textarea {
   object-position: center center;
 }
 
+.article:hover picture {
+  opacity: 0.8;
+}
+
 .article:hover .article__info {
   text-decoration: none;
 }
@@ -4160,7 +4164,7 @@ textarea {
 }
 
 .review__img {
-  width: 156px;
+  width: 167px;
 }
 
 .review__img img {
@@ -4168,7 +4172,7 @@ textarea {
 }
 
 .review__content {
-  width: calc(100% - 156px);
+  width: calc(100% - 167px);
   padding-left: 26px;
 }
 
@@ -5732,6 +5736,10 @@ table tbody b {
   object-position: center center;
 }
 
+.photogallery__item img:hover {
+  opacity: 0.8;
+}
+
 .contact {
   background-color: #FBFBFB;
   padding-bottom: 81px;
@@ -5908,11 +5916,20 @@ table tbody b {
 
 .address__item p {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 14.4px;
   font-family: "Muller", sans-serif;
   display: block;
+  margin-bottom: 14px;
+}
+
+.address__item a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14.4px;
+  font-family: "Muller", sans-serif;
   margin-bottom: 14px;
 }
 
@@ -6142,6 +6159,7 @@ table tbody b {
 
 .portfolio__grid .article {
   margin-bottom: 30px;
+  flex: 1 1 370px;
 }
 
 .portfolio__grid .article:hover img {
@@ -6501,6 +6519,7 @@ table tbody b {
 .vacancy__card {
   margin-bottom: 30px;
   display: none;
+  flex: 1 1 410px !important;
 }
 
 .vacancy__card.active {
@@ -7204,6 +7223,10 @@ table tbody b {
   object-position: center center;
 }
 
+.bdetail-slider__item:hover img {
+  opacity: 0.8;
+}
+
 .bdetail-print {
   display: flex;
   flex-wrap: wrap;
@@ -7218,13 +7241,13 @@ table tbody b {
 }
 
 .bdetail-print__ul {
-  width: 50%;
   padding-right: 48px;
   box-sizing: border-box;
 }
 
 .bdetail-print__ul:first-child {
-  max-width: 550px;
+  min-width: 448px;
+  max-width: 448px;
 }
 
 .bdetail-print__ul em {
@@ -7340,6 +7363,7 @@ table tbody b {
 }
 
 .bdetail-review__content {
+  max-width: 1200px;
   width: calc(100% - 364px);
 }
 
@@ -9602,21 +9626,6 @@ table tbody b {
     font-size: 1.11vw;
   }
 
-  .article__info h4 {
-    font-size: 1.46vw;
-    margin-bottom: 1.32vw;
-  }
-
-  .article__info span,
-  .article__info p {
-    font-size: 1.11vw;
-    margin-bottom: 1.52vw;
-  }
-
-  .article__info em {
-    font-size: 0.97vw;
-  }
-
   .btn-refresh span {
     font-size: 1.11vw;
     line-height: 1.67vw;
@@ -9628,17 +9637,9 @@ table tbody b {
     height: 1.39vw;
   }
 
-  .footer__bottom a.link {
-    font-size: 0.97vw;
-  }
-
   .footer__bottom .dev em {
-    font-size: 0.97vw;
-  }
-
-  .footer__bottom .dev a svg {
-    width: 3.82vw;
-    height: 0.76vw;
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .footer-search {
@@ -9665,9 +9666,9 @@ table tbody b {
   }
 
   .headslid .swiper-slide img {
-    max-width: 47vw;
+    max-width: 50vw;
     max-height: unset;
-    right: -9.6%;
+    right: -5.6%;
   }
 
   .menu__social {
@@ -9723,7 +9724,7 @@ table tbody b {
   }
 
   .review__content p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .review footer b {
@@ -9779,6 +9780,16 @@ table tbody b {
   .footer__wrap ul li a {
     font-size: 18px;
     line-height: 1;
+  }
+
+  .footer__bottom a.link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .footer__bottom .dev a svg {
+    width: 62px;
+    height: 12px;
   }
 
   .menu__mail a,
@@ -9854,8 +9865,17 @@ table tbody b {
     font-size: 25px;
   }
 
+  .contact-tab__item > div {
+    height: 400px;
+  }
+
+  .contact-tab__item h3 {
+    font-size: 40px;
+  }
+
   .contact-tab__item ul li em {
     font-size: 20px;
+    margin-bottom: 14px;
   }
 
   .contact-tab__item ul li span,
@@ -9865,6 +9885,7 @@ table tbody b {
 
   .contact-tab__item ul li small {
     font-size: 18px;
+    margin-top: 18px;
   }
 
   .address__item {
@@ -9878,6 +9899,11 @@ table tbody b {
   }
 
   .address__item p {
+    font-size: 20px;
+    margin-bottom: 34px;
+  }
+
+  .address__item a {
     font-size: 20px;
     margin-bottom: 34px;
   }
@@ -9993,7 +10019,7 @@ table tbody b {
   }
 
   .bdetail-print__text {
-    width: 70%;
+    width: calc(100% - 405px);
   }
 
   .bdetail-print__ul em {
@@ -10010,7 +10036,7 @@ table tbody b {
   }
 
   .bdetail-print__list {
-    width: 30%;
+    width: 405px;
   }
 
   .bdetail-print__list ul li {
@@ -10060,16 +10086,16 @@ table tbody b {
 }
 
 @media (min-width: 1920px) {
-  .bdetail-print__ul {
+  .bdetail-print__ul:last-child {
     width: unset;
+    padding-left: 5vw;
   }
 }
 
 @media (min-width: 1921px) {
-  .headslid .swiper-slide img {
-    width: 36%;
-    max-width: inherit;
-    right: 6%;
+  .headerbg__wrap {
+    padding-top: 157px;
+    height: 709px;
   }
 
   .benefits__item ~ .benefits__item {
@@ -11102,6 +11128,10 @@ table tbody b {
   }
 
   .address__item p {
+    margin-bottom: 10px;
+  }
+
+  .address__item a {
     margin-bottom: 10px;
   }
 

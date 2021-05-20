@@ -783,13 +783,18 @@ textarea {
     }
   }
 
-  &:hover &__info {
-    text-decoration: none;
-
-    h4 {
-      color: $blue;
-      text-decoration: none;
+  &:hover {
+    picture {
+      opacity: 0.8;
     }
+    .article__info {
+      text-decoration: none;
+  
+      h4 {
+        color: $blue;
+        text-decoration: none;
+      }
+  }
 
   }
 
@@ -833,11 +838,6 @@ textarea {
       line-height: 1.2;
       transition: .2s;
 
-      @media(min-width: 1366px) {
-        font-size: 1.46vw;
-        margin-bottom: 1.32vw;
-      }
-
       @media(max-width: 767px) {
         font-size: 16px;
         line-height: 21px;
@@ -854,10 +854,6 @@ textarea {
       display: block;
       color: $black-2;
       line-height: 1.42;
-      @media(min-width: 1366px) {
-        font-size: 1.11vw;
-        margin-bottom: 1.52vw;
-      }
 
       @media(max-width: 767px) {
         font-size: 13px;
@@ -873,10 +869,6 @@ textarea {
       font-size: 14px;
       font-family: $muller;
       color: $black-2;
-
-      @media(min-width: 1366px) {
-        font-size: 0.97vw;
-      }
 
       @media(max-width: 767px) {
         display: none;
@@ -1141,7 +1133,7 @@ textarea {
   }
 
   &__img {
-    width: 156px;
+    width: 167px;
 
     @media(max-width: 768px) {
       margin: auto;
@@ -1158,7 +1150,7 @@ textarea {
   }
 
   &__content {
-    width: calc(100% - 156px);
+    width: calc(100% - 167px);
     padding-left: 26px;
 
     @media(max-width: 768px) {
@@ -1177,7 +1169,7 @@ textarea {
         margin-bottom: 15px;
       }
       @media(min-width: 1600px) {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
   }

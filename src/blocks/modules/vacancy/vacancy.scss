@@ -122,6 +122,7 @@
   &__card {
     margin-bottom: 30px;
     display: none;
+    flex: 1 1 410px !important;
 
     &.active {
       display: block;

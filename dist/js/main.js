@@ -5614,6 +5614,12 @@ if (sliderminEl) {
         },
         1200: {
           slidesPerView: 3
+        },
+        1741: {
+          slidesPerView: 4
+        },
+        2188: {
+          slidesPerView: 5
         }
       },
       navigation: {
