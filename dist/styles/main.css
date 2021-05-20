@@ -9750,6 +9750,7 @@ table tbody b {
   }
 
   .article-vcncy em {
+    font-size: 16px;
     margin-bottom: 16px;
   }
 
@@ -9763,6 +9764,7 @@ table tbody b {
 
   .card em {
     margin-bottom: 16px;
+    font-size: 16px;
   }
 
   .card p {
