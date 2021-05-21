@@ -782,7 +782,12 @@
       font-size: 26px;
     }
   }
-  
+  @media (max-width: 1365px) {
+    padding-top: 10px;
+  }
+  @media (max-width: 993px) {
+    padding-top: unset;
+  }
 
 }
 

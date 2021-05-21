@@ -3388,11 +3388,15 @@ ul {
 }
 
 .h-full {
-  height: 100%;
+  height: 100% !important;
 }
 
 .h-inherit {
   height: inherit;
+}
+
+.mh-vw {
+  max-height: 100vw;
 }
 
 .w-full {
@@ -4701,12 +4705,14 @@ textarea {
   background: linear-gradient(111.34deg, rgba(112, 229, 211, 0.3) 0%, rgba(255, 255, 255, 0.3) 28.65%, rgba(92, 151, 221, 0.3) 52.08%, rgba(255, 255, 255, 0.3) 80.21%, rgba(58, 202, 242, 0.3) 100%);
   width: 100%;
   height: 100vh;
+  max-height: 100vw;
 }
 
 .headslid__wrap {
   background: url("../img/bg.svg") top right no-repeat;
   background-size: 67vw;
   height: 100vh;
+  max-height: 100vw;
 }
 
 .headslid__item {
@@ -4714,7 +4720,6 @@ textarea {
   height: 100%;
   display: flex;
   align-items: center;
-  min-height: 100vh;
   padding-top: 140px;
   padding-bottom: 140px;
   box-sizing: border-box;
@@ -5875,9 +5880,9 @@ table tbody b {
 .contact-tab__item ul li span,
 .contact-tab__item ul li a {
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
 }
 
@@ -6164,6 +6169,11 @@ table tbody b {
 
 .portfolio__grid .article:hover img {
   opacity: 0.7;
+}
+
+.portfolio__grid .article__faked {
+  flex: 1 1 370px;
+  height: 0;
 }
 
 .portfolio__bottom {
@@ -7246,8 +7256,11 @@ table tbody b {
 }
 
 .bdetail-print__ul:first-child {
-  min-width: 448px;
-  max-width: 448px;
+  max-width: 390px;
+}
+
+.bdetail-print__ul:last-child {
+  min-width: 60%;
 }
 
 .bdetail-print__ul em {
@@ -7365,6 +7378,7 @@ table tbody b {
 .bdetail-review__content {
   max-width: 1200px;
   width: calc(100% - 364px);
+  position: relative;
 }
 
 .support__wrap h1 {
@@ -9880,7 +9894,7 @@ table tbody b {
 
   .contact-tab__item ul li span,
   .contact-tab__item ul li a {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .contact-tab__item ul li small {
@@ -10018,10 +10032,6 @@ table tbody b {
     font-size: 25px;
   }
 
-  .bdetail-print__text {
-    width: calc(100% - 405px);
-  }
-
   .bdetail-print__ul em {
     font-size: 16px;
   }
@@ -10033,25 +10043,6 @@ table tbody b {
   .bdetail-print__ul p,
   .bdetail-print__ul li {
     font-size: 20px;
-  }
-
-  .bdetail-print__list {
-    width: 405px;
-  }
-
-  .bdetail-print__list ul li {
-    padding: 26px;
-    margin-bottom: 15px;
-  }
-
-  .bdetail-print__list ul li svg {
-    width: 31px;
-    height: 31px;
-  }
-
-  .bdetail-print__list ul li span {
-    font-size: 26px;
-    padding-left: 30px;
   }
 
   .support-grid__item h3 {
@@ -10082,6 +10073,29 @@ table tbody b {
 
   .menu__nav a {
     font-size: 20px;
+  }
+
+  .bdetail-print__text {
+    width: calc(100% - 485px);
+  }
+
+  .bdetail-print__list {
+    width: 485px;
+  }
+
+  .bdetail-print__list ul li {
+    padding: 26px;
+    margin-bottom: 15px;
+  }
+
+  .bdetail-print__list ul li svg {
+    width: 31px;
+    height: 31px;
+  }
+
+  .bdetail-print__list ul li span {
+    font-size: 22px;
+    padding-left: 30px;
   }
 }
 
@@ -10123,6 +10137,13 @@ table tbody b {
   }
 }
 
+@media (min-width: 2260px) {
+  .bdetail-review__content {
+    margin-left: auto;
+    right: calc((100% - 1200px)/2);
+  }
+}
+
 @media (min-width: 2300px) {
   .support-grid__item.first {
     background-size: cover;
@@ -10140,6 +10161,17 @@ table tbody b {
 
   .benefits__item ~ .benefits__item {
     margin-left: 23%;
+  }
+}
+
+@media (max-width: 1365px) {
+  .container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .menu {
+    padding-top: 10px;
   }
 }
 
@@ -10184,6 +10216,14 @@ table tbody b {
   .bdetail-slider .swiper-container {
     width: 100%;
   }
+
+  .bdetail-print__text {
+    width: calc(100% - 250px);
+  }
+
+  .bdetail-print__list {
+    width: 250px;
+  }
 }
 
 @media (max-width: 1180px) {
@@ -10193,6 +10233,12 @@ table tbody b {
 
   .headerbg__wrap {
     width: 100%;
+  }
+}
+
+@media (max-width: 1132px) {
+  .support-grid__item.three a {
+    font-size: 50px;
   }
 }
 
@@ -10263,6 +10309,12 @@ table tbody b {
   }
 }
 
+@media (max-width: 1051px) {
+  .repair__grid {
+    justify-content: space-evenly;
+  }
+}
+
 @media (max-width: 1032px) {
   .repair__grid-item {
     margin-right: 0;
@@ -10270,6 +10322,17 @@ table tbody b {
 
   .repair__grid-item:first-child {
     margin-right: 180px;
+  }
+}
+
+@media (max-width: 993px) {
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .menu {
+    padding-top: unset;
   }
 }
 
@@ -10501,6 +10564,12 @@ table tbody b {
   }
 }
 
+@media (max-width: 885px) {
+  .support-grid__item.three a {
+    font-size: 45px;
+  }
+}
+
 @media (max-width: 860px) {
   .vacancyblock__wrap ul {
     flex-wrap: wrap;
@@ -10605,6 +10674,12 @@ table tbody b {
 @media (max-width: 836px) {
   .reviews__wrap {
     width: 100%;
+  }
+}
+
+@media (max-width: 810px) {
+  .support-grid__item.three a {
+    font-size: 40px;
   }
 }
 
@@ -10724,12 +10799,16 @@ table tbody b {
     margin-top: 15px;
   }
 
+  .repair__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .repair__grid-item {
-    width: 100%;
+    width: 350px;
   }
 
   .repair__grid-item .btn {
-    margin-left: auto;
     margin-right: auto;
     display: block;
   }
@@ -11122,11 +11201,6 @@ table tbody b {
     margin-left: -15px;
   }
 
-  .contact-tab__item ul li span,
-  .contact-tab__item ul li a {
-    font-size: 20px;
-  }
-
   .address__item p {
     margin-bottom: 10px;
   }
@@ -11288,10 +11362,6 @@ table tbody b {
     padding-bottom: 20px;
   }
 
-  .bdetail-print__text {
-    width: calc(100% - 250px);
-  }
-
   .bdetail-print__ul em {
     margin-bottom: 12px;
   }
@@ -11305,10 +11375,6 @@ table tbody b {
   .bdetail-print__ul li {
     font-size: 16px;
     line-height: 22px;
-  }
-
-  .bdetail-print__list {
-    width: 250px;
   }
 
   .bdetail-print__list ul {
@@ -11334,10 +11400,6 @@ table tbody b {
 
   .support-grid {
     margin-bottom: 20px;
-  }
-
-  .support-grid__item.three a {
-    font-size: 40px;
   }
 
   .support-serv {
@@ -11526,6 +11588,22 @@ table tbody b {
 }
 
 @media (max-width: 576px) {
+  .headslid {
+    max-height: unset;
+  }
+
+  .headslid .mh-vw {
+    max-height: unset;
+  }
+
+  .headslid__wrap {
+    max-height: unset;
+  }
+
+  .headslid__item {
+    min-height: inherit;
+  }
+
   .advantage__wrap h2 {
     margin-bottom: 30px;
   }
@@ -11770,12 +11848,13 @@ table tbody b {
   }
 
   .contact-tab__item h3 {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 28px;
   }
 
   .contact-tab__item ul li {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   .contact-tab__item ul li:nth-child(2n - 1) {
@@ -11854,6 +11933,12 @@ table tbody b {
 
   .service__item {
     width: 180px;
+  }
+}
+
+@media (max-width: 370px) {
+  .repair__grid-item {
+    width: 290px;
   }
 }
 

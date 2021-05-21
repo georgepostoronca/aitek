@@ -225,7 +225,14 @@
           display: block;
           line-height: 1;
 
-          @media(max-width: 767px) {
+          @media(max-width: 1132px) {
+            font-size: 50px;
+          }
+          @media(max-width: 885px) {
+            font-size: 45px;
+          }
+
+          @media(max-width: 810px) {
             font-size: 40px;
           }
 

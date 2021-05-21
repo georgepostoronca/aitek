@@ -76,11 +76,14 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 .h-full {
-  height: 100%;
+  height: 100% !important;
 }
 
 .h-inherit {
   height: inherit;
+}
+.mh-vw {
+  max-height: 100vw;
 }
 
 .w-full {
@@ -99,6 +102,14 @@ h1, h2, h3, h4, h5, h6, ul {
   @media (min-width: 1366px) {
     max-width: 83.33vw;
     padding: 0;
+  }
+  @media (max-width: 1365px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media (max-width: 993px) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
