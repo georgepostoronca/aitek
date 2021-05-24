@@ -5694,12 +5694,16 @@ var galleryThumbs = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.
 var galleryTop = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.gallery-top', setttingsSliderBottom); // parteners Slider
 
 var sliderParteners = document.querySelector('.parteners-grid__slider');
+var sliderPhotogallery = document.querySelector('.photogallery__swiper');
 var sliderPartenersMobile = false;
+var sliderPhotogalleryMobile = false;
 var partenersSwiper;
+var photogallerySwiper;
 
 function mobileSlider() {
   if (sliderParteners) {
     if (window.innerWidth <= 762 && sliderPartenersMobile === false) {
+      console.log('.photogallery__grid');
       partenersSwiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](sliderParteners, {
         spaceBetween: 28,
         slidesPerView: 2.3,
@@ -5723,6 +5727,36 @@ function mobileSlider() {
     if (window.innerWidth > 762 && sliderPartenersMobile === true) {
       partenersSwiper.destroy();
       sliderPartenersMobile = false;
+    }
+  }
+
+  if (sliderPhotogallery) {
+    if (window.innerWidth <= 762 && sliderPhotogalleryMobile === false) {
+      $('.photogallery__grid').removeClass('row');
+      photogallerySwiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](sliderPhotogallery, {
+        spaceBetween: 28,
+        slidesPerView: 2.3,
+        loop: true,
+        // freeMode: true,
+        autoHeight: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1.3,
+            spaceBetween: 10
+          },
+          510: {
+            slidesPerView: 2.3,
+            spaceBetween: 20
+          }
+        }
+      });
+      sliderPhotogalleryMobile = true;
+    }
+
+    if (window.innerWidth > 762 && sliderPhotogalleryMobile === true) {
+      photogallerySwiper.destroy();
+      $('.photogallery__grid').addClass('row');
+      sliderPhotogalleryMobile = false;
     }
   }
 }

@@ -1230,6 +1230,9 @@ textarea {
   background-color: transparent;
   outline: none;
 
+  @media (max-width: 576px) {
+    align-items: flex-end;
+  }
   &.--max {
     span {
       font-size: 16px;
@@ -1293,6 +1296,12 @@ textarea {
     @media(min-width: 1600px) {
       font-size: 16px;
     }
+    @media (max-width: 576px) {
+      margin-bottom: 26px;
+    }
+    @media (max-width: 520px) {
+      margin-bottom: 15px;  
+    }
   }
 
   svg {
@@ -1301,6 +1310,13 @@ textarea {
     height: 9px;
     margin-left: 11px;
     transition: .2s;
+    
+    @media (max-width: 576px) {
+      margin-bottom: 35px;
+    }
+    @media (max-width: 520px) {
+      margin-bottom: 24px;
+    }
   }
 }
 

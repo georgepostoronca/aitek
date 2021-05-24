@@ -5717,6 +5717,11 @@ table tbody b {
   width: 100%;
 }
 
+.photogallery {
+  width: 100vw;
+  overflow: hidden;
+}
+
 .photogallery__wrap {
   padding-bottom: 59px;
 }
@@ -10398,6 +10403,10 @@ table tbody b {
     line-height: 1;
   }
 
+  .cybercom .section__head h2 {
+    margin-bottom: 16px;
+  }
+
   .cybercom-table table {
     width: 1000px;
   }
@@ -10888,13 +10897,17 @@ table tbody b {
     padding-top: 94px;
     padding-bottom: 30px;
     width: 100%;
-    height: auto;
+    height: 75%;
     min-height: inherit;
   }
 
   .headslid__item-content {
     text-align: center;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .headslid__item-content h1 b {
@@ -11588,6 +11601,18 @@ table tbody b {
 }
 
 @media (max-width: 576px) {
+  .link-arrow {
+    align-items: flex-end;
+  }
+
+  .link-arrow span {
+    margin-bottom: 26px;
+  }
+
+  .link-arrow svg {
+    margin-bottom: 35px;
+  }
+
   .headslid {
     max-height: unset;
   }
@@ -11618,6 +11643,10 @@ table tbody b {
 
   .cybercom .section__head {
     margin-bottom: 0;
+  }
+
+  .contact-tab__item h3 {
+    display: none;
   }
 
   .reviews__item .preview-mb {
@@ -11678,6 +11707,14 @@ table tbody b {
   .review footer em {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .link-arrow span {
+    margin-bottom: 15px;
+  }
+
+  .link-arrow svg {
+    margin-bottom: 24px;
   }
 
   .contact-tab__head button {
@@ -11843,13 +11880,13 @@ table tbody b {
     font-size: 30px;
   }
 
-  .contact-tab__item {
-    padding-top: 30px;
+  .improvecyber__wrap h2 {
+    font-size: 28px;
+    line-height: 1;
   }
 
-  .contact-tab__item h3 {
-    margin-bottom: 30px;
-    font-size: 28px;
+  .contact-tab__item {
+    padding-top: 30px;
   }
 
   .contact-tab__item ul li {
@@ -11890,6 +11927,10 @@ table tbody b {
 
   .bdetail-print footer a:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  .support__wrap p {
+    display: none;
   }
 
   .support-grid__item .btn {

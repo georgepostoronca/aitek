@@ -144,9 +144,8 @@
         margin-bottom: 38px;
         font-size: 35px;
 
-        @media(max-width: 480px) {
-          margin-bottom: 30px;
-          font-size: 28px;
+        @media(max-width: 576px) {
+          display: none;
         }
         @media(min-width: 1600px) {
           font-size: 40px;
