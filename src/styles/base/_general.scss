@@ -1222,7 +1222,7 @@ textarea {
 
 .link-arrow {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-end;
   cursor: pointer;
 
   border: 0;
@@ -1230,9 +1230,6 @@ textarea {
   background-color: transparent;
   outline: none;
 
-  @media (max-width: 576px) {
-    align-items: flex-end;
-  }
   &.--max {
     span {
       font-size: 16px;
@@ -1289,7 +1286,7 @@ textarea {
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
-    line-height: 27px;
+    line-height: 24px;
     color: $blue;
     transition: .2s;
     letter-spacing: 0.9px;
@@ -1310,12 +1307,13 @@ textarea {
     height: 9px;
     margin-left: 11px;
     transition: .2s;
+    margin-bottom: 8px;
     
     @media (max-width: 576px) {
-      margin-bottom: 35px;
+      margin-bottom: 34px;
     }
     @media (max-width: 520px) {
-      margin-bottom: 24px;
+      margin-bottom: 23px;
     }
   }
 }
@@ -1342,8 +1340,8 @@ textarea {
   color: $white;
   padding: 46px 31px 11px 31px;
   border-radius: 15px;
-  @media(min-width: 1600px) {
-    height: 215px;
+  @media(min-width: 2188px) {
+    height: 235px;
   }
 
   &.--blue {
@@ -1368,7 +1366,7 @@ textarea {
 
     margin-bottom: 5px;
     display: inline-block;
-    @media(min-width: 1600px) {
+    @media(min-width: 2188px) {
       font-size: 30px;
     }
   }
@@ -1380,7 +1378,7 @@ textarea {
     display: block;
     font-family: $muller;
     margin-bottom: 14px;
-    @media(min-width: 1600px) {
+    @media(min-width: 2188px) {
       font-size: 16px;
       margin-bottom: 16px;
     }
@@ -1388,7 +1386,7 @@ textarea {
 
    p {
      line-height: 25px;
-     @media(min-width: 1600px) {
+     @media(min-width: 2188px) {
       font-size: 20px;
     }
    }

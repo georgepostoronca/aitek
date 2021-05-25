@@ -13,6 +13,10 @@
     margin-bottom: 30px;
     overflow: hidden;
 
+    @media(max-width: 576px) {
+      padding: 0;
+    }
+
     span, div, a {
       background-color: $silver-6;
       height: 222px;

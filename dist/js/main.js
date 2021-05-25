@@ -5735,17 +5735,17 @@ function mobileSlider() {
       $('.photogallery__grid').removeClass('row');
       photogallerySwiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](sliderPhotogallery, {
         spaceBetween: 28,
-        slidesPerView: 2.3,
+        slidesPerView: "auto",
         loop: true,
         // freeMode: true,
         autoHeight: true,
         breakpoints: {
           0: {
-            slidesPerView: 1.3,
+            slidesPerView: "auto",
             spaceBetween: 10
           },
           510: {
-            slidesPerView: 2.3,
+            slidesPerView: "auto",
             spaceBetween: 20
           }
         }

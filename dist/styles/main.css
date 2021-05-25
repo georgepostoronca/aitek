@@ -4212,7 +4212,7 @@ textarea {
 
 .link-arrow {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-end;
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -4264,7 +4264,7 @@ textarea {
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 27px;
+  line-height: 24px;
   color: #2871B6;
   transition: .2s;
   letter-spacing: 0.9px;
@@ -4276,6 +4276,7 @@ textarea {
   height: 9px;
   margin-left: 11px;
   transition: .2s;
+  margin-bottom: 8px;
 }
 
 .link-blue {
@@ -9762,23 +9763,6 @@ table tbody b {
     font-size: 16px;
   }
 
-  .article-vcncy {
-    height: 215px;
-  }
-
-  .article-vcncy b {
-    font-size: 30px;
-  }
-
-  .article-vcncy em {
-    font-size: 16px;
-    margin-bottom: 16px;
-  }
-
-  .article-vcncy p {
-    font-size: 20px;
-  }
-
   .card h3 {
     font-size: 30px;
   }
@@ -10132,6 +10116,25 @@ table tbody b {
   }
 }
 
+@media (min-width: 2188px) {
+  .article-vcncy {
+    height: 235px;
+  }
+
+  .article-vcncy b {
+    font-size: 30px;
+  }
+
+  .article-vcncy em {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .article-vcncy p {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 2200px) {
   .footer__wrap ul li a {
     font-size: 24px;
@@ -10139,6 +10142,19 @@ table tbody b {
 
   .menu__nav a {
     font-size: 24px;
+  }
+
+  .bdetail-print__text {
+    width: calc(100% - 500px);
+    justify-content: space-between;
+  }
+
+  .bdetail-print__ul:first-child {
+    max-width: 550px;
+  }
+
+  .bdetail-print__list {
+    width: 500px;
   }
 }
 
@@ -10166,6 +10182,10 @@ table tbody b {
 
   .benefits__item ~ .benefits__item {
     margin-left: 23%;
+  }
+
+  .bdetail-print__ul:last-child {
+    padding-left: unset;
   }
 }
 
@@ -10278,6 +10298,10 @@ table tbody b {
 }
 
 @media (max-width: 1080px) {
+  .headslid__item {
+    justify-content: center;
+  }
+
   .headslid__item-content {
     width: 80%;
   }
@@ -10897,8 +10921,9 @@ table tbody b {
     padding-top: 94px;
     padding-bottom: 30px;
     width: 100%;
-    height: 75%;
+    height: 70%;
     min-height: inherit;
+    justify-content: unset;
   }
 
   .headslid__item-content {
@@ -10907,7 +10932,7 @@ table tbody b {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .headslid__item-content h1 b {
@@ -11601,16 +11626,12 @@ table tbody b {
 }
 
 @media (max-width: 576px) {
-  .link-arrow {
-    align-items: flex-end;
-  }
-
   .link-arrow span {
     margin-bottom: 26px;
   }
 
   .link-arrow svg {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   .headslid {
@@ -11643,6 +11664,10 @@ table tbody b {
 
   .cybercom .section__head {
     margin-bottom: 0;
+  }
+
+  .photogallery__item {
+    padding: 0;
   }
 
   .contact-tab__item h3 {
@@ -11714,7 +11739,7 @@ table tbody b {
   }
 
   .link-arrow svg {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
   }
 
   .contact-tab__head button {
