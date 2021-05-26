@@ -5573,17 +5573,11 @@ if (newsSlider) {
       1400: {
         spaceBetween: 30
       },
-      1600: {
-        spaceBetween: 70
+      1741: {
+        slidesPerView: 4
       },
-      1800: {
-        spaceBetween: 120
-      },
-      2000: {
-        spaceBetween: 170
-      },
-      2200: {
-        spaceBetween: 220
+      2188: {
+        slidesPerView: 5
       }
     }
   });

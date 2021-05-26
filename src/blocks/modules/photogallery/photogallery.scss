@@ -1,7 +1,7 @@
 .photogallery {
   width: 100vw;
   overflow: hidden;
-  
+
   &__wrap {
     padding-bottom: 59px;
   }
@@ -12,6 +12,8 @@
   &__item {
     margin-bottom: 30px;
     overflow: hidden;
+    max-width: unset !important;
+    flex-grow: 1 !important;
 
     @media(max-width: 576px) {
       padding: 0;

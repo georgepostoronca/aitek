@@ -5366,6 +5366,9 @@ textarea {
   display: block;
   height: 539px;
   overflow: hidden;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 15px;
   background-color: #C1C1C1;
 }
@@ -5730,6 +5733,8 @@ table tbody b {
 .photogallery__item {
   margin-bottom: 30px;
   overflow: hidden;
+  max-width: unset !important;
+  flex-grow: 1 !important;
 }
 
 .photogallery__item span,
@@ -6594,7 +6599,6 @@ table tbody b {
 .vacancy-detail__back .link-arrow svg {
   width: 13px;
   fill: currentColor;
-  margin: 0;
 }
 
 .vacancy-detail__info {
@@ -7079,6 +7083,7 @@ table tbody b {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1600px;
 }
 
 .repair__grid-item {
@@ -7580,7 +7585,7 @@ table tbody b {
   height: 100%;
 }
 
-.support-serv__item span {
+.support-serv__item a {
   width: calc(100% - 40px);
   padding-left: 26px;
   font-style: normal;
@@ -9637,11 +9642,6 @@ table tbody b {
     padding: 0;
   }
 
-  .btn {
-    min-width: 15.83vw;
-    padding: 1.39vw;
-  }
-
   .btn span {
     font-size: 1.11vw;
   }
@@ -9903,7 +9903,11 @@ table tbody b {
 
   .address__item p {
     font-size: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
+  }
+
+  .address__item p ~ p {
+    margin-top: 40px;
   }
 
   .address__item a {
@@ -10050,7 +10054,7 @@ table tbody b {
     font-size: 16px;
   }
 
-  .support-serv__item span {
+  .support-serv__item a {
     font-size: 20px;
   }
 }
@@ -10062,6 +10066,10 @@ table tbody b {
 
   .menu__nav a {
     font-size: 20px;
+  }
+
+  .vacancy__card {
+    max-width: 25%;
   }
 
   .bdetail-print__text {
@@ -10089,6 +10097,10 @@ table tbody b {
 }
 
 @media (min-width: 1920px) {
+  .parteners-grid__scroll {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
   .bdetail-print__ul:last-child {
     width: unset;
     padding-left: 5vw;
@@ -10186,6 +10198,16 @@ table tbody b {
 
   .bdetail-print__ul:last-child {
     padding-left: unset;
+  }
+}
+
+@media (min-width: 2420px) {
+  .vacancy__card {
+    max-width: 20%;
+  }
+
+  .parteners-grid__scroll {
+    grid-template-columns: repeat(7, 1fr);
   }
 }
 

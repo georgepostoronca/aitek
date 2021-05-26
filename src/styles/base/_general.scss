@@ -495,10 +495,10 @@ textarea {
   will-change: transform;
   overflow: hidden;
 
-  @media(min-width: 1366px) {
-    min-width: 15.83vw;
-    padding: 1.39vw;
-  }
+  // @media(min-width: 1366px) {
+  //   min-width: 15.83vw;
+  //   padding: 1.39vw;
+  // }
 
   &.--max {
     min-width: 261px;
@@ -800,7 +800,7 @@ textarea {
     }
     .article__info {
       text-decoration: none;
-  
+
       h4 {
         color: $blue;
         text-decoration: none;
@@ -1297,7 +1297,7 @@ textarea {
       margin-bottom: 26px;
     }
     @media (max-width: 520px) {
-      margin-bottom: 15px;  
+      margin-bottom: 15px;
     }
   }
 
@@ -1308,7 +1308,7 @@ textarea {
     margin-left: 11px;
     transition: .2s;
     margin-bottom: 8px;
-    
+
     @media (max-width: 576px) {
       margin-bottom: 34px;
     }

@@ -132,6 +132,13 @@
       margin-bottom: 20px;
     }
 
+    @media(min-width: 1800px) {
+      max-width: 25%;
+    }
+    @media(min-width: 2420px) {
+      max-width: 20%;
+    }
+
     .card {
       @media(max-width: 767px) {
         height: auto;
@@ -185,7 +192,7 @@
         width: 100%;
         margin-bottom: 30px;
       }
-      
+
 
       .link-arrow {
         padding: 0;
@@ -216,7 +223,7 @@
         svg {
           width: 13px;
           fill: currentColor;
-          margin: 0;
+          // margin: 0;
         }
       }
     }
