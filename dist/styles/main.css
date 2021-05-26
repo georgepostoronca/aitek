@@ -3793,6 +3793,7 @@ textarea {
   overflow: hidden;
   background-color: #fff;
   text-decoration: none !important;
+  height: 100%;
   display: inline-flex;
   flex-direction: column;
 }
@@ -6426,6 +6427,7 @@ table tbody b {
   display: flex;
   flex-direction: column;
   margin-bottom: 69px;
+  flex: 1 1 30%;
 }
 
 .benefits__item b {
@@ -9168,12 +9170,6 @@ table tbody b {
   }
 }
 
-@media (min-width: 993px) {
-  .benefits__item ~ .benefits__item {
-    margin-left: 15px;
-  }
-}
-
 @media (min-width: 1024px) {
   .plyr:-webkit-full-screen .plyr__captions {
     font-size: 21px;
@@ -9716,10 +9712,6 @@ table tbody b {
     width: 65%;
   }
 
-  .benefits__item ~ .benefits__item {
-    margin-left: 10%;
-  }
-
   .support-grid__item.first p {
     height: 150px;
   }
@@ -9924,6 +9916,10 @@ table tbody b {
     height: 20px;
   }
 
+  .vacancyblock__wrap {
+    height: 32.64vw;
+  }
+
   .vacancyblock__wrap ul li b {
     font-size: 40px;
   }
@@ -9959,26 +9955,6 @@ table tbody b {
   .benefits__item p {
     font-size: 20px;
     width: 350px;
-  }
-
-  .vacancy-detail__back .link-arrow span {
-    font-size: 16px;
-  }
-
-  .vacancy-detail__tab-head button span {
-    font-size: 20px;
-  }
-
-  .vacancy-detail__tab-item ul li {
-    font-size: 20px;
-  }
-
-  .vacancy-detail__tab-item footer h4 {
-    font-size: 30px;
-  }
-
-  .vacancy-detail__tab-item footer p {
-    font-size: 20px;
   }
 
   .parteners-grid__item b {
@@ -10112,10 +10088,6 @@ table tbody b {
     padding-top: 157px;
     height: 709px;
   }
-
-  .benefits__item ~ .benefits__item {
-    margin-left: 17%;
-  }
 }
 
 @media (min-width: 2000px) {
@@ -10190,10 +10162,6 @@ table tbody b {
 
   .menu__nav a {
     font-size: 26px;
-  }
-
-  .benefits__item ~ .benefits__item {
-    margin-left: 23%;
   }
 
   .bdetail-print__ul:last-child {
@@ -10518,6 +10486,7 @@ table tbody b {
   .benefits__item {
     width: calc(50% - 15px);
     margin-bottom: 40px;
+    flex: 1 1 45%;
   }
 
   .vacancy__content {
@@ -10953,7 +10922,6 @@ table tbody b {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .headslid__item-content h1 b {
@@ -11294,10 +11262,6 @@ table tbody b {
     margin-bottom: 30px;
   }
 
-  .benefits__item {
-    margin-bottom: 25px;
-  }
-
   .benefits__item b {
     font-size: 18px;
     margin-bottom: 10px;
@@ -11493,6 +11457,11 @@ table tbody b {
 }
 
 @media (max-width: 762px) {
+  .benefits__item {
+    margin-bottom: 25px;
+    flex: 1 1 100%;
+  }
+
   .parteners-grid .more-parteners {
     display: none;
   }
@@ -11861,6 +11830,10 @@ table tbody b {
   .headslid {
     background: url("../img/bg-mobile.svg") bottom center no-repeat;
     background-size: 100% auto;
+  }
+
+  .headslid__wrap {
+    background: none;
   }
 
   .headslid__item-content p {

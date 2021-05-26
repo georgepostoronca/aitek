@@ -23,6 +23,9 @@
       background: #DDBB95;
       padding-top: 18px;
     }
+    @media(min-width: 1600px) { 
+      height: 32.64vw;
+    }
 
     ul {
       width: 100%;

@@ -215,9 +215,9 @@
           font-size: 13px;
           letter-spacing: -0.8px;
           padding-left: 10px;
-          @media(min-width: 1600px) {
-            font-size: 16px;
-          }
+          // @media(min-width: 1600px) {
+          //   font-size: 16px;
+          // }
         }
 
         svg {
@@ -328,9 +328,9 @@
             @media(max-width: 767px) {
               font-size: 13px;
             }
-            @media(min-width: 1600px) {
-              font-size: 20px;
-            }
+            // @media(min-width: 1600px) {
+            //   font-size: 20px;
+            // }
           }
         }
       }
@@ -366,9 +366,9 @@
             padding-left: 10px;
             position: relative;
             margin-bottom: 6px;
-            @media(min-width: 1600px) {
-              font-size: 20px;
-            }
+            // @media(min-width: 1600px) {
+            //   font-size: 20px;
+            // }
             &:after {
               content: "";
               width: 3px;
@@ -394,9 +394,9 @@
             line-height: 27px;
             letter-spacing: 0;
             margin-bottom: 10px;
-            @media(min-width: 1600px) {
-              font-size: 30px;
-            }
+            // @media(min-width: 1600px) {
+            //   font-size: 30px;
+            // }
           }
 
           p {
@@ -406,9 +406,9 @@
             font-size: 16px;
             line-height: 27px;
             margin-bottom: 23px;
-            @media(min-width: 1600px) {
-              font-size: 20px;
-            }
+            // @media(min-width: 1600px) {
+            //   font-size: 20px;
+            // }
 
             a {
               color: inherit;
