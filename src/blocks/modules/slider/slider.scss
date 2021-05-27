@@ -185,7 +185,7 @@
         @media(max-width: 1300px) {
           width: 54%;
           max-width: inherit;
-          
+
         }
 
         // @media(min-width: 1921px) {
@@ -209,6 +209,7 @@
         @media(max-width: 480px) {
           width: 90%;
           margin-top: 110px;
+          top: 40%;
         }
         @media(max-height: 480px) {
           display: none;

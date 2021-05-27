@@ -9893,15 +9893,6 @@ table tbody b {
     font-size: 25px;
   }
 
-  .address__item p {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-
-  .address__item p ~ p {
-    margin-top: 40px;
-  }
-
   .address__item a {
     font-size: 20px;
     margin-bottom: 34px;
@@ -11845,6 +11836,7 @@ table tbody b {
   .headslid .swiper-slide img {
     width: 90%;
     margin-top: 110px;
+    top: 40%;
   }
 
   .headslid .swiper-pagination {

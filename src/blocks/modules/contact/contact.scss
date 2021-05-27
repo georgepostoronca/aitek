@@ -321,15 +321,6 @@
       @media(max-width: 767px) {
         margin-bottom: 10px;
       }
-      @media(min-width: 1600px) {
-        font-size: 20px;
-        margin-bottom: 30px;
-      }
-    }
-    p ~ p {
-      @media(min-width: 1600px) {
-        margin-top: 40px;
-      }
     }
     a {
       font-style: normal;
