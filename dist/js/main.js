@@ -5628,6 +5628,9 @@ if (sliderminEl) {
         clickable: true
       }
     });
+    $('.js-slidermin').find('.swiper-slide').each(function () {
+      $(this).height(307);
+    });
   });
 }
 

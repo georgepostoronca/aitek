@@ -556,6 +556,10 @@
             height: 100%;
             fill: rgba(#fff, .5);
           }
+          @media(max-width: 576px) {
+            width: 27px;
+            height: 27px;
+          }
         }
       }
     }
