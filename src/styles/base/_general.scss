@@ -1241,6 +1241,12 @@ textarea {
 
     svg {
       width: 15px;
+      @media (max-width: 576px) {
+        margin-bottom: 27px;
+      }
+      @media (max-width: 520px) {
+        margin-bottom: 15px;
+      }
     }
   }
 
@@ -1340,7 +1346,7 @@ textarea {
   color: $white;
   padding: 46px 31px 11px 31px;
   border-radius: 15px;
-  height: calc(100% - 57px);
+  height: calc(100% - 40px);
   @media(min-width: 2188px) {
     height: 235px;
   }

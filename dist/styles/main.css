@@ -4298,7 +4298,7 @@ textarea {
   color: #ffffff;
   padding: 46px 31px 11px 31px;
   border-radius: 15px;
-  height: calc(100% - 57px);
+  height: calc(100% - 40px);
 }
 
 .article-vcncy.--blue {
@@ -11606,6 +11606,10 @@ table tbody b {
 }
 
 @media (max-width: 576px) {
+  .link-arrow.--max svg {
+    margin-bottom: 27px;
+  }
+
   .link-arrow span {
     margin-bottom: 26px;
   }
@@ -11728,6 +11732,10 @@ table tbody b {
   .review footer em {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .link-arrow.--max svg {
+    margin-bottom: 15px;
   }
 
   .link-arrow span {
