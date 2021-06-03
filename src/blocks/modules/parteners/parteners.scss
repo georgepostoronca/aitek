@@ -67,6 +67,7 @@
         pointer-events: none;
         display: block;
         transition: .2s;
+        z-index: 1;
         background: linear-gradient(0, rgba(255, 255, 255, 0) 20%, #FFFFFF 100%);
 
         @media(max-width: 992px) {
@@ -81,6 +82,7 @@
         bottom: 0;
         width: 100%;
         height: 50%;
+        z-index: 1;
         pointer-events: none;
         display: block;
         transition: .2s;
