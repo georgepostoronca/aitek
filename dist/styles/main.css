@@ -4049,7 +4049,7 @@ textarea {
   position: absolute;
   right: 0;
   top: 50%;
-  margin-top: -5px;
+  margin-top: -4px;
   transform-origin: center center;
   transition: .2s;
   color: #2871B6;
