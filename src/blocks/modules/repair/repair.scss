@@ -1,7 +1,4 @@
 .repair {
-
-
-
   &__wrap {
 
   }
@@ -117,6 +114,46 @@
           display: block;
         }
       }
+    }
+  }
+
+  &__request {
+    &-wrapper {
+      margin-top: 30px;
+    }
+    &-radios {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-type, &-location {
+      display: flex;
+      flex-direction: column;
+      margin-right: 50px;
+      input {
+        height: 19px;
+        margin-right: 10px;
+      }
+      label {
+        display: flex;
+        margin-bottom: 15px;
+      }
+    }
+    &-text {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s;
+    }
+    &-inputs {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      input {
+        margin-bottom: 20px;
+        width: 300px;
+      }
+    }
+    .btn {
+      margin: 20px 0;
     }
   }
 }

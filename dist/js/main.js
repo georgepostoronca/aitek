@@ -6061,6 +6061,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
       });
     });
   }
+}); // repair request
+
+$('input[name="type"]').add('input[name="location"]').click(function () {
+  if ($('input[name="type"]:checked').val() > 0 && $('input[name="location"]:checked').val() > 0) {
+    var value = +$('input[name="type"]:checked').val() + +$('input[name="location"]:checked').val();
+    $('.repair__request-text').css("max-height", "300px");
+    $('.repair__request-days').text(value);
+  }
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 

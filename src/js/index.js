@@ -622,3 +622,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 });
+
+// repair request
+$('input[name="type"]').add('input[name="location"]').click(function(){
+  if($('input[name="type"]:checked').val() > 0 && $('input[name="location"]:checked').val() > 0) {
+    let value = +$('input[name="type"]:checked').val() + +$('input[name="location"]:checked').val();
+    $('.repair__request-text').css("max-height","300px")
+    $('.repair__request-days').text(value);
+  }
+});
