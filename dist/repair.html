@@ -142,34 +142,34 @@
                   <button class="btn --light" data-fancybox data-src="#tingle-img"><span>Подробнее на схеме</span></button>
                 </div>
               </div>
-              <div class="repair__request"> 
+              <div class="repair__request">
                 <h3 class="h3">Заявка на ремонт</h3>
                 <form class="repair__request-wrapper">
                   <div class="repair__request-radios">
-                    <div class="repair__request-type"> 
+                    <div class="repair__request-type">
                       <p>Тип ремонта:</p>
-                      <label> 
+                      <label>
                         <input type="radio" name="type" value="10">Негарантийный ремонт
                       </label>
-                      <label> 
+                      <label>
                         <input type="radio" name="type" value="30">Гарантийный ремонт
                       </label>
-                      <label> 
+                      <label>
                         <input type="radio" name="type" value="5">Гарантийный ремонт (Системный блок Айтек)
                       </label>
                     </div>
                     <div class="repair__request-location">
                       <p>Ваше местоположение:</p>
-                      <label> 
+                      <label>
                         <input type="radio" name="location" value="5">Владимир
                       </label>
-                      <label> 
+                      <label>
                         <input type="radio" name="location" value="10">Вл. область и другие регионы
                       </label>
                     </div>
                   </div>
                   <div class="repair__request-text">
-                    <p>Плановый срок ремонта не более: <strong> <span class="repair__request-days">15 </span> рабочих дней.</strong></p><small>Это максимальный срок, учитывающий различные сценарии и нормативы сервисного центра. * Срок ремонта может быть изменен в случаях ремонта во внешнем сервисном центре.</small>
+                    <p>Плановый срок ремонта не более:<strong><span class="repair__request-days">15</span> рабочих дней.</strong></p><small>Это максимальный срок, учитывающий различные сценарии и нормативы сервисного центра. * Срок ремонта может быть изменен в случаях ремонта во внешнем сервисном центре.</small>
                   </div>
                   <div class="repair__request-inputs">
                     <input placeholder="Компания">
@@ -179,8 +179,10 @@
                     <input placeholder="Наименование товара (модель)">
                     <input placeholder="Заявленная неисправность">
                     <input placeholder="Серийный номер товара">
-                    <input placeholder="Номер документа о покупке">
-                    <textarea placeholder="Комментарий" style="resize: none;"> </textarea>
+                    <div id="docnum">
+                      <input placeholder="Номер документа о покупке">
+                    </div>
+                    <textarea placeholder="Комментарий" style="resize: none;"></textarea>
                   </div>
                   <button class="btn" type="submit">Отправить</button>
                 </form>

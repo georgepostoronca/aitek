@@ -7183,6 +7183,12 @@ table tbody b {
   width: 300px;
 }
 
+.repair__request-inputs #docnum {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s;
+}
+
 .repair__request .btn {
   margin: 20px 0;
 }

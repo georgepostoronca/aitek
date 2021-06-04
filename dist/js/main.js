@@ -6069,6 +6069,13 @@ $('input[name="type"]').add('input[name="location"]').click(function () {
     $('.repair__request-text').css("max-height", "300px");
     $('.repair__request-days').text(value);
   }
+
+  if ($('input[name="type"]:checked').val() != 10) {
+    console.log($('input[name="type"]:checked').val());
+    $('#docnum').css('max-height', '300px');
+  } else {
+    $('#docnum').css('max-height', '0');
+  }
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 

@@ -151,6 +151,12 @@
         margin-bottom: 20px;
         width: 300px;
       }
+      #docnum {
+        // display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s;
+      }
     }
     .btn {
       margin: 20px 0;

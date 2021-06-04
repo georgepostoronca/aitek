@@ -48,36 +48,36 @@ section.repair
                             | рабочих дней
                     button.btn.--light(data-fancybox data-src="#tingle-img")
                         span Подробнее на схеме
-            
-            .repair__request 
+
+            .repair__request
                 h3.h3 Заявка на ремонт
                 form.repair__request-wrapper
                     .repair__request-radios
-                        .repair__request-type 
+                        .repair__request-type
                             p Тип ремонта:
-                            label 
+                            label
                                 input(type="radio" name='type' value='10')
                                 | Негарантийный ремонт
-                            label 
+                            label
                                 input(type="radio" name='type' value='30')
                                 | Гарантийный ремонт
-                            label 
+                            label
                                 input(type="radio" name='type' value='5')
                                 | Гарантийный ремонт (Системный блок Айтек)
-                                
+
                         .repair__request-location
                             p Ваше местоположение:
-                            label 
+                            label
                                 input(type="radio" name='location' value='5')
                                 | Владимир
-                            label 
+                            label
                                 input(type="radio" name='location' value='10')
                                 | Вл. область и другие регионы
 
                     .repair__request-text
-                        p Плановый срок ремонта не более: 
-                            strong 
-                                span.repair__request-days 15 
+                        p Плановый срок ремонта не более:
+                            strong
+                                span.repair__request-days 15
                                 |  рабочих дней.
                         small Это максимальный срок, учитывающий различные сценарии и нормативы сервисного центра. * Срок ремонта может быть изменен в случаях ремонта во внешнем сервисном центре.
 
@@ -89,8 +89,8 @@ section.repair
                         input(placeholder='Наименование товара (модель)')
                         input(placeholder='Заявленная неисправность')
                         input(placeholder='Серийный номер товара')
-                        input(placeholder='Номер документа о покупке')
-                        textarea(placeholder='Комментарий' style="resize: none;") 
-                    
+                        #docnum
+                            input(placeholder='Номер документа о покупке')
+                        textarea(placeholder='Комментарий' style="resize: none;")
                     button(type="submit").btn Отправить
 
