@@ -4,7 +4,7 @@
   position: relative;
 
 
-  
+
   img {
     position: absolute;
     top: 0;
@@ -28,7 +28,7 @@
       width: 100%;
     }
 
-    @media(max-width: 768px) {
+    @media(max-width: 767px) {
       padding-top: 50px;
       padding-bottom: 50px;
       text-align: center;
@@ -55,7 +55,7 @@
         line-height: 1;
       }
 
-      @media(max-width: 768px) {
+      @media(max-width: 767px) {
         font-size: 45px;
       }
 
@@ -78,7 +78,7 @@
 
       margin-bottom: 43px;
 
-      @media(max-width: 768px) {
+      @media(max-width: 767px) {
         width: 100%;
       }
       @media(min-width: 1600px) {

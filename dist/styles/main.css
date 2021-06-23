@@ -5702,6 +5702,10 @@ table tbody b {
   color: #2871B6;
 }
 
+.cmpdetail__wrap {
+  padding-top: 26px;
+}
+
 .improvecyber.--page-service .improvecyber__wrap {
   padding-bottom: 0;
 }
@@ -5938,16 +5942,15 @@ table tbody b {
   line-height: 14.4px;
   font-family: "Muller", sans-serif;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 
 .address__item a {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 14.4px;
+  line-height: 19px;
   font-family: "Muller", sans-serif;
-  margin-bottom: 14px;
 }
 
 .address__item span {
@@ -6190,6 +6193,7 @@ table tbody b {
 
 .portfolio__bottom {
   text-align: center;
+  margin-bottom: 26px;
 }
 
 .reviews {
@@ -8369,6 +8373,12 @@ table tbody b {
   }
 }
 
+@media (min-width: 767px) and (max-height: 700px) {
+  .headslid__item {
+    min-height: 700px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -8795,12 +8805,6 @@ table tbody b {
   .plyr__captions {
     font-size: 18px;
     font-size: var(--plyr-font-size-large, 18px);
-  }
-}
-
-@media (min-width: 768px) and (max-height: 700px) {
-  .headslid__item {
-    min-height: 700px;
   }
 }
 
@@ -10756,7 +10760,15 @@ table tbody b {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .plyr__time + .plyr__time {
+    display: none;
+  }
+
+  .block-scroll {
+    overflow: hidden;
+  }
+
   h2,
   .h2 {
     font-size: 35px;
@@ -10766,137 +10778,6 @@ table tbody b {
   h3 {
     font-size: 30px;
     line-height: 1;
-  }
-
-  .article.--min-info .article__info {
-    padding: 20px;
-  }
-
-  .article__info {
-    padding: 27px 21px;
-    padding-bottom: 29px;
-  }
-
-  .review.--quote footer svg {
-    width: 34px;
-    height: 25px;
-    right: 15px;
-    bottom: 15px;
-  }
-
-  .review__img {
-    margin: auto;
-    margin-bottom: 15px;
-  }
-
-  .review__content {
-    padding-left: 0;
-    width: 100%;
-  }
-
-  .notfound {
-    flex-direction: column;
-  }
-
-  .notfound p {
-    margin-left: 0;
-    border-left: none;
-    padding-left: 0;
-  }
-
-  .headslid .swiper-slide {
-    padding-bottom: 60px;
-    box-sizing: border-box;
-  }
-
-  .headslid .swiper-slide .container-fluid {
-    height: auto;
-  }
-
-  .blockblue {
-    min-height: inherit;
-  }
-
-  .blockblue__content p {
-    width: 100%;
-  }
-
-  .headerbg__wrap {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-  }
-
-  .headerbg__wrap h1 {
-    font-size: 45px;
-  }
-
-  .headerbg__wrap p {
-    width: 100%;
-  }
-
-  .cybercom .section__head {
-    margin-bottom: 30px;
-  }
-
-  table thead td {
-    padding: 15px;
-  }
-
-  table tbody td {
-    padding: 15px;
-  }
-
-  .portfolio__label {
-    display: none;
-  }
-
-  .portfolio__map {
-    display: none;
-  }
-
-  .portfolio__grid {
-    margin-bottom: 0;
-  }
-
-  .currvcncy .section__head {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .currvcncy .section__head h2 {
-    padding-right: 0;
-  }
-
-  .currvcncy .section__head a {
-    margin-top: 15px;
-  }
-
-  .repair__grid {
-    flex-direction: column;
-  }
-
-  .repair__grid-item {
-    width: 350px;
-  }
-
-  .repair__grid-item .btn {
-    margin-right: auto;
-    display: block;
-  }
-
-  .bdetail-slider__control {
-    bottom: -2px;
-  }
-}
-
-@media (max-width: 767px) {
-  .plyr__time + .plyr__time {
-    display: none;
-  }
-
-  .block-scroll {
-    overflow: hidden;
   }
 
   h4 {
@@ -10910,8 +10791,17 @@ table tbody b {
     padding-right: 15px;
   }
 
+  .article.--min-info .article__info {
+    padding: 20px;
+  }
+
   .article picture {
     height: 228px;
+  }
+
+  .article__info {
+    padding: 27px 21px;
+    padding-bottom: 29px;
   }
 
   .article__info h4 {
@@ -10946,6 +10836,23 @@ table tbody b {
     display: block;
   }
 
+  .review.--quote footer svg {
+    width: 34px;
+    height: 25px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .review__img {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .review__content {
+    padding-left: 0;
+    width: 100%;
+  }
+
   .page-work .vacancyblock {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -10954,6 +10861,16 @@ table tbody b {
   .card {
     padding: 20px;
     display: block;
+  }
+
+  .notfound {
+    flex-direction: column;
+  }
+
+  .notfound p {
+    margin-left: 0;
+    border-left: none;
+    padding-left: 0;
   }
 
   .headslid__item {
@@ -10993,6 +10910,15 @@ table tbody b {
     display: inline-block;
     width: 250px;
     margin: 0 auto;
+  }
+
+  .headslid .swiper-slide {
+    padding-bottom: 60px;
+    box-sizing: border-box;
+  }
+
+  .headslid .swiper-slide .container-fluid {
+    height: auto;
   }
 
   .headslid .swiper-slide img {
@@ -11204,6 +11130,14 @@ table tbody b {
     margin-bottom: 0;
   }
 
+  .blockblue {
+    min-height: inherit;
+  }
+
+  .blockblue__content p {
+    width: 100%;
+  }
+
   .blockvideo__wrap h2 {
     margin-bottom: 20px;
   }
@@ -11227,6 +11161,20 @@ table tbody b {
     padding-bottom: 30px;
   }
 
+  .headerbg__wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .headerbg__wrap h1 {
+    font-size: 45px;
+  }
+
+  .headerbg__wrap p {
+    width: 100%;
+  }
+
   .advantage__wrap h2 {
     margin-bottom: 40px;
   }
@@ -11236,8 +11184,20 @@ table tbody b {
     padding-bottom: 30px;
   }
 
+  .cybercom .section__head {
+    margin-bottom: 30px;
+  }
+
   .cybercom-table table {
     width: 800px;
+  }
+
+  table thead td {
+    padding: 15px;
+  }
+
+  table tbody td {
+    padding: 15px;
   }
 
   .improvecyber__wrap p {
@@ -11308,6 +11268,31 @@ table tbody b {
   .portfolio__select .customSelect .custom-select-panel {
     right: inherit;
     left: 0;
+  }
+
+  .portfolio__label {
+    display: none;
+  }
+
+  .portfolio__map {
+    display: none;
+  }
+
+  .portfolio__grid {
+    margin-bottom: 0;
+  }
+
+  .currvcncy .section__head {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .currvcncy .section__head h2 {
+    padding-right: 0;
+  }
+
+  .currvcncy .section__head a {
+    margin-top: 15px;
   }
 
   .benefits__wrap h2 {
@@ -11435,6 +11420,23 @@ table tbody b {
     padding-top: 30px;
     margin-bottom: 30px;
     padding-bottom: 20px;
+  }
+
+  .repair__grid {
+    flex-direction: column;
+  }
+
+  .repair__grid-item {
+    width: 350px;
+  }
+
+  .repair__grid-item .btn {
+    margin-right: auto;
+    display: block;
+  }
+
+  .bdetail-slider__control {
+    bottom: -2px;
   }
 
   .bdetail-print__ul em {

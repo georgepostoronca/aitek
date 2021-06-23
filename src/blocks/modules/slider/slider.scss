@@ -61,7 +61,7 @@
       min-height: inherit;
     }
 
-    @media(min-width: 768px) and (max-height: 700px) {
+    @media(min-width: 767px) and (max-height: 700px) {
       min-height: 700px;
     }
     &-content {
@@ -106,7 +106,7 @@
           }
         }
 
-        
+
       }
 
       p {
@@ -158,14 +158,14 @@
       position: relative;
       overflow: hidden;
 
-      @media(max-width: 768px) {
+      @media(max-width: 767px) {
         //padding-bottom: 80px;
         padding-bottom: 60px;
         box-sizing: border-box;
       }
 
       .container-fluid {
-        @media(max-width: 768px) {
+        @media(max-width: 767px) {
           height: auto;
         }
       }

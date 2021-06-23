@@ -215,7 +215,7 @@ h2, .h2 {
     word-break: break-all;
   }
 
-  @media(max-width: 768px) {
+  @media(max-width: 767px) {
     font-size: 35px;
     line-height: 1;
   }
@@ -246,7 +246,7 @@ h3 {
     }
   }
 
-  @media(max-width: 768px) {
+  @media(max-width: 767px) {
     font-size: 30px;
     line-height: 1;
   }
@@ -721,7 +721,7 @@ textarea {
     padding-bottom: 15px;
     border-radius: 0 0 15px 15px;
 
-    @media(max-width: 768px) {
+    @media(max-width: 767px) {
       padding: 20px;
     }
   }
@@ -828,7 +828,7 @@ textarea {
     padding: 25px 25px;
     flex: 1;
 
-    @media(max-width: 768px) {
+    @media(max-width: 767px) {
       padding: 27px 21px;
       padding-bottom: 29px;
     }
@@ -1133,7 +1133,7 @@ textarea {
         right: 46px;
         bottom: 20px;
 
-        @media(max-width: 768px) {
+        @media(max-width: 767px) {
           width: 34px;
           height: 25px;
           right: 15px;
@@ -1146,7 +1146,7 @@ textarea {
   &__img {
     width: 167px;
 
-    @media(max-width: 768px) {
+    @media(max-width: 767px) {
       margin: auto;
       margin-bottom: 15px;
     }
@@ -1164,7 +1164,7 @@ textarea {
     width: calc(100% - 167px);
     padding-left: 26px;
 
-    @media(max-width: 768px) {
+    @media(max-width: 767px) {
       padding-left: 0;
       width: 100%;
     }
