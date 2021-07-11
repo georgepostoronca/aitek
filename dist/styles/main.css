@@ -552,7 +552,7 @@ html {
 /*# sourceMappingURL=bootstrap-grid.min.css.map */
 
 /**
- * Swiper 6.5.8
+ * Swiper 6.5.3
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -560,7 +560,7 @@ html {
  *
  * Released under the MIT License
  *
- * Released on: April 23, 2021
+ * Released on: March 31, 2021
  */
 
 @font-face {
@@ -713,7 +713,7 @@ html {
 }
 
 /**
- * Swiper 6.5.8
+ * Swiper 6.5.3
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -721,7 +721,7 @@ html {
  *
  * Released under the MIT License
  *
- * Released on: April 23, 2021
+ * Released on: March 31, 2021
  */
 
 @font-face {
@@ -1015,6 +1015,7 @@ button.swiper-pagination-bullet {
   padding: 0;
   box-shadow: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -1300,6 +1301,7 @@ button.swiper-pagination-bullet {
   top: 0;
   bottom: 0;
   right: 0;
+  -webkit-filter: blur(50px);
   filter: blur(50px);
 }
 
@@ -2364,7 +2366,6 @@ a.plyr__control:before {
 .plyr__video-wrapper {
   background: #000;
   background: var(--plyr-video-background, var(--plyr-video-background, #000));
-  height: 100%;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -2520,16 +2521,6 @@ a.plyr__control:before {
   height: 100%;
 }
 
-.plyr:fullscreen .plyr__video-wrapper {
-  height: 100%;
-  position: static;
-}
-
-.plyr:fullscreen.plyr--vimeo .plyr__video-wrapper {
-  height: 0;
-  position: relative;
-}
-
 .plyr:fullscreen .plyr__control .icon--exit-fullscreen {
   display: block;
 }
@@ -2552,16 +2543,6 @@ a.plyr__control:before {
 
 .plyr:-webkit-full-screen video {
   height: 100%;
-}
-
-.plyr:-webkit-full-screen .plyr__video-wrapper {
-  height: 100%;
-  position: static;
-}
-
-.plyr:-webkit-full-screen.plyr--vimeo .plyr__video-wrapper {
-  height: 0;
-  position: relative;
 }
 
 .plyr:-webkit-full-screen .plyr__control .icon--exit-fullscreen {
@@ -2588,16 +2569,6 @@ a.plyr__control:before {
   height: 100%;
 }
 
-.plyr:-moz-full-screen .plyr__video-wrapper {
-  height: 100%;
-  position: static;
-}
-
-.plyr:-moz-full-screen.plyr--vimeo .plyr__video-wrapper {
-  height: 0;
-  position: relative;
-}
-
 .plyr:-moz-full-screen .plyr__control .icon--exit-fullscreen {
   display: block;
 }
@@ -2620,16 +2591,6 @@ a.plyr__control:before {
 
 .plyr:-ms-fullscreen video {
   height: 100%;
-}
-
-.plyr:-ms-fullscreen .plyr__video-wrapper {
-  height: 100%;
-  position: static;
-}
-
-.plyr:-ms-fullscreen.plyr--vimeo .plyr__video-wrapper {
-  height: 0;
-  position: relative;
 }
 
 .plyr:-ms-fullscreen .plyr__control .icon--exit-fullscreen {
@@ -2661,16 +2622,6 @@ a.plyr__control:before {
 
 .plyr--fullscreen-fallback video {
   height: 100%;
-}
-
-.plyr--fullscreen-fallback .plyr__video-wrapper {
-  height: 100%;
-  position: static;
-}
-
-.plyr--fullscreen-fallback.plyr--vimeo .plyr__video-wrapper {
-  height: 0;
-  position: relative;
 }
 
 .plyr--fullscreen-fallback .plyr__control .icon--exit-fullscreen {
