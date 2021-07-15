@@ -22,16 +22,24 @@ let customSelectAll = [].slice.call(document.querySelectorAll(".js-custom-select
 customSelectAll.forEach(item => {
     const wrapCustomSelect = customSelect(item);
 
-    try {
-        const placeholder = item.dataset.placeholder || undefined;
-        const selected = wrapCustomSelect[0].opener.querySelector("span");
-        if (selected) selected.innerText = placeholder;
-    } catch (e) {
-        console.log(e);
+    function placeholder() {
+        try {
+            const placeholder = item.dataset.placeholder || undefined;
+            const selected = wrapCustomSelect[0].opener.querySelector("span");
+            if (selected) selected.innerText = placeholder;
+        } catch (e) {
+            console.log(e);
+        }
     }
+    placeholder();
+
     if (wrapCustomSelect[0]) {
         wrapCustomSelect[0].select.addEventListener("change", (e) => {
-            // console.log(e);
+
+            if(item.selectedIndex === 0) {
+                placeholder();
+            }
+
             if (e.target.dataset.changeNumber) {
                 chabgeNumber(e.target);
             }

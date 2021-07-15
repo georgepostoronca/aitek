@@ -5474,17 +5474,25 @@ var customSelectAll = [].slice.call(document.querySelectorAll(".js-custom-select
 customSelectAll.forEach(function (item) {
   var wrapCustomSelect = custom_select__WEBPACK_IMPORTED_MODULE_1___default()(item);
 
-  try {
-    var placeholder = item.dataset.placeholder || undefined;
-    var selected = wrapCustomSelect[0].opener.querySelector("span");
-    if (selected) selected.innerText = placeholder;
-  } catch (e) {
-    console.log(e);
+  function placeholder() {
+    try {
+      var _placeholder = item.dataset.placeholder || undefined;
+
+      var selected = wrapCustomSelect[0].opener.querySelector("span");
+      if (selected) selected.innerText = _placeholder;
+    } catch (e) {
+      console.log(e);
+    }
   }
+
+  placeholder();
 
   if (wrapCustomSelect[0]) {
     wrapCustomSelect[0].select.addEventListener("change", function (e) {
-      // console.log(e);
+      if (item.selectedIndex === 0) {
+        placeholder();
+      }
+
       if (e.target.dataset.changeNumber) {
         chabgeNumber(e.target);
       }
